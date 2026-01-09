@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery | Web Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 35px rgba(0,0,0,0.5);
+        }
+
+        code {
+            color: #22c55e;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">jQuery</h1>
+        <p class="fs-5 mt-3">Write less, do more – Simplifying JavaScript</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is jQuery?</h3>
+        <p>
+            <strong>jQuery</strong> is a fast, lightweight JavaScript library
+            that simplifies HTML DOM manipulation, event handling,
+            animations, and AJAX.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Why Use jQuery?</h3>
+        <ul>
+            <li>Simple and concise syntax</li>
+            <li>Cross-browser compatibility</li>
+            <li>Easy DOM manipulation</li>
+            <li>Built-in animations and effects</li>
+            <li>AJAX support</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>jQuery Syntax</h3>
+        <p>
+            Basic syntax:
+        </p>
+        <code>
+            $(selector).action();
+        </code>
+        <p class="mt-2">
+            Example:
+        </p>
+        <code>
+            $("p").hide();
+        </code>
+    </div>
+
+    <div class="content-card">
+        <h3>Common jQuery Selectors</h3>
+        <ul>
+            <li><code>$("p")</code> – Select all paragraphs</li>
+            <li><code>$("#id")</code> – Select by ID</li>
+            <li><code>$(".class")</code> – Select by class</li>
+            <li><code>$("*")</code> – Select all elements</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Common jQuery Events</h3>
+        <ul>
+            <li><code>click()</code></li>
+            <li><code>dblclick()</code></li>
+            <li><code>mouseenter()</code></li>
+            <li><code>mouseleave()</code></li>
+            <li><code>keyup()</code></li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>jQuery Effects</h3>
+        <ul>
+            <li><code>hide()</code> / <code>show()</code></li>
+            <li><code>fadeIn()</code> / <code>fadeOut()</code></li>
+            <li><code>slideUp()</code> / <code>slideDown()</code></li>
+            <li><code>animate()</code></li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>jQuery vs JavaScript</h3>
+        <ul>
+            <li>jQuery reduces code length</li>
+            <li>JavaScript offers better performance</li>
+            <li>Modern frameworks reduce jQuery usage</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="javascript.html" class="btn btn-outline-primary me-2">← JavaScript</a>
+        <a href="webdev.html" class="btn btn-primary">Web Development</a>
+        <a href="react.js" class="btn btn-outline-primary ms-2">React →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Web Development Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

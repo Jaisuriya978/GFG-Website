@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL | Structured Query Language</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6f42c1, #4c2a85);
+            color: white;
+            padding: 60px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .content-card {
+            background: #111;
+            color: whitesmoke;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #ccc;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin-left: 12px;
+            border-radius: 50%;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: #6f42c1;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">SQL</h1>
+        <p class="mt-3">Standard language for managing and querying relational databases</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container my-5">
+
+    <!-- What is SQL -->
+    <div class="content-card">
+        <h3>What is SQL?</h3>
+        <p>
+            <strong>SQL (Structured Query Language)</strong> is a standard programming
+            language used to manage and manipulate relational databases.
+        </p>
+        <p>
+            It allows users to create, read, update, and delete data efficiently.
+        </p>
+    </div>
+
+    <!-- SQL Commands -->
+    <div class="content-card">
+        <h3>Types of SQL Commands</h3>
+        <ul>
+            <li><strong>DDL</strong> – CREATE, ALTER, DROP</li>
+            <li><strong>DML</strong> – INSERT, UPDATE, DELETE</li>
+            <li><strong>DQL</strong> – SELECT</li>
+            <li><strong>DCL</strong> – GRANT, REVOKE</li>
+            <li><strong>TCL</strong> – COMMIT, ROLLBACK</li>
+        </ul>
+    </div>
+
+    <!-- Key Concepts -->
+    <div class="content-card">
+        <h3>Core SQL Concepts</h3>
+        <ul>
+            <li>Tables and schemas</li>
+            <li>Primary and foreign keys</li>
+            <li>Constraints</li>
+            <li>Indexes</li>
+        </ul>
+    </div>
+
+    <!-- Joins -->
+    <div class="content-card">
+        <h3>Joins in SQL</h3>
+        <ul>
+            <li>INNER JOIN</li>
+            <li>LEFT JOIN</li>
+            <li>RIGHT JOIN</li>
+            <li>FULL JOIN</li>
+        </ul>
+    </div>
+
+    <!-- Use Cases -->
+    <div class="content-card">
+        <h3>Use Cases</h3>
+        <ul>
+            <li>Database-driven applications</li>
+            <li>Data analysis and reporting</li>
+            <li>Backend development</li>
+            <li>Business intelligence</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center">
+        <a href="mysql.html" class="btn btn-outline-purple me-2" style="border-color:#6f42c1;color:#6f42c1;">← MySQL</a>
+        <a href="index.html" class="btn" style="background:#6f42c1;color:white;">Back to Home</a>
+        <a href="postgresql.html" class="btn btn-outline-purple ms-2" style="border-color:#6f42c1;color:#6f42c1;">PostgreSQL →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

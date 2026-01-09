@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Express.js | Backend Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #000000, #3b3b3b);
+            color: white;
+            padding: 60px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .content-card {
+            background: #111;
+            color: whitesmoke;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #ccc;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin-left: 12px;
+            border-radius: 50%;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Express.js</h1>
+        <p class="mt-3">Fast, unopinionated, minimalist web framework for Node.js</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container my-5">
+
+    <!-- What is Express.js -->
+    <div class="content-card">
+        <h3>What is Express.js?</h3>
+        <p>
+            <strong>Express.js</strong> is a lightweight backend web application framework
+            built on top of Node.js.
+        </p>
+        <p>
+            It simplifies building REST APIs and web applications.
+        </p>
+    </div>
+
+    <!-- Features -->
+    <div class="content-card">
+        <h3>Key Features</h3>
+        <ul>
+            <li>Minimal and flexible framework</li>
+            <li>Robust routing system</li>
+            <li>Middleware support</li>
+            <li>Fast server-side development</li>
+        </ul>
+    </div>
+
+    <!-- Middleware -->
+    <div class="content-card">
+        <h3>Middleware in Express</h3>
+        <p>
+            Middleware functions have access to request and response objects
+            and execute code before sending responses.
+        </p>
+        <ul>
+            <li>Application-level middleware</li>
+            <li>Router-level middleware</li>
+            <li>Error-handling middleware</li>
+        </ul>
+    </div>
+
+    <!-- Routing -->
+    <div class="content-card">
+        <h3>Routing</h3>
+        <p>
+            Express provides a powerful routing mechanism to handle HTTP requests.
+        </p>
+    </div>
+
+    <!-- Use Cases -->
+    <div class="content-card">
+        <h3>Use Cases</h3>
+        <ul>
+            <li>RESTful APIs</li>
+            <li>Backend for web & mobile apps</li>
+            <li>Microservices</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center">
+        <a href="nodejs.html" class="btn btn-outline-secondary me-2">← Node.js</a>
+        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+        <a href="mongodb.html" class="btn btn-outline-secondary ms-2">MongoDB →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

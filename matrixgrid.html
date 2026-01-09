@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix & Grid | Learn DSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #20c997, #198754);
+            color: white;
+            padding: 60px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .content-card {
+            background: #111;
+            color: whitesmoke;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        .operation-list li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #ccc;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin-left: 12px;
+            border-radius: 50%;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: #20c997;
+            color: #0f172a;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Matrix & Grid</h1>
+        <p class="mt-3">Learn matrix representation, traversal techniques, and grid-based problems</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container my-5">
+
+    <!-- What is Matrix -->
+    <div class="content-card">
+        <h3>What is a Matrix?</h3>
+        <p>
+            A <strong>Matrix</strong> is a two-dimensional data structure arranged
+            in rows and columns.
+        </p>
+        <p>
+            Matrices are widely used to represent grids, tables, images,
+            and graph connections.
+        </p>
+    </div>
+
+    <!-- Grid Representation -->
+    <div class="content-card">
+        <h3>Grid Representation</h3>
+        <ul>
+            <li>2D arrays are commonly used to represent grids</li>
+            <li>Each cell can be accessed using <code>grid[row][column]</code></li>
+            <li>Indices usually start from 0</li>
+        </ul>
+    </div>
+
+    <!-- Traversal Techniques -->
+    <div class="content-card">
+        <h3>Matrix Traversal Techniques</h3>
+        <ul class="operation-list">
+            <li>Row-wise traversal</li>
+            <li>Column-wise traversal</li>
+            <li>Spiral traversal</li>
+            <li>Diagonal traversal</li>
+        </ul>
+    </div>
+
+    <!-- Common Matrix Problems -->
+    <div class="content-card">
+        <h3>Common Matrix & Grid Problems</h3>
+        <ul>
+            <li>Rotate matrix</li>
+            <li>Search in a sorted matrix</li>
+            <li>Flood fill algorithm</li>
+            <li>Number of islands</li>
+            <li>Shortest path in a grid</li>
+        </ul>
+    </div>
+
+    <!-- Applications -->
+    <div class="content-card">
+        <h3>Applications of Matrix & Grid</h3>
+        <ul>
+            <li>Image processing</li>
+            <li>Game boards (Chess, Sudoku)</li>
+            <li>Dynamic programming on grids</li>
+            <li>Graph problems using grids</li>
+        </ul>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="text-center">
+        <a href="recursion.html" class="btn btn-outline-success me-2">← Recursion</a>
+        <a href="index.html" class="btn btn-success">Back to Home</a>
+        <a href="searching.html" class="btn btn-outline-success ms-2">Searching →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

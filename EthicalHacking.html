@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ethical Hacking | Learning Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1b5e20, #43a047);
+            color: white;
+            padding: 55px 20px;
+            border-radius: 14px;
+        }
+        .card {
+            border-radius: 14px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+        }
+        .badge-custom {
+            background-color: #e8f5e9;
+            color: #1b5e20;
+        }
+        pre {
+            background: #1e1e1e;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        footer {
+            background: #1b5e20;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Learning Hub</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="Cybersecurity1.html">Cybersecurity</a></li>
+                <li class="nav-item"><a class="nav-link active" href="EthicalHacking.html">Ethical Hacking</a></li>
+                <li class="nav-item"><a class="nav-link" href="WAS.html">Web App Security</a></li>
+                <li class="nav-item"><a class="nav-link" href="Cryptography.html">Cryptography</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="container mt-4">
+    <div class="hero text-center">
+        <h1>Ethical Hacking</h1>
+        <p class="lead">
+            Finding and fixing security vulnerabilities legally
+        </p>
+        <span class="badge badge-custom">Security Testing</span>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container mt-5">
+
+    <!-- Definition -->
+    <div class="card p-4 mb-4">
+        <h3>What is Ethical Hacking?</h3>
+        <p>
+            <strong>Ethical Hacking</strong> is the authorized practice of bypassing
+            system security to identify potential data breaches and network threats.
+            Ethical hackers help organizations improve security.
+        </p>
+    </div>
+
+    <!-- Types -->
+    <div class="card p-4 mb-4">
+        <h3>Types of Hackers</h3>
+        <ul>
+            <li><strong>White Hat</strong> – Ethical hackers</li>
+            <li><strong>Black Hat</strong> – Malicious attackers</li>
+            <li><strong>Gray Hat</strong> – Between legal and illegal</li>
+        </ul>
+    </div>
+
+    <!-- Phases -->
+    <div class="card p-4 mb-4">
+        <h3>Phases of Ethical Hacking</h3>
+        <ol>
+            <li>Reconnaissance</li>
+            <li>Scanning</li>
+            <li>Gaining Access</li>
+            <li>Maintaining Access</li>
+            <li>Covering Tracks</li>
+        </ol>
+    </div>
+
+    <!-- Example -->
+    <div class="card p-4 mb-4">
+        <h3>Example: SQL Injection</h3>
+        <pre>
+Username: admin' OR '1'='1 --
+Password: anything
+        </pre>
+        <p class="mt-2">
+            ⚠️ Used to bypass login systems when input validation is missing.
+        </p>
+    </div>
+
+    <!-- Tools -->
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Popular Ethical Hacking Tools</h4>
+                <ul>
+                    <li>Nmap</li>
+                    <li>Metasploit</li>
+                    <li>Wireshark</li>
+                    <li>Burp Suite</li>
+                    <li>Hydra</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Skills Required</h4>
+                <ul>
+                    <li>Networking Fundamentals</li>
+                    <li>Linux & Windows Internals</li>
+                    <li>Web Security</li>
+                    <li>Scripting (Python, Bash)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Careers -->
+    <div class="card p-4 mt-4">
+        <h3>Career Roles</h3>
+        <ul>
+            <li>Ethical Hacker</li>
+            <li>Penetration Tester</li>
+            <li>Security Analyst</li>
+            <li>Red Team Engineer</li>
+        </ul>
+    </div>
+
+    <!-- Note -->
+    <div class="card p-4 mt-4 border border-success">
+        <h4>⚠️ Important Note</h4>
+        <p>
+            Ethical hacking must always be performed with
+            <strong>proper authorization</strong>. Unauthorized hacking is illegal.
+        </p>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

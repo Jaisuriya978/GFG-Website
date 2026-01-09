@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consensus Algorithms | Blockchain Technology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #10b981, #047857);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #f1f5f9;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 26px rgba(0,0,0,0.45);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            color: #e5e7eb;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5f5;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Consensus Algorithms</h1>
+        <p class="fs-5 mt-3">How Decentralized Networks Agree on the Truth</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is a Consensus Algorithm?</h3>
+        <p>
+            A <strong>consensus algorithm</strong> is a mechanism that enables
+            distributed blockchain nodes to agree on a single version of the ledger
+            without relying on a central authority.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Why Consensus is Important</h3>
+        <ul>
+            <li>Prevents double spending</li>
+            <li>Maintains data consistency</li>
+            <li>Ensures network security</li>
+            <li>Builds trust in decentralized systems</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Key Properties of Consensus Algorithms</h3>
+        <ul>
+            <li>Fault tolerance</li>
+            <li>Decentralization</li>
+            <li>Scalability</li>
+            <li>Security</li>
+            <li>Energy efficiency</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Popular Consensus Algorithms</h3>
+        <ul>
+            <li><strong>Proof of Work (PoW)</strong></li>
+            <li><strong>Proof of Stake (PoS)</strong></li>
+            <li><strong>Delegated Proof of Stake (DPoS)</strong></li>
+            <li><strong>Proof of Authority (PoA)</strong></li>
+            <li><strong>Byzantine Fault Tolerance (BFT)</strong></li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Proof of Work (PoW)</h3>
+        <ul>
+            <li>Used by Bitcoin</li>
+            <li>Miners solve cryptographic puzzles</li>
+            <li>High energy consumption</li>
+            <li>Very secure but less scalable</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Proof of Stake (PoS)</h3>
+        <ul>
+            <li>Validators stake tokens</li>
+            <li>Lower energy usage</li>
+            <li>Faster transactions</li>
+            <li>Used by Ethereum 2.0</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Delegated Proof of Stake (DPoS)</h3>
+        <ul>
+            <li>Users vote for delegates</li>
+            <li>High throughput</li>
+            <li>More centralized</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Proof of Authority (PoA)</h3>
+        <ul>
+            <li>Validators are pre-approved</li>
+            <li>Used in private blockchains</li>
+            <li>High efficiency</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Byzantine Fault Tolerance (BFT)</h3>
+        <ul>
+            <li>Handles malicious nodes</li>
+            <li>Used in permissioned blockchains</li>
+            <li>Ensures system reliability</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Comparison of Consensus Algorithms</h3>
+        <div class="table-responsive">
+            <table class="table table-dark table-bordered">
+                <thead>
+                    <tr>
+                        <th>Algorithm</th>
+                        <th>Energy</th>
+                        <th>Speed</th>
+                        <th>Decentralization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PoW</td>
+                        <td>High</td>
+                        <td>Low</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>PoS</td>
+                        <td>Low</td>
+                        <td>High</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>DPoS</td>
+                        <td>Low</td>
+                        <td>Very High</td>
+                        <td>Medium</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="cryptocurrency.html" class="btn btn-outline-primary me-2">← Cryptocurrency</a>
+        <a href="blockchainbasics.html" class="btn btn-primary">Blockchain Basics</a>
+        <a href="ethereum.html" class="btn btn-outline-primary ms-2">Ethereum →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Consensus Algorithms Learning Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

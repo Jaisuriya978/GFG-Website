@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array | DSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(135deg, #198754, #146c43);
+            color: white;
+            padding: 60px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+        .content-card {
+            background: #111;
+            color:#333;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+        .card {
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .badge-custom {
+            background-color: #fff3e0;
+            color: #033114;
+        }
+        code {
+            background: #f1f1f1;
+            padding: 6px 10px;
+            border-radius: 6px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #ccc;
+            margin-top: 40px;
+        }
+
+        .footer {
+  background-color: #070b14;
+  color: #cbd5e1;
+  padding: 50px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h3,
+.footer-col .brand {
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #22c55e;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  margin-top: 40px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+        .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 12px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  color: #cbd5e1;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #22c55e;
+  color: #0f172a;
+}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">DSA Learning</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="array.html">Array</a></li>
+                <li class="nav-item"><a class="nav-link" href="string.html">String</a></li>
+                <li class="nav-item"><a class="nav-link" href="linkedlist.html">Linked List</a></li>
+                <li class="nav-item"><a class="nav-link" href="stack.html">Stack</a></li>
+                <li class="nav-item"><a class="nav-link" href="queue.html">Queue</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="container mt-4">
+    <div class="hero text-center">
+        <h1>Array</h1>
+        <p class="lead">
+            A collection of elements stored in contiguous memory locations.
+        </p>
+        <span class="badge badge-custom">DSA Basics</span>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container mt-5">
+
+    <!-- What is Array -->
+    <div class="card p-4 mb-4">
+        <h3>What is an Array?</h3>
+        <p>
+            An <strong>Array</strong> is a linear data structure that stores elements of the
+            same data type in contiguous memory locations.
+        </p>
+        <p>Example:</p>
+        <code>int arr[] = {1, 2, 3, 4, 5};</code>
+    </div>
+
+    <!-- Types -->
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>One Dimensional Array</h4>
+                <p>Stores elements in a single row.</p>
+                <code>arr[i]</code>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Two Dimensional Array</h4>
+                <p>Stores elements in rows and columns.</p>
+                <code>arr[i][j]</code>
+            </div>
+        </div>
+    </div>
+
+    <!-- Operations -->
+    <div class="card p-4 mt-4">
+        <h3>Basic Operations</h3>
+        <ul>
+            <li>Traversal</li>
+            <li>Insertion</li>
+            <li>Deletion</li>
+            <li>Searching</li>
+            <li>Sorting</li>
+        </ul>
+    </div>
+
+    <!-- Advantages & Disadvantages -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Advantages</h4>
+                <ul>
+                    <li>Fast access using index</li>
+                    <li>Easy to implement</li>
+                    <li>Efficient memory usage</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Disadvantages</h4>
+                <ul>
+                    <li>Fixed size</li>
+                    <li>Insertion & deletion are costly</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Applications -->
+    <div class="card p-4 mt-4">
+        <h3>Applications of Array</h3>
+        <ul>
+            <li>Storing and processing data</li>
+            <li>Searching and sorting algorithms</li>
+            <li>Matrix operations</li>
+            <li>Building other data structures</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+  </div>
+</footer>
+
+</body>
+</html>
+

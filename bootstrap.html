@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap 5 | Web Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+        .hero {
+            background: linear-gradient(135deg, #7952b3, #563d7c);
+            color: white;
+            padding: 50px 20px;
+            border-radius: 12px;
+        }
+        .card {
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+        .badge-custom {
+            background-color: #ede7f6;
+            color: #7952b3;
+        }
+        code {
+            background: #f1f1f1;
+            padding: 6px 10px;
+            border-radius: 6px;
+            display: inline-block;
+        }
+        footer {
+            background: #7952b3;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Web Learning</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="html5.html">HTML5</a></li>
+                <li class="nav-item"><a class="nav-link" href="css3.html">CSS3</a></li>
+                <li class="nav-item"><a class="nav-link" href="js.html">JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link active" href="bootstrap5.html">Bootstrap 5</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="container mt-4">
+    <div class="hero text-center">
+        <h1>Bootstrap 5</h1>
+        <p class="lead">
+            A powerful CSS framework for building responsive and modern websites.
+        </p>
+        <span class="badge badge-custom">CSS Framework</span>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container mt-5">
+
+    <!-- What is Bootstrap -->
+    <div class="card p-4 mb-4">
+        <h3>What is Bootstrap 5?</h3>
+        <p>
+            <strong>Bootstrap 5</strong> is the latest version of the popular open-source framework developed by Twitter. 
+            It offers a wide range of HTML, CSS, and JavaScript tools to create responsive and mobile-first websites.
+        </p>
+        <code>&lt;link href="bootstrap.min.css" rel="stylesheet"&gt;</code>
+    </div>
+
+    <div class="mt-3">
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220523145817/Bootstrap5-Tutorial.jpg" alt="bootstrap" height="200px" width="600px">
+    </div>
+
+    <div class="mt-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fB00t4At0rk?si=4O138HrkgdKXxl0r&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Key Features -->
+    <div class="card p-4 mb-4">
+        <h3>Key Features</h3>
+        <ul>
+            <li>Mobile-first grid system</li>
+            <li>No jQuery dependency</li>
+            <li>Utility-first classes</li>
+            <li>Improved forms & components</li>
+            <li>Dark mode support</li>
+        </ul>
+    </div>
+
+    <!-- Components & Utilities -->
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Popular Components</h4>
+                <ul>
+                    <li>Navbar</li>
+                    <li>Buttons</li>
+                    <li>Cards</li>
+                    <li>Modals</li>
+                    <li>Carousel</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Utility Classes</h4>
+                <ul>
+                    <li>Spacing (<code>m-</code>, <code>p-</code>)</li>
+                    <li>Flexbox utilities</li>
+                    <li>Text & color helpers</li>
+                    <li>Display utilities</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid System -->
+    <div class="card p-4 mt-4">
+        <h3>Bootstrap Grid System</h3>
+        <p>
+            Bootstrap uses a 12-column grid layout to create responsive designs.
+        </p>
+        <code>
+            &lt;div class="row"&gt;<br>
+            &nbsp;&nbsp;&lt;div class="col-md-6"&gt;...&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;div class="col-md-6"&gt;...&lt;/div&gt;<br>
+            &lt;/div&gt;
+        </code>
+    </div>
+
+    <div class="content-card">
+        <h3>Bootstrap Comparison</h3>
+        <div class="table-responsive">
+            <table class="table table-dark table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Bootstrap 5</th>
+                        <th>Bootstrap 4</th>
+                        <th>Bootstrap 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Latest Version</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✖</td>
+                    </tr>
+                    <tr>
+                        <td>New Features</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>Faster Stylesheet</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✖</td>
+                    </tr>
+                    <tr>
+                        <td>Responsiveness</td>
+                        <td>Improved</td>
+                        <td>Mobile-First</td>
+                        <td>Mobile-first</td>
+                    </tr>
+                    <tr>
+                        <td>Browser support (Latest)</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>Browser Support(IE)</td>
+                        <td>No (IE11 and below)</td>
+                        <td>Yes (up to IE11)</td>
+                        <td>Yes (up to IE9)</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript Library</td>
+                        <td>Vanilla JavaScript</td>
+                        <td>jQuery</td>
+                        <td>jQuery</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Advantages -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Advantages of Bootstrap 5</h4>
+                <ul>
+                    <li>Fast development</li>
+                    <li>Responsive by default</li>
+                    <li>Cross-browser support</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Where Bootstrap is Used</h4>
+                <ul>
+                    <li>Landing pages</li>
+                    <li>Admin dashboards</li>
+                    <li>Web applications</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

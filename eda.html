@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exploratory Data Analysis | Data Analytics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #a855f7, #7c3aed);
+            color: #fff;
+            padding: 70px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .content-card {
+            background: #111;
+            color: whitesmoke;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+        }
+
+        pre {
+            background: #0b1220;
+            padding: 15px;
+            border-radius: 8px;
+            color: #e5e7eb;
+        }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin-left: 12px;
+            border-radius: 50%;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: #a855f7;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Exploratory Data Analysis (EDA)</h1>
+        <p class="mt-3 fs-5">Understanding Data Before Modeling</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <!-- What is EDA -->
+    <div class="content-card">
+        <h3>What is EDA?</h3>
+        <p>
+            <strong>Exploratory Data Analysis (EDA)</strong> is the process of
+            analyzing datasets to summarize their main characteristics,
+            identify patterns, detect anomalies, and test assumptions.
+        </p>
+    </div>
+
+    <!-- Objectives -->
+    <div class="content-card">
+        <h3>Objectives of EDA</h3>
+        <ul>
+            <li>Understand data structure</li>
+            <li>Identify missing values</li>
+            <li>Detect outliers</li>
+            <li>Find patterns and relationships</li>
+            <li>Prepare data for modeling</li>
+        </ul>
+    </div>
+
+    <!-- Types -->
+    <div class="content-card">
+        <h3>Types of EDA</h3>
+        <ul>
+            <li><strong>Univariate Analysis</strong></li>
+            <li><strong>Bivariate Analysis</strong></li>
+            <li><strong>Multivariate Analysis</strong></li>
+        </ul>
+    </div>
+
+    <!-- Techniques -->
+    <div class="content-card">
+        <h3>Common EDA Techniques</h3>
+        <ul>
+            <li>Summary statistics</li>
+            <li>Data visualization</li>
+            <li>Correlation analysis</li>
+            <li>Handling missing values</li>
+            <li>Outlier detection</li>
+        </ul>
+    </div>
+
+    <!-- Tools -->
+    <div class="content-card">
+        <h3>Tools Used for EDA</h3>
+        <ul>
+            <li>Python (Pandas, NumPy)</li>
+            <li>Matplotlib & Seaborn</li>
+            <li>R Programming</li>
+            <li>Excel / Google Sheets</li>
+            <li>Power BI / Tableau</li>
+        </ul>
+    </div>
+
+    <!-- Example -->
+    <div class="content-card">
+        <h3>Simple Python Example</h3>
+        <pre><code>
+import pandas as pd
+
+df = pd.read_csv("data.csv")
+print(df.describe())
+print(df.isnull().sum())
+        </code></pre>
+    </div>
+
+    <!-- Importance -->
+    <div class="content-card">
+        <h3>Why EDA is Important</h3>
+        <ul>
+            <li>Improves model performance</li>
+            <li>Reveals hidden insights</li>
+            <li>Ensures data quality</li>
+            <li>Reduces modeling errors</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center">
+        <a href="probability.html" class="btn btn-outline-purple me-2">← Probability</a>
+        <a href="index.html" class="btn btn-purple">Back to Home</a>
+        <a href="ml.html" class="btn btn-outline-purple ms-2">Machine Learning →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+</body>
+</html>

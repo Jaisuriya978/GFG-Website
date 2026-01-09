@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistics | Data Analysis Fundamentals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #38bdf8, #0284c7);
+            color: #111;
+            padding: 70px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .content-card {
+            background: #111;
+            color: whitesmoke;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+        }
+
+        pre {
+            background: #0b1220;
+            padding: 15px;
+            border-radius: 8px;
+            color: #e5e7eb;
+        }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin-left: 12px;
+            border-radius: 50%;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: #38bdf8;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Statistics</h1>
+        <p class="mt-3 fs-5">Mathematical Foundations for Data Analysis</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <!-- What is Statistics -->
+    <div class="content-card">
+        <h3>What is Statistics?</h3>
+        <p>
+            <strong>Statistics</strong> is the science of collecting, organizing,
+            analyzing, interpreting, and presenting data to make informed decisions.
+        </p>
+    </div>
+
+    <!-- Types -->
+    <div class="content-card">
+        <h3>Types of Statistics</h3>
+        <ul>
+            <li><strong>Descriptive Statistics</strong> – Summarizes data</li>
+            <li><strong>Inferential Statistics</strong> – Draws conclusions from samples</li>
+        </ul>
+    </div>
+
+    <!-- Descriptive -->
+    <div class="content-card">
+        <h3>Descriptive Statistics</h3>
+        <ul>
+            <li>Mean</li>
+            <li>Median</li>
+            <li>Mode</li>
+            <li>Range</li>
+            <li>Variance</li>
+            <li>Standard Deviation</li>
+        </ul>
+    </div>
+
+    <!-- Inferential -->
+    <div class="content-card">
+        <h3>Inferential Statistics</h3>
+        <ul>
+            <li>Sampling</li>
+            <li>Probability</li>
+            <li>Confidence Intervals</li>
+            <li>Hypothesis Testing</li>
+            <li>Regression Analysis</li>
+        </ul>
+    </div>
+
+    <!-- Probability -->
+    <div class="content-card">
+        <h3>Probability Basics</h3>
+        <p>
+            Probability measures the likelihood of an event occurring,
+            ranging from 0 to 1.
+        </p>
+    </div>
+
+    <!-- Example -->
+    <div class="content-card">
+        <h3>Simple Example</h3>
+        <pre><code>
+import statistics
+
+data = [10, 20, 30, 40, 50]
+print(statistics.mean(data))
+print(statistics.median(data))
+        </code></pre>
+    </div>
+
+    <!-- Applications -->
+    <div class="content-card">
+        <h3>Applications of Statistics</h3>
+        <ul>
+            <li>Business forecasting</li>
+            <li>Medical research</li>
+            <li>Economics</li>
+            <li>Machine Learning</li>
+            <li>Quality control</li>
+        </ul>
+    </div>
+
+    <!-- Advantages -->
+    <div class="content-card">
+        <h3>Why Statistics is Important</h3>
+        <ul>
+            <li>Helps in data-driven decisions</li>
+            <li>Identifies trends and patterns</li>
+            <li>Reduces uncertainty</li>
+            <li>Supports predictive modeling</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center">
+        <a href="dv.html" class="btn btn-outline-info me-2">← Data Visualization</a>
+        <a href="index.html" class="btn btn-info">Back to Home</a>
+        <a href="probability.html" class="btn btn-outline-info ms-2">Probability →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polymorphism | OOP Concepts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+        .hero {
+            background: linear-gradient(135deg, #bf360c, #ff7043);
+            color: white;
+            padding: 50px 20px;
+            border-radius: 12px;
+        }
+        .card {
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+        .badge-custom {
+            background-color: #fbe9e7;
+            color: #bf360c;
+        }
+        pre {
+            background: #212121;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        footer {
+            background: #bf360c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Learning Hub</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="classObject.html">Class & Object</a></li>
+                <li class="nav-item"><a class="nav-link" href="encapsulation.html">Encapsulation</a></li>
+                <li class="nav-item"><a class="nav-link" href="inheritance.html">Inheritance</a></li>
+                <li class="nav-item"><a class="nav-link active" href="polymorphism.html">Polymorphism</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="container mt-4">
+    <div class="hero text-center">
+        <h1>Polymorphism</h1>
+        <p class="lead">
+            One interface, multiple implementations.
+        </p>
+        <span class="badge badge-custom">OOP Pillar</span>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container mt-5">
+
+    <!-- Definition -->
+    <div class="card p-4 mb-4">
+        <h3>What is Polymorphism?</h3>
+        <p>
+            <strong>Polymorphism</strong> means "many forms".
+            It allows methods to perform different tasks based on the object
+            calling them.
+        </p>
+    </div>
+
+    <!-- Types -->
+    <div class="card p-4 mb-4">
+        <h3>Types of Polymorphism</h3>
+        <ul>
+            <li><strong>Compile-time Polymorphism</strong> (Method Overloading)</li>
+            <li><strong>Runtime Polymorphism</strong> (Method Overriding)</li>
+        </ul>
+    </div>
+
+    <!-- Overloading -->
+    <div class="card p-4 mb-4">
+        <h3>Method Overloading (Compile-time)</h3>
+        <pre>
+class MathOperation {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+        </pre>
+    </div>
+
+    <!-- Overriding -->
+    <div class="card p-4 mb-4">
+        <h3>Method Overriding (Runtime)</h3>
+        <pre>
+class Animal {
+    void sound() {
+        System.out.println("Animal makes sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Dog();
+        a.sound();
+    }
+}
+        </pre>
+    </div>
+
+    <!-- Advantages -->
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Advantages</h4>
+                <ul>
+                    <li>Flexibility</li>
+                    <li>Scalability</li>
+                    <li>Code reusability</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Real-world Example</h4>
+                <p>
+                    Payment system: Credit Card, UPI, Net Banking<br>
+                    Same interface, different implementations.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Points -->
+    <div class="card p-4 mt-4">
+        <h3>Key Points</h3>
+        <ul>
+            <li>Method overloading does not require inheritance</li>
+            <li>Method overriding requires inheritance</li>
+            <li>Runtime polymorphism uses dynamic binding</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub | Polymorphism</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

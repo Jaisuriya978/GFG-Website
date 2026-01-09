@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeeksforGeeks UI Clone</title>
+    <link rel="stylesheet" href="style1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: #fff;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: #1a1a1a;
+      padding: 14px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: #2f8d46;
+    }
+
+    .search-box {
+      flex: 1;
+      margin: 0 30px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px 16px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      background: #2a2a2a;
+      color: #fff;
+    }
+
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #2f8d46;
+    }
+
+    /* ===== SUB NAV ===== */
+    .sub-nav {
+      background: #151515;
+      padding: 10px 40px;
+      display: flex;
+      gap: 22px;
+      font-size: 14px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    .sub-nav a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .sub-nav a:hover {
+      color: #2f8d46;
+    }
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.card button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.card button:hover {
+    background: white;
+    color: black;
+}
+
+.card.blue { background: #647ACB; }
+.card.red { background: #D57A7A; }
+.card.green { background: #8BAF8C; }
+.card.purple { background: #A38FD6; }
+.card.orange { background: #D8A35F; }
+.card.pink { background: #D78F9C; }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 80px 40px;
+      text-align: center;
+      background: radial-gradient(circle at top, #222, #0e0e0e);
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+
+    .hero-search {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      display: flex;
+    }
+
+    .hero-search input {
+      flex: 1;
+      padding: 14px 20px;
+      border-radius: 30px 0 0 30px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .hero-search button {
+      padding: 14px 26px;
+      border-radius: 0 30px 30px 0;
+      border: none;
+      cursor: pointer;
+      background: #2f8d46;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .tags {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      background: #1f1f1f;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      border: 1px solid #2a2a2a;
+    }
+
+    .tag.green {
+      background: #2f8d46;
+      border: none;
+    }
+
+    /* ===== SECTION ===== */
+    .section {
+      padding: 60px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .section-text {
+      max-width: 500px;
+    }
+
+    .section-text h2 {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .section-text span {
+      color: #2f8d46;
+    }
+
+    .section-text p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #2f8d46;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      width: 160px;
+      text-align: center;
+      border: 1px solid #2a2a2a;
+    }
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #333;
+      margin: 0 auto 12px;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #2f8d46; /* GFG green */
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* 🔥 Hover Animation */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  border-color: #2f8d46;
+}
+
+
+    /* ===== FOOTER ===== */
+
+    .footer {
+  background-color: #070b14;
+  color: #cbd5e1;
+  padding: 50px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h3,
+.footer-col .brand {
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #22c55e;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  margin-top: 40px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 12px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  color: #cbd5e1;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #22c55e;
+  color: #0f172a;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">GFG</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search..." />
+    </div>
+
+    <nav>
+      <a href="login.html">Login</a>
+        <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="practice.html">Practice</a>
+      <a href="jobs.html">Jobs</a>
+    </nav>
+  </header>
+  <center>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    
+    <a class="navbar-brand" href="index.html">GeeksforGeeks</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-3 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tutorials.html">Tutorials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="practice.html">Practice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jobs.html">Jobs</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+  <div class="category-bar">
+    <span>DSA</span>
+    <span>OPPS</span>
+    <span>Practice Problems</span>
+    <span>C</span>
+    <span>C++</span>
+    <span>Java</span>
+    <span>Python</span>
+    <span>JavaScript</span>
+    <span>PHP</span>
+    <span>Data Science</span>
+    <span>Artificial Intelligence</span>
+    <span>Machine Learning</span>
+    <span>Deep Learning</span>
+    <span>Cloud Computing</span>
+    <span>DevOps</span>
+    <span>Software Testing</span>
+    <span>Blockchain</span>
+</div>
+
+<div class="bg-dark border-bottom">
+  <div class="container">
+
+    <!-- Toggle button for mobile -->
+    <button class="btn btn-outline-secondary d-lg-none my-2"
+            data-bs-toggle="collapse"
+            data-bs-target="#categoryBar">
+      Categories
+    </button>
+
+    <!-- Category Bar -->
+    <div class="collapse d-lg-block" id="categoryBar">
+      <ul class="nav gap-3 py-2 flex-wrap align-items-center">
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold"
+             href="#"
+             role="button"
+             data-bs-toggle="dropdown">
+            DSA
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="array.html">Arrays</a></li>
+            <li><a class="dropdown-item" href="string.html">Strings</a></li>
+            <li><a class="dropdown-item" href="linkedlist.html">Linked List</a></li>
+            <li><a class="dropdown-item" href="stack.html">Stack</a></li>
+            <li><a class="dropdown-item" href="queue.html">Queue</a></li>
+            <li><a class="dropdown-item" href="Tree.html">Trees</a></li>
+            <li><a class="dropdown-item" href="graph.html">Graphs</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold"
+             href="#"
+             role="button"
+             data-bs-toggle="dropdown">
+            OPPS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="oops1.html">OOPS</a></li>
+            <li><a class="dropdown-item" href="oopsPrinciples.html">OOPS Principles</a></li>
+            <li><a class="dropdown-item" href="programmingInOops.html">OOPS Programming</a></li>
+            <li><a class="dropdown-item" href="classObject.html">Class & Objects</a></li>
+            <li><a class="dropdown-item" href="abstraction.html">Abstraction</a></li>
+            <li><a class="dropdown-item" href="encapsulation.html">Encapsulation</a></li>
+            <li><a class="dropdown-item" href="inheritance.html">Inheritance</a></li>
+            <li><a class="dropdown-item" href="polymorphism.html">polymorphism</a></li>
+            <li><a class="dropdown-item" href="interfaces.html">Interfaces</a></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+
+        <!-- Languages Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold"
+             href="#"
+             data-bs-toggle="dropdown">
+          <select onchange="alert(this.value)">
+        <option>Select</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="C#">C#</option>
+        <option value="Go">GO</option>
+        <option value="R">R</option>
+          </select>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="c.html">C</a></li>
+            <li><a class="dropdown-item" href="cpp.html">C++</a></li>
+            <li><a class="dropdown-item" href="java.html">Java</a></li>
+            <li><a class="dropdown-item" href="python.html">Python</a></li>
+            <li><a class="dropdown-item" href="html5.html">HTML</a></li>
+            <li><a class="dropdown-item" href="css3.html">CSS</a></li>
+            <li><a class="dropdown-item" href="js.html">JavaScript</a></li>
+            <li><a class="dropdown-item" href="php.html">PHP</a></li>
+
+          </ul>
+        </li>
+
+        <!-- Tech Stack Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold"
+             href="#"
+             data-bs-toggle="dropdown">
+            Technologies
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Full Stack Development</a></li>
+            <li><a class="dropdown-item" href="#">Web Design</a></li>
+            <li><a class="dropdown-item" href="#">Data Science</a></li>
+            <li><a class="dropdown-item" href="#">Artificial Intelligence</a></li>
+            <li><a class="dropdown-item" href="#">Machine Learning</a></li>
+            <li><a class="dropdown-item"href="#">Deep Learning</a></li>
+            <li><a class="dropdown-item" href="#">Gen AI</a></li>
+            <li><a class="dropdown-item" href="#">Data Analytics</a></li>
+            <li><a class="dropdown-item" href="#">Software Testing</a></li>
+            <li><a class="dropdown-item" href="#">System Design</a>
+            <li><a class="dropdown-item" href="#">Android Development</a></li>
+            <li><a class="dropdown-item" href="#">CyberSecurity</a></li>
+            <li><a class="dropdown-item" href="#">Cloud Computing</a></li> 
+            <li><a class="dropdown-item" href="#">Internet of Things</a></li>
+            <li><a class="dropdown-item" href="#">Blockchain</a></li>
+            <li><a class="dropdown-item" href="#">Business Intelligence</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</div>
+</center>
+
+
+  <div class="container text-white my-5 p-1 rounded">
+        <h1>Explore</h1>
+  </div>
+  <div class="cards">
+    <div class="card bg-primary" style="width: 300px;">
+    <h2>Data Structure and Algorithms</h2>
+    <a href="dsa1.html">
+        <button>View more →</button>
+    </a>
+  </div>
+  <br>
+  <div class="card bg-danger" style="width: 300px;">
+    <h2>Web<br>Development</h2>
+    <a href="webdev.html">
+        <button>View more →</button>
+    </a>
+  </div>
+  <br>
+  <div class="card bg-success" style="width: 300px;">
+    <h2>AI ML & Data Science</h2>
+      <a href="aiml.html">
+          <button>View more →</button>
+      </a>
+  </div><br>
+  <div class="card bg-secondary" style="width:300px;"> 
+  <h2>Cloud<br>Computing</h2>
+    <a href="cloud.html">
+      <button>View more →</button>
+    </a>
+  </div>
+  <br>
+  <div class="card bg-warning" style="width: 300px;">
+  <h2>OOPS</h2>
+    <a href="oops.html">
+      <button>View more →</button> 
+    </a>
+  </div><br>
+  <div class="card" style="background-color: blueviolet; width: 300px;">
+  <h2>Cyber<br>Security</h2>
+    <a href="cybersecurity.html">
+      <button>View more →</button>
+    </a>
+  </div>
+  <br>
+  <div class="card" style="background-color: #D57A7A; width: 300px;">
+    <h2>Software<br>Testing</h2>
+    <a href="softwaretesting.html">
+      <button>View more →</button>
+    </a>
+  </div>
+  <br>
+  <div class="card" style="background-color: brown; width: 300px;">
+    <h2>Blockchain</h2>
+    <a href="blockchain.html">
+      <button>View more →</button>
+    </a>
+  </div>
+
+</div>            
+    <!-- Hero Section -->
+<section class="container-fluid bg-dark py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Content -->
+      <div class="col-lg-6 text-center text-lg-start">
+        <h1 class="display-5 fw-bold mb-3">
+          Hello 👋, What Do You Want To Learn?
+        </h1>
+
+        <p class="lead text-muted mb-4">
+          Learn in-demand skills with structured roadmaps, hands-on practice,
+          and expert guidance. Start your journey from beginner to pro today.
+        </p>
+
+        <div class="hero-search d-flex mb-4">
+          <input 
+            type="text" 
+            class="form-control me-2" 
+          />
+          <button class="btn btn-success px-4">
+            Search
+          </button>
+        </div>
+
+        <div class="mb-3">
+          <span class="badge bg-secondary me-2">DSA</span>
+          <span class="badge bg-secondary me-2">Web Development</span>
+          <span class="badge bg-secondary me-2">OPPs</span>
+          <span class="badge bg-secondary me-2">AI ML & Data Science</span>
+          <span class="badge bg-secondary me-2">Cloud Computing</span>
+          <span class="badge bg-secondary me-2">CyberSecurity</span>
+          <span class="badge bg-secondary me-2">Software Testing</span>
+          <span class="badge bg-secondary me-2">Blockchain Technologies</span>
+        </div>
+
+        <div class="mt-4">
+          <a href="exploreroadmaps.html" class="btn btn-outline-primary me-2">Explore Roadmaps</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 text-center mt-5 mt-lg-0">
+        <img 
+          src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+          alt="Learning Illustration"
+          class="img-fluid"
+          style="max-width: 240px; max-height: 180px;"
+        />
+        <img 
+          src="https://static.vecteezy.com/system/resources/thumbnails/007/469/004/small_2x/graduated-student-in-simple-flat-personal-profile-icon-or-symbol-people-concept-illustration-vector.jpg"
+          alt="Learning Illustration"
+          class="img-fluid"
+          style="max-width: 240px; max-height: 180px;"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="tags">
+      <div class="tag">DSA Course
+      <a href="dsa1.html"><button>View</button></a>
+      </div>
+      <div class="tag">AI ML & DataScience
+      <a href="aiml.html"><button>View</button></a>
+      </div>
+      <div class="tag">Web Development
+      <a href="webdev.html"><button>View</button></a>
+      </div> <br>
+      <div class="tag">Cloud Computing
+      <a href="cloud.html"><button>View</button></a>
+      </div>
+      <div class="tag">OPPS
+      <a href="oops.html"><button>View</button></a>
+      </div>
+      <div class="tag">Cyber Security
+      <a href="cybersecurity.html"><button>View</button></a>
+      </div>
+      <div class="tag">Software Testing
+      <a href="softwaretesting.html"><button>View</button></a>
+      </div>
+      <div class="tag">Blockchain
+      <a href="blockchain.html"><button>View</button></a>
+      </div>
+     
+
+
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-text">
+  <h2>Need help with <span>Learning Roadmaps?</span></h2>
+  <p>
+    Not sure where to start or what to learn next? Our structured learning roadmaps
+    guide you step-by-step from beginner to advanced levels. Learn in-demand skills,
+    follow industry-ready paths, and stay consistent with clear milestones.
+  </p>
+  <p>
+    Connect with trusted experts anytime, get real-time guidance, practical resources,
+    and personalized recommendations tailored to your career goals.
+  </p>
+  <a href="exploreroadmaps.html" class="btn">Explore Roadmaps</a>
+</div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="avatar">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*L1FbcKSvUAPO_y5L6wwEQA.png" alt="Interview Experience"></div>
+        <h3>On-campus Interview Experience</h3>
+        <p>Real student interview experiences from top companies.</p>
+      </div>
+      <div class="card">
+        <div class="avatar">
+          <img src="https://media.easy-peasy.ai/27feb2bb-aeb4-4a83-9fb6-8f3f2a15885e/f5bc55ab-9b5e-4715-9dee-d893d9a6b926.png" alt="Web3 & future Tech">
+        </div>
+        <h3>Web3 & Future Tech</h3>
+    <p>Blockchain, Web3, AI, and emerging technologies.</p>
+      </div>
+      <div class="card">
+        <div class="avatar">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYPeYOhYBBs-dvMEnCie2niXO_WV2Ta2RPUA&s" alt="Learning Tips"></div>
+    <h3>Daily Learning Tips</h3>
+    <p>Tips to improve coding and problem-solving skills.</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Bottom Bar -->
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Brand & Address -->
+    <div class="footer-col">
+      <h2 class="brand">GeeksforGeeks</h2>
+      <p><strong>Corporate & Communications Address:</strong><br>
+        A-143, 7th Floor, Sovereign Corporate Tower,<br>
+        Sector-136, Noida, Uttar Pradesh (201305)
+      </p>
+      <p><strong>Registered Address:</strong><br>
+        K 061, Tower K, Gulshan Vivante Apartment,<br>
+        Sector 137, Noida, Uttar Pradesh (201305)
+      </p>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-col">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Legal</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Explore -->
+    <div class="footer-col">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#">POTD</a></li>
+        <li><a href="#">Job-A-Thon</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Nation Skill Up</a></li>
+      </ul>
+    </div>
+
+    <!-- Tutorials -->
+    <div class="footer-col">
+      <h3>Tutorials</h3>
+      <ul>
+        <li><a href="#">DSA</a></li>
+        <li><a href="#">Programming Languages</a></li>
+        <li><a href="#">Web Technology</a></li>
+        <li><a href="#">AI, ML & Data Science</a></li>
+        <li><a href="#">DevOps</a></li>
+      </ul>
+    </div>
+
+    <!-- Courses -->
+    <div class="footer-col">
+      <h3>Courses</h3>
+      <ul>
+        <li><a href="#">DSA & Placements</a></li>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">Data Science</a></li>
+        <li><a href="#">DevOps & Cloud</a></li>
+      </ul>
+    </div>
+
+    <!-- Offline Centers -->
+    <div class="footer-col">
+      <h3>Offline Centers</h3>
+      <ul>
+        <li>Delhi</li>
+        <li>Gurgaon</li>
+        <li>Noida</li>
+        <li>Bengaluru</li>
+        <li>Pune</li>
+        <li>Hyderabad</li>
+        <li>Patna</li>
+      </ul>
+    </div>
+
+    <!-- Preparation Corner -->
+    <div class="footer-col">
+      <h3>Preparation Corner</h3>
+      <ul>
+        <li><a href="#">Interview Corner</a></li>
+        <li><a href="#">Aptitude</a></li>
+        <li><a href="#">Puzzles</a></li>
+        <li><a href="#">System Design</a></li>
+      </ul>
+    </div>
+
+  </div>
+    <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <footer class="footer">
+  <div class="footer-container">
+
+    
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+
+</body>
+</html>

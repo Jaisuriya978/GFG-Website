@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ethereum | Blockchain Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6366f1, #4338ca);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #f1f5f9;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 26px rgba(0,0,0,0.45);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            background: #020617;
+            color: #22c55e;
+            padding: 6px 10px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 6px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5f5;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Ethereum</h1>
+        <p class="fs-5 mt-3">The Decentralized Platform for Smart Contracts & dApps</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is Ethereum?</h3>
+        <p>
+            <strong>Ethereum</strong> is an open-source, decentralized blockchain
+            platform that enables developers to build and deploy
+            <strong>smart contracts</strong> and <strong>decentralized applications (dApps)</strong>.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Key Components of Ethereum</h3>
+        <ul>
+            <li>Ethereum Virtual Machine (EVM)</li>
+            <li>Smart Contracts</li>
+            <li>Ether (ETH)</li>
+            <li>Gas Fees</li>
+            <li>Nodes and Validators</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Ethereum Virtual Machine (EVM)</h3>
+        <p>
+            The <strong>EVM</strong> is a runtime environment that executes smart contracts
+            across all Ethereum nodes, ensuring consistent results.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Ether (ETH)</h3>
+        <ul>
+            <li>Native cryptocurrency of Ethereum</li>
+            <li>Used to pay gas fees</li>
+            <li>Used for staking in Proof of Stake</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Gas and Transaction Fees</h3>
+        <ul>
+            <li>Gas measures computational effort</li>
+            <li>Prevents spam attacks</li>
+            <li>Users pay gas in ETH</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Consensus Mechanism</h3>
+        <ul>
+            <li>Originally Proof of Work</li>
+            <li>Now uses Proof of Stake (Ethereum 2.0)</li>
+            <li>Energy efficient and scalable</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Smart Contract Example (Solidity)</h3>
+        <code>
+            pragma solidity ^0.8.0;<br>
+            contract SimpleStorage {<br>
+            &nbsp;&nbsp;uint public value;<br>
+            &nbsp;&nbsp;function set(uint x) public {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;value = x;<br>
+            &nbsp;&nbsp;}<br>
+            }
+        </code>
+    </div>
+
+    <div class="content-card">
+        <h3>Popular Ethereum Use Cases</h3>
+        <ul>
+            <li>Decentralized Finance (DeFi)</li>
+            <li>NFTs</li>
+            <li>Decentralized Exchanges</li>
+            <li>Gaming and Metaverse</li>
+            <li>DAO (Decentralized Autonomous Organizations)</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Advantages of Ethereum</h3>
+        <ul>
+            <li>Strong developer ecosystem</li>
+            <li>Highly secure</li>
+            <li>Large community support</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Challenges</h3>
+        <ul>
+            <li>High gas fees</li>
+            <li>Scalability issues</li>
+            <li>Complex development</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="consensusalgorithm.html" class="btn btn-outline-primary me-2">← Consensus</a>
+        <a href="blockchainbasics.html" class="btn btn-primary">Blockchain Basics</a>
+        <a href="solidity.html" class="btn btn-outline-primary ms-2">Solidity →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Ethereum Learning Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

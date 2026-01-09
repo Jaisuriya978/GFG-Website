@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XPath | Selenium Automation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #14b8a6, #0f766e);
+            color: #fff;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #f1f5f9;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 26px rgba(0,0,0,0.45);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .code-box {
+            background: #020617;
+            color: #22c55e;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5f5;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">XPath</h1>
+        <p class="fs-5 mt-3">Advanced Element Location Technique in Selenium</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is XPath?</h3>
+        <p>
+            <strong>XPath (XML Path Language)</strong> is used to navigate through
+            elements and attributes in an HTML or XML document. It is widely used
+            in Selenium when other locators fail.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Types of XPath</h3>
+        <ul>
+            <li><strong>Absolute XPath</strong></li>
+            <li><strong>Relative XPath</strong></li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Absolute XPath</h3>
+        <p>
+            Starts from the root node and traverses the entire DOM.
+            It is not recommended because it breaks easily when UI changes.
+        </p>
+        <div class="code-box">
+            /html/body/div/div/form/input
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>Relative XPath</h3>
+        <p>
+            Starts with <strong>//</strong> and is flexible and reliable.
+            It is the most preferred XPath in automation testing.
+        </p>
+        <div class="code-box">
+            //input[@id='username']
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>XPath Using Attributes</h3>
+        <div class="code-box">
+            //input[@name='email']<br>
+            //button[@type='submit']
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>XPath Using Functions</h3>
+        <ul>
+            <li><strong>contains()</strong></li>
+            <li><strong>starts-with()</strong></li>
+            <li><strong>text()</strong></li>
+        </ul>
+        <div class="code-box">
+            //input[contains(@id,'user')]<br>
+            //button[starts-with(@id,'btn')]<br>
+            //a[text()='Login']
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>XPath Axes</h3>
+        <ul>
+            <li>parent</li>
+            <li>child</li>
+            <li>ancestor</li>
+            <li>descendant</li>
+            <li>following</li>
+            <li>preceding</li>
+            <li>following-sibling</li>
+            <li>preceding-sibling</li>
+        </ul>
+        <div class="code-box">
+            //input[@id='email']/parent::div<br>
+            //label[text()='Email']/following-sibling::input
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>Best Practices</h3>
+        <ul>
+            <li>Avoid absolute XPath</li>
+            <li>Use relative XPath</li>
+            <li>Keep XPath short and readable</li>
+            <li>Prefer unique attributes</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="seleniumlocators.html" class="btn btn-outline-success me-2">← Selenium Locators</a>
+        <a href="selenium.html" class="btn btn-success">Selenium</a>
+        <a href="seleniumCommands.html" class="btn btn-outline-success ms-2">Selenium Commands →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Software Testing Learning Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

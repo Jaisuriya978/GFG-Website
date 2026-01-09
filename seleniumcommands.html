@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selenium Commands | Automation Testing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #22c55e, #15803d);
+            color: #fff;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #f1f5f9;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 26px rgba(0,0,0,0.45);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .code-box {
+            background: #020617;
+            color: #22c55e;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5f5;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Selenium Commands</h1>
+        <p class="fs-5 mt-3">Essential WebDriver Methods & Actions</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What are Selenium Commands?</h3>
+        <p>
+            Selenium commands are predefined WebDriver methods used to
+            interact with web elements and browsers during automation testing.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Browser Commands</h3>
+        <div class="code-box">
+            driver.get("https://example.com");<br>
+            driver.navigate().to("https://example.com");<br>
+            driver.navigate().back();<br>
+            driver.navigate().forward();<br>
+            driver.navigate().refresh();<br>
+            driver.getTitle();<br>
+            driver.getCurrentUrl();<br>
+            driver.close();<br>
+            driver.quit();
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>WebElement Commands</h3>
+        <div class="code-box">
+            element.click();<br>
+            element.sendKeys("text");<br>
+            element.clear();<br>
+            element.getText();<br>
+            element.isDisplayed();<br>
+            element.isEnabled();<br>
+            element.isSelected();
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>Find Element Commands</h3>
+        <div class="code-box">
+            driver.findElement(By.id("id"));<br>
+            driver.findElements(By.className("class"));
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>Wait Commands</h3>
+        <ul>
+            <li>Implicit Wait</li>
+            <li>Explicit Wait</li>
+            <li>Fluent Wait</li>
+        </ul>
+        <div class="code-box">
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>Window & Frame Commands</h3>
+        <div class="code-box">
+            driver.switchTo().window(windowID);<br>
+            driver.switchTo().frame("frameName");<br>
+            driver.switchTo().defaultContent();
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>Alert Commands</h3>
+        <div class="code-box">
+            Alert alert = driver.switchTo().alert();<br>
+            alert.accept();<br>
+            alert.dismiss();<br>
+            alert.getText();<br>
+            alert.sendKeys("text");
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>Mouse & Keyboard Actions</h3>
+        <div class="code-box">
+            Actions act = new Actions(driver);<br>
+            act.moveToElement(element).perform();<br>
+            act.doubleClick(element).perform();<br>
+            act.contextClick(element).perform();<br>
+            act.dragAndDrop(src, dest).perform();
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>Best Practices</h3>
+        <ul>
+            <li>Use explicit waits instead of Thread.sleep()</li>
+            <li>Follow Page Object Model</li>
+            <li>Handle exceptions properly</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="xpath.html" class="btn btn-outline-success me-2">← XPath</a>
+        <a href="seleniumLocators.html" class="btn btn-success">Selenium Locatorss</a>
+        <a href="Agile.html" class="btn btn-outline-success ms-2">Agile →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Software Testing Learning Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

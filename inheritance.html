@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inheritance | OOP Concepts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0d47a1, #42a5f5);
+            color: white;
+            padding: 50px 20px;
+            border-radius: 12px;
+        }
+        .card {
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+        .badge-custom {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+        }
+        pre {
+            background: #212121;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        footer {
+            background: #0d47a1;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Learning Hub</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="classObject.html">Class & Object</a></li>
+                <li class="nav-item"><a class="nav-link" href="encapsulation.html">Encapsulation</a></li>
+                <li class="nav-item"><a class="nav-link active" href="inheritance.html">Inheritance</a></li>
+                <li class="nav-item"><a class="nav-link" href="polymorphism.html">Polymorphism</a></li>
+                <li class="nav-item"><a class="nav-link" href="abstraction.html">Abstraction</a></li>
+                <li class="nav-item"><a class="nav-link" href="interfaces.html">Interfaces</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="container mt-4">
+    <div class="hero text-center">
+        <h1>Inheritance</h1>
+        <p class="lead">
+            Acquiring properties and behaviors from another class.
+        </p>
+        <span class="badge badge-custom">OOP Pillar</span>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container mt-5">
+
+    <!-- Definition -->
+    <div class="card p-4 mb-4">
+        <h3>What is Inheritance?</h3>
+        <p>
+            <strong>Inheritance</strong> allows a class (child/subclass) to acquire
+            properties and methods of another class (parent/superclass),
+            promoting code reusability.
+        </p>
+    </div>
+
+    <!-- Example -->
+    <div class="card p-4 mb-4">
+        <h3>Inheritance Example (Java)</h3>
+        <pre>
+class Animal {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Barking...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.eat();
+        d.bark();
+    }
+}
+        </pre>
+    </div>
+
+    <!-- Types -->
+    <div class="card p-4 mb-4">
+        <h3>Types of Inheritance</h3>
+        <ul>
+            <li>Single Inheritance</li>
+            <li>Multilevel Inheritance</li>
+            <li>Hierarchical Inheritance</li>
+            <li>Multiple Inheritance (via interfaces in Java)</li>
+        </ul>
+    </div>
+
+    <!-- Advantages -->
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Advantages</h4>
+                <ul>
+                    <li>Code reusability</li>
+                    <li>Improved maintainability</li>
+                    <li>Method overriding</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Real-world Example</h4>
+                <p>
+                    <strong>Vehicle</strong> → Car, Bike, Truck<br>
+                    Car inherits features like engine, wheels, speed.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Points -->
+    <div class="card p-4 mt-4">
+        <h3>Key Points</h3>
+        <ul>
+            <li><code>extends</code> keyword is used in Java</li>
+            <li><code>super</code> keyword accesses parent members</li>
+            <li>Constructors are not inherited</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Footer -->
+ <footer class="footer">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+</body>
+</html>

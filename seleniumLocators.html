@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selenium Locators | Automation Testing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0ea5e9, #0369a1);
+            color: #fff;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #f1f5f9;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 26px rgba(0,0,0,0.45);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .code-box {
+            background: #020617;
+            color: #22c55e;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5f5;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Selenium Locators</h1>
+        <p class="fs-5 mt-3">Techniques to Identify Web Elements in Selenium</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What are Locators?</h3>
+        <p>
+            <strong>Locators</strong> are used in Selenium to identify and locate
+            web elements on a webpage. Selenium WebDriver interacts with these
+            elements to perform actions like click, sendKeys, and submit.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Types of Selenium Locators</h3>
+        <ul>
+            <li>ID</li>
+            <li>Name</li>
+            <li>Class Name</li>
+            <li>Tag Name</li>
+            <li>Link Text</li>
+            <li>Partial Link Text</li>
+            <li>CSS Selector</li>
+            <li>XPath</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>ID Locator</h3>
+        <p>Finds elements using the unique ID attribute.</p>
+        <div class="code-box">
+            driver.findElement(By.id("username"));
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>Name Locator</h3>
+        <p>Locates elements using the name attribute.</p>
+        <div class="code-box">
+            driver.findElement(By.name("email"));
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>Class Name Locator</h3>
+        <p>Finds elements using the class attribute.</p>
+        <div class="code-box">
+            driver.findElement(By.className("login-btn"));
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>CSS Selector</h3>
+        <p>Uses CSS patterns to locate elements.</p>
+        <div class="code-box">
+            driver.findElement(By.cssSelector("input[type='text']"));
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>XPath</h3>
+        <p>XPath is used to locate elements using XML path expressions.</p>
+        <div class="code-box">
+            driver.findElement(By.xpath("//input[@id='password']"));
+        </div>
+    </div>
+
+    <div class="content-card">
+        <h3>Best Practices</h3>
+        <ul>
+            <li>Prefer ID locator whenever possible</li>
+            <li>Avoid absolute XPath</li>
+            <li>Use relative XPath</li>
+            <li>Keep locators simple and stable</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="testng.html" class="btn btn-outline-info me-2">← TestNG</a>
+        <a href="seleniumcommands.html" class="btn btn-info">Commands</a>
+        <a href="xpath.html" class="btn btn-outline-info ms-2">XPath →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Software Testing Learning Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

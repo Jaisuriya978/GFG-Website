@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Services | Cloud Computing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f43f5e, #e11d48);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .content-card {
+            background: #111;
+            color: whitesmoke;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+        }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin-left: 12px;
+            border-radius: 50%;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: #f43f5e;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Cloud Services</h1>
+        <p class="mt-3 fs-5">Explore Different Services in Cloud Computing</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <!-- IaaS -->
+    <div class="content-card">
+        <h3>Infrastructure as a Service (IaaS)</h3>
+        <p>
+            Provides virtualized computing resources over the internet. Users manage OS, applications, and middleware, 
+            while the provider manages hardware.
+        </p>
+        <ul>
+            <li>Examples: AWS EC2, Microsoft Azure Virtual Machines, Google Compute Engine</li>
+            <li>Benefits: Scalable, pay-as-you-go, no hardware maintenance</li>
+        </ul>
+    </div>
+
+    <!-- PaaS -->
+    <div class="content-card">
+        <h3>Platform as a Service (PaaS)</h3>
+        <p>
+            Provides a platform to develop, run, and manage applications without dealing with infrastructure management.
+        </p>
+        <ul>
+            <li>Examples: Google App Engine, Heroku, Microsoft Azure App Service</li>
+            <li>Benefits: Simplifies development, faster deployment, integrated tools</li>
+        </ul>
+    </div>
+
+    <!-- SaaS -->
+    <div class="content-card">
+        <h3>Software as a Service (SaaS)</h3>
+        <p>
+            Delivers software applications over the internet, accessible from any device, with provider managing infrastructure.
+        </p>
+        <ul>
+            <li>Examples: Google Workspace, Salesforce, Zoom, Dropbox</li>
+            <li>Benefits: Accessible anywhere, no installation, subscription-based</li>
+        </ul>
+    </div>
+
+    <!-- FaaS -->
+    <div class="content-card">
+        <h3>Function as a Service (FaaS)</h3>
+        <p>
+            Enables running small pieces of code (functions) in the cloud without managing servers. Automatically scales based on demand.
+        </p>
+        <ul>
+            <li>Examples: AWS Lambda, Azure Functions, Google Cloud Functions</li>
+            <li>Benefits: Event-driven, cost-efficient, auto-scaling</li>
+        </ul>
+    </div>
+
+    <!-- Advantages -->
+    <div class="content-card">
+        <h3>Advantages of Cloud Services</h3>
+        <ul>
+            <li>Reduces infrastructure costs</li>
+            <li>Flexible and scalable resources</li>
+            <li>Faster deployment and development</li>
+            <li>Global accessibility</li>
+            <li>Automatic updates and maintenance</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center">
+        <a href="cloudModels.html" class="btn btn-outline-danger me-2">← Cloud Models</a>
+        <a href="index.html" class="btn btn-danger">Back to Home</a>
+        <a href="CA.html" class="btn btn-outline-danger ms-2">Cloud Architecture →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+</body>
+</html>

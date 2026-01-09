@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DApps | Decentralized Applications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #9333ea, #4c1d95);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #f1f5f9;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 26px rgba(0,0,0,0.45);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        pre {
+            background: #020617;
+            color: #22c55e;
+            padding: 18px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5f5;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">DApps</h1>
+        <p class="fs-5 mt-3">Decentralized Applications</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What are DApps?</h3>
+        <p>
+            <strong>DApps (Decentralized Applications)</strong> are applications that run on
+            blockchain networks instead of centralized servers.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Characteristics of DApps</h3>
+        <ul>
+            <li>Open-source</li>
+            <li>Decentralized backend</li>
+            <li>Smart contract-based logic</li>
+            <li>Token-driven incentives</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>DApp Architecture</h3>
+        <ul>
+            <li>Frontend (HTML, CSS, JavaScript)</li>
+            <li>Wallet (MetaMask)</li>
+            <li>Smart Contracts (Solidity)</li>
+            <li>Blockchain (Ethereum)</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Example DApp Flow</h3>
+        <ul>
+            <li>User connects wallet</li>
+            <li>Transaction signed</li>
+            <li>Smart contract executed</li>
+            <li>Blockchain state updated</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Simple DApp Smart Contract</h3>
+        <pre>
+pragma solidity ^0.8.0;
+
+contract Counter {
+    uint public count;
+
+    function increment() public {
+        count++;
+    }
+}
+        </pre>
+    </div>
+
+    <div class="content-card">
+        <h3>Popular DApps</h3>
+        <ul>
+            <li>Uniswap</li>
+            <li>OpenSea</li>
+            <li>Aave</li>
+            <li>Compound</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Advantages of DApps</h3>
+        <ul>
+            <li>Trustless operation</li>
+            <li>Censorship resistant</li>
+            <li>High transparency</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Challenges of DApps</h3>
+        <ul>
+            <li>Scalability issues</li>
+            <li>Gas fees</li>
+            <li>User experience</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="Web3.html" class="btn btn-outline-primary me-2">← Web3</a>
+        <a href="solidity.html" class="btn btn-primary">Solidity</a>
+        <a href="smartcontracts.html" class="btn btn-outline-primary ms-2">smart contracts →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 DApps Learning Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artificial Intelligence | Learning Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #0f9d58;
+            padding: 14px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        /* Main Layout */
+        .main {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: black;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .sidebar h3 {
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 8px 0;
+            color: #0f9d58;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content */
+        .content {
+            background: #111;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .content h1 {
+            margin-top: 0;
+            font-size: 26px;
+        }
+
+        .content p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* Topic Cards */
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .topic-card {
+            border: 1px solid #fff;
+            border-radius: 8px;
+            padding: 16px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .topic-card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transform: translateY(-5px);
+        }
+
+        .topic-card h4 {
+            margin-top: 0;
+            color: #0f9d58;
+        }
+
+        .topic-card a {
+            text-decoration: none;
+            color: #0f9d58;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #ccc;
+            margin-top: 40px;
+        }
+
+        .footer {
+  background-color: #070b14;
+  color: #cbd5e1;
+  padding: 50px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h3,
+.footer-col .brand {
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #22c55e;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  margin-top: 40px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+        .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 12px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  color: #cbd5e1;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #22c55e;
+  color: #0f172a;
+}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Learning Hub</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="ai.html">AI</a></li>
+                <li class="nav-item"><a class="nav-link" href="ml.html">ML</a></li>
+                <li class="nav-item"><a class="nav-link" href="dl.html">DL</a></li>
+                <li class="nav-item"><a class="nav-link" href="datascience.html">Data Science</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="container mt-4">
+    <div class="hero text-center">
+        <h1>Artificial Intelligence</h1>
+        <p class="lead">
+            Building systems that can think, learn, and make decisions like humans.
+        </p>
+        <span class="badge badge-custom">AI Fundamentals</span>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container mt-5">
+
+    <!-- What is AI -->
+    <div class="card p-4 mb-4">
+        <h3>What is Artificial Intelligence?</h3>
+        <p>
+            <strong>Artificial Intelligence (AI)</strong> refers to the simulation of human
+            intelligence in machines that are programmed to think, learn, and solve problems.
+        </p>
+    </div>
+
+    <!-- Types of AI -->
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card p-4">
+                <h4>Narrow AI</h4>
+                <p>
+                    Designed to perform a specific task (e.g., chatbots, face recognition).
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-4">
+                <h4>General AI</h4>
+                <p>
+                    A hypothetical AI that can perform any intellectual task like humans.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-4">
+                <h4>Super AI</h4>
+                <p>
+                    AI that surpasses human intelligence (theoretical concept).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Areas -->
+    <div class="card p-4 mt-4">
+        <h3>Core Areas of AI</h3>
+        <ul>
+            <li>Machine Learning</li>
+            <li>Natural Language Processing (NLP)</li>
+            <li>Computer Vision</li>
+            <li>Robotics</li>
+            <li>Expert Systems</li>
+        </ul>
+    </div>
+
+    <!-- Applications -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Applications of AI</h4>
+                <ul>
+                    <li>Healthcare</li>
+                    <li>Finance</li>
+                    <li>Autonomous vehicles</li>
+                    <li>Recommendation systems</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Advantages & Challenges</h4>
+                <ul>
+                    <li>High accuracy & automation</li>
+                    <li>Data dependency</li>
+                    <li>Ethical concerns</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer-bottom">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+  </div>
+</footer>
+</body>
+</html>

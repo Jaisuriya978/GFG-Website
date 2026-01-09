@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prefix Sum | DSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6610f2, #3d0a91);
+            color: white;
+            padding: 60px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .content-card {
+            background: #111;
+            color: whitesmoke;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #ccc;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin-left: 12px;
+            border-radius: 50%;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: #6610f2;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Prefix Sum</h1>
+        <p class="mt-3">Fast range query optimization technique</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container my-5">
+
+    <!-- What is Prefix Sum -->
+    <div class="content-card">
+        <h3>What is Prefix Sum?</h3>
+        <p>
+            <strong>Prefix Sum</strong> is a technique where we precompute cumulative
+            sums of an array to answer range sum queries efficiently.
+        </p>
+        <p>
+            It reduces time complexity from O(n) to O(1) per query.
+        </p>
+    </div>
+
+    <!-- How It Works -->
+    <div class="content-card">
+        <h3>How Prefix Sum Works</h3>
+        <ul>
+            <li>prefix[0] = arr[0]</li>
+            <li>prefix[i] = prefix[i-1] + arr[i]</li>
+            <li>Range Sum = prefix[r] - prefix[l-1]</li>
+        </ul>
+    </div>
+
+    <!-- Types -->
+    <div class="content-card">
+        <h3>Types of Prefix Sum</h3>
+        <ul>
+            <li>1D Prefix Sum</li>
+            <li>2D Prefix Sum (Matrix)</li>
+        </ul>
+    </div>
+
+    <!-- Common Problems -->
+    <div class="content-card">
+        <h3>Common Problems</h3>
+        <ul>
+            <li>Range sum queries</li>
+            <li>Subarray sum problems</li>
+            <li>Equilibrium index</li>
+            <li>Rainwater trapping</li>
+        </ul>
+    </div>
+
+    <!-- Advantages & Limitations -->
+    <div class="content-card">
+        <h3>Advantages & Limitations</h3>
+        <ul>
+            <li>Very fast queries</li>
+            <li>Simple implementation</li>
+            <li>Extra space required</li>
+            <li>Preprocessing needed</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center">
+        <a href="twopointertechnique.html" class="btn btn-outline-primary me-2">← Two Pointer</a>
+        <a href="index.html" class="btn btn-primary">Back to Home</a>
+        <a href="slidingwindow.html" class="btn btn-outline-primary ms-2">Sliding Window →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

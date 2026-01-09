@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hadoop | Big Data Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f97316, #c2410c);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .content-card {
+            background: #111;
+            color: whitesmoke;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+        }
+
+        pre {
+            background: #0b1220;
+            padding: 15px;
+            border-radius: 8px;
+            color: #e5e7eb;
+        }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin-left: 12px;
+            border-radius: 50%;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: #f97316;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Apache Hadoop</h1>
+        <p class="mt-3 fs-5">Distributed Storage & Processing for Big Data</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <!-- Definition -->
+    <div class="content-card">
+        <h3>What is Hadoop?</h3>
+        <p>
+            <strong>Apache Hadoop</strong> is an open-source framework used to store
+            and process massive amounts of data across clusters of commodity hardware.
+            It enables distributed computing with fault tolerance.
+        </p>
+    </div>
+
+    <!-- Why Hadoop -->
+    <div class="content-card">
+        <h3>Why Hadoop?</h3>
+        <ul>
+            <li>Handles huge data volumes</li>
+            <li>Highly scalable</li>
+            <li>Fault-tolerant</li>
+            <li>Cost-effective</li>
+        </ul>
+    </div>
+
+    <!-- Hadoop Architecture -->
+    <div class="content-card">
+        <h3>Hadoop Architecture</h3>
+        <ul>
+            <li><strong>HDFS</strong> – Distributed file storage</li>
+            <li><strong>YARN</strong> – Resource management</li>
+            <li><strong>MapReduce</strong> – Data processing</li>
+            <li><strong>Hadoop Common</strong> – Utilities and libraries</li>
+        </ul>
+    </div>
+
+    <!-- HDFS -->
+    <div class="content-card">
+        <h3>HDFS (Hadoop Distributed File System)</h3>
+        <p>
+            HDFS stores large files across multiple machines with high reliability.
+        </p>
+        <ul>
+            <li>NameNode – Manages metadata</li>
+            <li>DataNode – Stores actual data</li>
+            <li>Secondary NameNode – Checkpointing</li>
+        </ul>
+    </div>
+
+    <!-- MapReduce -->
+    <div class="content-card">
+        <h3>MapReduce</h3>
+        <p>
+            MapReduce is a programming model for processing large datasets
+            using parallel computation.
+        </p>
+        <pre><code>
+// Pseudo Flow
+Map(key, value) → Intermediate(key, value)
+Reduce(key, values) → Final Output
+        </code></pre>
+    </div>
+
+    <!-- YARN -->
+    <div class="content-card">
+        <h3>YARN (Yet Another Resource Negotiator)</h3>
+        <p>
+            YARN manages resources and schedules jobs in Hadoop clusters.
+        </p>
+        <ul>
+            <li>Resource Manager</li>
+            <li>Node Manager</li>
+            <li>Application Master</li>
+        </ul>
+    </div>
+
+    <!-- Hadoop Ecosystem -->
+    <div class="content-card">
+        <h3>Hadoop Ecosystem Tools</h3>
+        <ul>
+            <li>Hive – SQL-like queries</li>
+            <li>Pig – Data flow language</li>
+            <li>HBase – NoSQL database</li>
+            <li>Sqoop – Data transfer</li>
+            <li>Flume – Log ingestion</li>
+        </ul>
+    </div>
+
+    <!-- Use Cases -->
+    <div class="content-card">
+        <h3>Real-World Use Cases</h3>
+        <ul>
+            <li>Search engines</li>
+            <li>Log analysis</li>
+            <li>Recommendation systems</li>
+            <li>Fraud detection</li>
+        </ul>
+    </div>
+
+    <!-- Advantages -->
+    <div class="content-card">
+        <h3>Advantages of Hadoop</h3>
+        <ul>
+            <li>Scalable & reliable</li>
+            <li>Handles structured & unstructured data</li>
+            <li>Cost-effective storage</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center">
+        <a href="bigdata.html" class="btn btn-outline-warning me-2">← Big Data</a>
+        <a href="index.html" class="btn btn-warning">Back to Home</a>
+        <a href="spark.html" class="btn btn-outline-warning ms-2">Apache Spark →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+</body>
+</html>

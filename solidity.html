@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solidity | Smart Contract Programming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #f1f5f9;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 26px rgba(0,0,0,0.45);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        pre {
+            background: #020617;
+            color: #22c55e;
+            padding: 18px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5f5;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Solidity</h1>
+        <p class="fs-5 mt-3">Programming Language for Ethereum Smart Contracts</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is Solidity?</h3>
+        <p>
+            <strong>Solidity</strong> is a statically typed, contract-oriented programming language
+            designed for developing <strong>smart contracts</strong> on the Ethereum blockchain.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Why Solidity?</h3>
+        <ul>
+            <li>Write decentralized applications (DApps)</li>
+            <li>Automate agreements using smart contracts</li>
+            <li>Secure and transparent execution</li>
+            <li>Backbone of Ethereum ecosystem</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Solidity Features</h3>
+        <ul>
+            <li>Statically typed language</li>
+            <li>Supports inheritance & libraries</li>
+            <li>Modifiers and events</li>
+            <li>Gas-efficient execution</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Basic Solidity Contract</h3>
+        <pre>
+pragma solidity ^0.8.0;
+
+contract HelloWorld {
+    string public message = "Hello Blockchain";
+
+    function updateMessage(string memory _msg) public {
+        message = _msg;
+    }
+}
+        </pre>
+    </div>
+
+    <div class="content-card">
+        <h3>Key Solidity Concepts</h3>
+        <ul>
+            <li>Contracts</li>
+            <li>State Variables</li>
+            <li>Functions</li>
+            <li>Modifiers</li>
+            <li>Events</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Data Types in Solidity</h3>
+        <ul>
+            <li>uint, int</li>
+            <li>bool</li>
+            <li>address</li>
+            <li>string</li>
+            <li>array, mapping</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Smart Contract Lifecycle</h3>
+        <ul>
+            <li>Write contract</li>
+            <li>Compile</li>
+            <li>Deploy</li>
+            <li>Interact</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Advantages of Solidity</h3>
+        <ul>
+            <li>Trustless execution</li>
+            <li>Immutable contracts</li>
+            <li>Decentralized logic</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Common Use Cases</h3>
+        <ul>
+            <li>DeFi applications</li>
+            <li>NFT marketplaces</li>
+            <li>DAO governance</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="ethereum.html" class="btn btn-outline-primary me-2">← Ethereum</a>
+        <a href="bitcoin.html" class="btn btn-primary">Bitcoin</a>
+        <a href="Web3.html" class="btn btn-outline-primary ms-2">Web3 →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Blockchain Learning Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

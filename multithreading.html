@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multithreading in OOPS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .content-card {
+            background: #111;
+            color: whitesmoke;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+        }
+
+        pre {
+            background: #0b1220;
+            padding: 15px;
+            border-radius: 8px;
+            color: #e5e7eb;
+        }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin-left: 12px;
+            border-radius: 50%;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: #8b5cf6;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Multithreading in OOPS</h1>
+        <p class="mt-3 fs-5">Executing multiple threads concurrently</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <!-- Definition -->
+    <div class="content-card">
+        <h3>What is Multithreading?</h3>
+        <p>
+            <strong>Multithreading</strong> is a programming concept where multiple
+            threads execute concurrently within a single process.
+            Each thread performs a different task simultaneously.
+        </p>
+    </div>
+
+    <!-- Why -->
+    <div class="content-card">
+        <h3>Why Multithreading?</h3>
+        <ul>
+            <li>Better CPU utilization</li>
+            <li>Faster execution</li>
+            <li>Improved application performance</li>
+            <li>Supports multitasking</li>
+        </ul>
+    </div>
+
+    <!-- Thread Creation -->
+    <div class="content-card">
+        <h3>Creating Threads in Java</h3>
+        <ul>
+            <li>By extending <code>Thread</code> class</li>
+            <li>By implementing <code>Runnable</code> interface</li>
+        </ul>
+    </div>
+
+    <!-- Example Thread -->
+    <div class="content-card">
+        <h3>Example: Extending Thread Class</h3>
+        <pre><code>
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread running");
+    }
+
+    public static void main(String[] args) {
+        MyThread t = new MyThread();
+        t.start();
+    }
+}
+        </code></pre>
+    </div>
+
+    <!-- Runnable -->
+    <div class="content-card">
+        <h3>Example: Implementing Runnable Interface</h3>
+        <pre><code>
+class MyTask implements Runnable {
+    public void run() {
+        System.out.println("Runnable thread");
+    }
+
+    public static void main(String[] args) {
+        Thread t = new Thread(new MyTask());
+        t.start();
+    }
+}
+        </code></pre>
+    </div>
+
+    <!-- Life Cycle -->
+    <div class="content-card">
+        <h3>Thread Life Cycle</h3>
+        <ul>
+            <li>New</li>
+            <li>Runnable</li>
+            <li>Running</li>
+            <li>Waiting / Blocked</li>
+            <li>Terminated</li>
+        </ul>
+    </div>
+
+    <!-- Synchronization -->
+    <div class="content-card">
+        <h3>Thread Synchronization</h3>
+        <p>
+            Synchronization prevents multiple threads from accessing shared
+            resources simultaneously, avoiding data inconsistency.
+        </p>
+    </div>
+
+    <!-- Advantages -->
+    <div class="content-card">
+        <h3>Advantages of Multithreading</h3>
+        <ul>
+            <li>Improves responsiveness</li>
+            <li>Efficient resource usage</li>
+            <li>Better scalability</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center">
+        <a href="filehandling.html" class="btn btn-outline-primary me-2">← File Handling</a>
+        <a href="index.html" class="btn btn-primary">Back to Home</a>
+        <a href="oops1.html" class="btn btn-outline-primary ms-2">OOPS →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

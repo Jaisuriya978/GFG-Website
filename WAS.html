@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Application Security | Learning Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+        }
+        .hero {
+            background: linear-gradient(135deg, #4a148c, #7b1fa2);
+            color: white;
+            padding: 55px 20px;
+            border-radius: 14px;
+        }
+        .card {
+            border-radius: 14px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+        }
+        .badge-custom {
+            background-color: #f3e5f5;
+            color: #4a148c;
+        }
+        pre {
+            background: #1e1e1e;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        footer {
+            background: #4a148c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Learning Hub</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="Cybersecurity1.html">Cybersecurity</a></li>
+                <li class="nav-item"><a class="nav-link" href="EthicalHacking.html">Ethical Hacking</a></li>
+                <li class="nav-item"><a class="nav-link active" href="WAS.html">Web App Security</a></li>
+                <li class="nav-item"><a class="nav-link" href="Cryptography.html">Cryptography</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="container mt-4">
+    <div class="hero text-center">
+        <h1>Web Application Security (WAS)</h1>
+        <p class="lead">
+            Protecting web applications from attacks and vulnerabilities
+        </p>
+        <span class="badge badge-custom">Application Security</span>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container mt-5">
+
+    <!-- Intro -->
+    <div class="card p-4 mb-4">
+        <h3>What is Web Application Security?</h3>
+        <p>
+            <strong>Web Application Security (WAS)</strong> focuses on protecting
+            websites and web applications from security threats by identifying,
+            fixing, and preventing vulnerabilities in web-based systems.
+        </p>
+    </div>
+
+    <!-- OWASP -->
+    <div class="card p-4 mb-4">
+        <h3>OWASP Top 10 (Popular Risks)</h3>
+        <ul>
+            <li>Injection (SQL, Command)</li>
+            <li>Broken Authentication</li>
+            <li>Broken Access Control</li>
+            <li>Cross-Site Scripting (XSS)</li>
+            <li>Security Misconfiguration</li>
+            <li>Insecure Deserialization</li>
+            <li>Using Vulnerable Components</li>
+        </ul>
+    </div>
+
+    <!-- Example -->
+    <div class="card p-4 mb-4">
+        <h3>Example: Cross-Site Scripting (XSS)</h3>
+        <pre>
+&lt;script&gt;
+alert('XSS Attack');
+&lt;/script&gt;
+        </pre>
+        <p class="mt-2">
+            ⚠️ Injected into input fields when validation is missing.
+        </p>
+    </div>
+
+    <!-- Security Controls -->
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Security Measures</h4>
+                <ul>
+                    <li>Input Validation & Sanitization</li>
+                    <li>Authentication & Authorization</li>
+                    <li>HTTPS & Secure Cookies</li>
+                    <li>Web Application Firewall (WAF)</li>
+                    <li>Secure Session Management</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Testing Techniques</h4>
+                <ul>
+                    <li>Manual Testing</li>
+                    <li>Vulnerability Scanning</li>
+                    <li>Penetration Testing</li>
+                    <li>Source Code Review</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="card p-4 mt-4">
+        <h3>Common WAS Tools</h3>
+        <ul>
+            <li>Burp Suite</li>
+            <li>OWASP ZAP</li>
+            <li>Nikto</li>
+            <li>Acunetix</li>
+            <li>Postman (API Security)</li>
+        </ul>
+    </div>
+
+    <!-- Careers -->
+    <div class="card p-4 mt-4">
+        <h3>Career Roles</h3>
+        <ul>
+            <li>Web Security Analyst</li>
+            <li>Application Security Engineer</li>
+            <li>Penetration Tester</li>
+            <li>Bug Bounty Hunter</li>
+        </ul>
+    </div>
+
+    <!-- Tip -->
+    <div class="card p-4 mt-4 border border-purple">
+        <h4>✅ Best Practice</h4>
+        <p>
+            Follow <strong>secure coding standards</strong> and regularly test
+            applications against OWASP vulnerabilities.
+        </p>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

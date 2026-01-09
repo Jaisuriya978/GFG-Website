@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Learning | Learning Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+        .hero {
+            background: linear-gradient(135deg, #00695c, #26a69a);
+            color: white;
+            padding: 50px 20px;
+            border-radius: 12px;
+        }
+        .card {
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+        .badge-custom {
+            background-color: #e0f2f1;
+            color: #00695c;
+        }
+        code {
+            background: #f1f1f1;
+            padding: 6px 10px;
+            border-radius: 6px;
+        }
+        footer {
+            background: #00695c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Learning Hub</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="ai.html">AI</a></li>
+                <li class="nav-item"><a class="nav-link active" href="ml.html">ML</a></li>
+                <li class="nav-item"><a class="nav-link" href="dl.html">DL</a></li>
+                <li class="nav-item"><a class="nav-link" href="datascience.html">Data Science</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="container mt-4">
+    <div class="hero text-center">
+        <h1>Machine Learning</h1>
+        <p class="lead">
+            Teaching machines to learn from data and improve automatically.
+        </p>
+        <span class="badge badge-custom">ML Fundamentals</span>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container mt-5">
+
+    <!-- What is ML -->
+    <div class="card p-4 mb-4">
+        <h3>What is Machine Learning?</h3>
+        <p>
+            <strong>Machine Learning (ML)</strong> is a subset of AI that enables systems
+            to learn patterns from data and make predictions without being explicitly programmed.
+        </p>
+    </div>
+
+    <!-- Types of ML -->
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card p-4">
+                <h4>Supervised Learning</h4>
+                <p>
+                    Trains models using labeled data (e.g., classification, regression).
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-4">
+                <h4>Unsupervised Learning</h4>
+                <p>
+                    Finds patterns in unlabeled data (e.g., clustering).
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-4">
+                <h4>Reinforcement Learning</h4>
+                <p>
+                    Learns by interacting with an environment and receiving rewards.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Algorithms -->
+    <div class="card p-4 mt-4">
+        <h3>Popular ML Algorithms</h3>
+        <ul>
+            <li>Linear Regression</li>
+            <li>Logistic Regression</li>
+            <li>Decision Trees</li>
+            <li>Random Forest</li>
+            <li>K-Means Clustering</li>
+            <li>Support Vector Machines (SVM)</li>
+        </ul>
+    </div>
+
+    <!-- ML Workflow -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>ML Workflow</h4>
+                <ol>
+                    <li>Data Collection</li>
+                    <li>Data Preprocessing</li>
+                    <li>Model Training</li>
+                    <li>Evaluation</li>
+                    <li>Deployment</li>
+                </ol>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Applications of ML</h4>
+                <ul>
+                    <li>Recommendation systems</li>
+                    <li>Fraud detection</li>
+                    <li>Spam filtering</li>
+                    <li>Image recognition</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-bottom">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+  </div>
+</footer>
+</body>
+</html>

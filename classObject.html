@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class & Object | OOP Concepts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+        .hero {
+            background: linear-gradient(135deg, #6a1b9a, #ab47bc);
+            color: white;
+            padding: 50px 20px;
+            border-radius: 12px;
+        }
+        .card {
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+        .badge-custom {
+            background-color: #f3e5f5;
+            color: #6a1b9a;
+        }
+        code {
+            background: #f1f1f1;
+            padding: 6px 10px;
+            border-radius: 6px;
+        }
+        pre {
+            background: #212121;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        footer {
+            background: #6a1b9a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Learning Hub</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="oops.html">OOP</a></li>
+                <li class="nav-item"><a class="nav-link active" href="classObject.html">Class & Object</a></li>
+                <li class="nav-item"><a class="nav-link" href="inheritance.html">Inheritance</a></li>
+                <li class="nav-item"><a class="nav-link" href="polymorphism.html">Polymorphism</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="container mt-4">
+    <div class="hero text-center">
+        <h1>Class & Object</h1>
+        <p class="lead">
+            Core building blocks of Object-Oriented Programming.
+        </p>
+        <span class="badge badge-custom">OOP Fundamentals</span>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container mt-5">
+
+    <!-- Class -->
+    <div class="card p-4 mb-4">
+        <h3>What is a Class?</h3>
+        <p>
+            A <strong>class</strong> is a blueprint or template used to create objects.
+            It defines properties (variables) and behaviors (methods).
+        </p>
+        <pre>
+class Student {
+    int id;
+    String name;
+
+    void display() {
+        System.out.println(id + " " + name);
+    }
+}
+        </pre>
+    </div>
+
+    <!-- Object -->
+    <div class="card p-4 mb-4">
+        <h3>What is an Object?</h3>
+        <p>
+            An <strong>object</strong> is an instance of a class.
+            It represents a real-world entity and occupies memory.
+        </p>
+        <pre>
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.id = 101;
+        s1.name = "Alex";
+        s1.display();
+    }
+}
+        </pre>
+    </div>
+
+    <!-- Key Differences -->
+    <div class="card p-4 mb-4">
+        <h3>Class vs Object</h3>
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Class</th>
+                    <th>Object</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Blueprint</td>
+                    <td>Instance</td>
+                </tr>
+                <tr>
+                    <td>Logical entity</td>
+                    <td>Physical entity</td>
+                </tr>
+                <tr>
+                    <td>Does not occupy memory</td>
+                    <td>Occupies memory</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Advantages -->
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Advantages</h4>
+                <ul>
+                    <li>Code reusability</li>
+                    <li>Better data security</li>
+                    <li>Easy maintenance</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h4>Real-world Example</h4>
+                <p>
+                    <strong>Class:</strong> Car <br>
+                    <strong>Objects:</strong> BMW, Audi, Tesla
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
