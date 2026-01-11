@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Design | UI/UX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6366f1, #4338ca);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 35px rgba(0,0,0,0.5);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            background: #1f2937;
+            color: #93c5fd;
+            padding: 3px 6px;
+            border-radius: 6px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Responsive Design</h1>
+        <p class="fs-5 mt-3">Designing experiences for all screen sizes</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is Responsive Design?</h3>
+        <p>
+            <strong>Responsive Web Design (RWD)</strong> ensures that websites
+            adapt smoothly to different screen sizes and devices such as
+            mobiles, tablets, and desktops.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Why Responsive Design Matters</h3>
+        <ul>
+            <li>Improves user experience</li>
+            <li>Supports mobile-first users</li>
+            <li>Boosts SEO rankings</li>
+            <li>Reduces maintenance cost</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Core Principles</h3>
+        <ul>
+            <li><strong>Fluid grids</strong> – Layouts scale proportionally</li>
+            <li><strong>Flexible images</strong> – Media adapts to containers</li>
+            <li><strong>Media queries</strong> – Apply styles per screen size</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Media Query Example</h3>
+        <pre>
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+        </pre>
+    </div>
+
+    <div class="content-card">
+        <h3>Mobile-First Design</h3>
+        <p>
+            Mobile-first design starts by designing for small screens first
+            and progressively enhancing the layout for larger devices.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Common Breakpoints</h3>
+        <ul>
+            <li>Mobile: &lt; 576px</li>
+            <li>Tablet: 576px – 992px</li>
+            <li>Desktop: &gt; 992px</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Responsive Design Tools</h3>
+        <ul>
+            <li>Bootstrap / Tailwind CSS</li>
+            <li>CSS Grid & Flexbox</li>
+            <li>Chrome DevTools</li>
+            <li>Figma responsive frames</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="user-research.html" class="btn btn-outline-primary me-2">← User Research</a>
+        <a href="ui.html" class="btn btn-primary">UI Design</a>
+        <a href="accessibility.html" class="btn btn-outline-primary ms-2">Accessibility →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Responsive Design Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
