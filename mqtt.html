@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MQTT | IoT & Networking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #facc15, #b45309);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .diagram-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">MQTT Protocol</h1>
+        <p class="fs-5 mt-3">Lightweight messaging protocol for IoT devices</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is MQTT?</h3>
+        <p>
+            <strong>MQTT (Message Queuing Telemetry Transport)</strong> is a lightweight, publish-subscribe 
+            messaging protocol designed for low-bandwidth, high-latency, or unreliable networks, commonly used in IoT applications.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Key Features</h3>
+        <ul>
+            <li>Publish/Subscribe messaging model</li>
+            <li>Lightweight and efficient for low-power devices</li>
+            <li>Supports Quality of Service (QoS) levels</li>
+            <li>Works over TCP/IP networks</li>
+            <li>Designed for IoT, mobile devices, and sensors</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>MQTT Architecture</h3>
+        <p>
+            MQTT uses a <strong>broker</strong> to manage messages between devices. Devices are categorized as:
+        </p>
+        <ul>
+            <li><strong>Publisher:</strong> Sends messages to a topic</li>
+            <li><strong>Subscriber:</strong> Receives messages from subscribed topics</li>
+            <li><strong>Broker:</strong> Central server that routes messages</li>
+        </ul>
+        <img src="https://i.imgur.com/J7LczgV.png" alt="MQTT Architecture" class="diagram-image">
+        <p class="mt-2">Diagram illustrating publishers, subscribers, and broker communication in MQTT.</p>
+    </div>
+
+    <div class="content-card">
+        <h3>Applications of MQTT in IoT</h3>
+        <ul>
+            <li>Smart homes and appliances</li>
+            <li>Industrial IoT monitoring and control</li>
+            <li>Healthcare and wearable devices</li>
+            <li>Connected vehicles and telemetry</li>
+            <li>Remote sensors and environmental monitoring</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="wireless-communication.html" class="btn btn-outline-yellow me-2">← Wireless Communication</a>
+        <a href="index.html" class="btn btn-yellow">Home</a>
+        <a href="iot-protocols.html" class="btn btn-outline-yellow ms-2">Iot Protocols →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

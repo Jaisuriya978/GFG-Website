@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Embedded C | Embedded Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #facc15, #b45309);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .code-snippet {
+            background: #1f2937;
+            color: #22c55e;
+            padding: 15px;
+            border-radius: 12px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Embedded C</h1>
+        <p class="fs-5 mt-3">C programming language for microcontrollers and embedded systems</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is Embedded C?</h3>
+        <p>
+            <strong>Embedded C</strong> is an extension of the C programming language designed to program microcontrollers, 
+            sensors, and other embedded systems. It allows direct access to hardware, memory, and peripheral devices.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Features of Embedded C</h3>
+        <ul>
+            <li>Efficient and fast execution suitable for low-resource devices</li>
+            <li>Direct manipulation of hardware registers and memory</li>
+            <li>Supports modular and structured programming</li>
+            <li>Real-time programming capabilities</li>
+            <li>Compatible with various microcontroller families (8051, AVR, PIC, ARM)</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Applications of Embedded C</h3>
+        <ul>
+            <li>IoT devices and sensor systems</li>
+            <li>Home automation and smart appliances</li>
+            <li>Robotics and drones</li>
+            <li>Automotive embedded systems (ECUs)</li>
+            <li>Medical devices and health monitors</li>
+            <li>Industrial automation and control systems</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Example Code in Embedded C</h3>
+        <p>Turning an LED on and off using a microcontroller:</p>
+        <div class="code-snippet">
+<pre>
+#include &lt;avr/io.h&gt;
+#include &lt;util/delay.h&gt;
+
+int main(void) {
+    DDRB |= (1 &lt;&lt; PB0); // Set PB0 as output
+
+    while(1) {
+        PORTB |= (1 &lt;&lt; PB0);  // Turn LED on
+        _delay_ms(500);
+        PORTB &= ~(1 &lt;&lt; PB0); // Turn LED off
+        _delay_ms(500);
+    }
+    return 0;
+}
+</pre>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="esp32.html" class="btn btn-outline-yellow me-2">← ESP32</a>
+        <a href="index.html" class="btn btn-yellow">Home</a>
+        <a href="embedded-systems.html" class="btn btn-outline-yellow ms-2">Embedded Systems →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

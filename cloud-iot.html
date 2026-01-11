@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud IoT | Internet of Things</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #10b981, #047857);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .cloud-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Cloud IoT</h1>
+        <p class="fs-5 mt-3">Integrating IoT devices with cloud platforms for data storage, analysis, and control</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is Cloud IoT?</h3>
+        <p>
+            <strong>Cloud IoT</strong> refers to connecting IoT devices to cloud platforms to enable real-time data collection, processing, analytics, and remote device management.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Components of Cloud IoT</h3>
+        <ul>
+            <li><strong>IoT Devices:</strong> Sensors, actuators, microcontrollers, and gateways</li>
+            <li><strong>IoT Gateway:</strong> Aggregates and preprocesses data</li>
+            <li><strong>Cloud Platform:</strong> Stores, analyzes, and visualizes IoT data</li>
+            <li><strong>Applications:</strong> Web or mobile interfaces for monitoring and control</li>
+            <li><strong>Security:</strong> Encryption, authentication, and secure data transmission</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>How Cloud IoT Works</h3>
+        <ol>
+            <li>IoT device collects sensor data.</li>
+            <li>Device sends data via IoT gateway using protocols like MQTT, CoAP, or HTTP.</li>
+            <li>Cloud platform receives data, stores it, and performs analytics.</li>
+            <li>Insights and alerts are sent to applications or dashboards.</li>
+            <li>Control commands can be sent back to IoT devices for automation.</li>
+        </ol>
+    </div>
+
+    <div class="content-card">
+        <h3>Popular Cloud IoT Platforms</h3>
+        <ul>
+            <li>Google Cloud IoT Core</li>
+            <li>Amazon Web Services (AWS) IoT</li>
+            <li>Microsoft Azure IoT Hub</li>
+            <li>IBM Watson IoT</li>
+            <li>Oracle IoT Cloud</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Cloud IoT Architecture Diagram</h3>
+        <img src="https://i.imgur.com/2k6tO2E.png" alt="Cloud IoT Architecture" class="cloud-image">
+        <p class="mt-2">Illustrates IoT devices, gateways, cloud platforms, and applications communicating in a secure IoT system.</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="esp32.html" class="btn btn-outline-green me-2">← ESP32</a>
+        <a href="index.html" class="btn btn-green">Home</a>
+        <a href="embedded-systems.html" class="btn btn-outline-green ms-2">Embedded Systems →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

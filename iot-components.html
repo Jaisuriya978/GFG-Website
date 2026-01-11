@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IoT Components | Internet of Things</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #22c55e, #15803d);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .component-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">IoT Components</h1>
+        <p class="fs-5 mt-3">Essential building blocks of an IoT system</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What are IoT Components?</h3>
+        <p>
+            IoT Components are the hardware and software elements that work together 
+            to collect, transmit, process, and display data from the physical world.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Key Components of IoT</h3>
+        <ul>
+            <li><strong>Sensors:</strong> Detect physical changes like temperature, light, motion, or humidity.</li>
+            <li><strong>Actuators:</strong> Perform actions based on processed data, e.g., turning on a motor or light.</li>
+            <li><strong>Microcontrollers & Microprocessors:</strong> Control devices and execute instructions.</li>
+            <li><strong>Connectivity Modules:</strong> Wi-Fi, Bluetooth, Zigbee, LoRaWAN, LTE, 5G for data transmission.</li>
+            <li><strong>Gateways:</strong> Bridge between IoT devices and the cloud.</li>
+            <li><strong>Cloud / Edge Computing:</strong> Processes and stores IoT data for analysis and decision-making.</li>
+            <li><strong>User Interfaces:</strong> Dashboards, mobile apps, or web apps to visualize and interact with IoT data.</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>IoT Hardware Components Diagram</h3>
+        <img src="https://i.imgur.com/mgF7vK9.png" alt="IoT Components Diagram" class="component-image">
+        <p class="mt-2">Illustrates the interaction between sensors, actuators, microcontrollers, gateways, and cloud systems.</p>
+    </div>
+
+    <div class="content-card">
+        <h3>Examples of IoT Components</h3>
+        <ul>
+            <li>Temperature sensor (DHT11, DS18B20)</li>
+            <li>Motion sensor (PIR sensor)</li>
+            <li>Actuators (Servo motor, Relay)</li>
+            <li>Microcontroller (Arduino, ESP8266, ESP32)</li>
+            <li>Connectivity module (Wi-Fi module ESP8266, Bluetooth HC-05)</li>
+            <li>IoT Gateway (Raspberry Pi, Edge devices)</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Role of IoT Components</h3>
+        <ul>
+            <li>Collect real-time data from the environment</li>
+            <li>Transmit data securely to processing units</li>
+            <li>Process and analyze data locally or in the cloud</li>
+            <li>Trigger automated actions or alerts</li>
+            <li>Enable user interaction through dashboards or apps</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="iot-architecture.html" class="btn btn-outline-success me-2">← IoT Architecture</a>
+        <a href="index.html" class="btn btn-success">Home</a>
+        <a href="iot-protocols.html" class="btn btn-outline-success ms-2">IoT Protocols →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

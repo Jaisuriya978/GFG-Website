@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internet of Things (IoT) | GeeksforGeeks Style</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            background: #111;
+            color: #e5e7eb;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #0f9d58;
+            padding: 14px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        /* Layout */
+        .main {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #000;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .sidebar h3 {
+            color: #ccc;
+            margin-bottom: 12px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 8px 0;
+            color: #22c55e;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content */
+        .content {
+            background: #111;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .content h1 {
+            font-size: 26px;
+        }
+
+        .content p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* Topic Cards */
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .topic-card {
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 16px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        .topic-card h4 {
+            color: #22c55e;
+        }
+
+        .topic-card a {
+            text-decoration: none;
+            color: #22c55e;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #ccc;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            border-top: 1px solid #111;
+            padding-top: 15px;
+        }
+
+        .social-icons a {
+            width: 36px;
+            height: 36px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #1e293b;
+            color: #cbd5e1;
+            border-radius: 50%;
+            margin-left: 12px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background: #22c55e;
+            color: #0f172a;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">GeeksforGeeks</div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="practice.html">Practice</a>
+        <a href="jobs.html">Jobs</a>
+    </div>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Internet of Things</h3>
+        <a href="iot-intro.html">IoT Introduction</a>
+        <a href="iot-architecture.html">IoT Architecture</a>
+        <a href="iot-components.html">IoT Components</a>
+        <a href="sensors.html">Sensors</a>
+        <a href="actuators.html">Actuators</a>
+        <a href="iot-gateways.html">IoT Gateways</a>
+        <a href="esp32.html">ESP32</a>
+        <a href="microcontrollers.html">Microcontrollers</a>
+        <a href="microprocessors.html">Microprocessors</a>
+        <a href="embedded-systems.html">Embedded Systems</a>
+        <a href="wireless-communication.html">Wireless Communication</a>
+        <a href="bluetooth.html">Bluetooth</a>
+        <a href="wifi.html">Wi-Fi</a>
+        <a href="arduino.html">Arduino</a>
+        <a href="raspberrypi.html">Raspberry Pi</a>
+        <a href="embedded-c.html">Embedded C</a>
+        <a href="iot-protocols.html">IoT Protocols</a>
+        <a href="mqtt.html">MQTT</a>
+        <a href="http1.html">HTTP</a>
+        <a href="https.html">HTTPS</a>
+        <a href="cloud-iot.html">Cloud & IoT</a>
+        <a href="iot-security.html">IoT Security</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Internet of Things (IoT)</h1>
+        <p>
+            The Internet of Things (IoT) connects physical devices to the internet,
+            enabling them to collect, share, and act on data using sensors,
+            software, and network connectivity.
+        </p>
+
+        <h2>Popular IoT Topics</h2>
+
+        <div class="topics">
+            <div class="topic-card">
+                <h4>IoT Basics</h4>
+                <p>Understanding how IoT systems work.</p>
+                <a href="iot-intro.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Actuators</h4>
+                <p>Devices that perform actions based on data.</p>
+                <a href="actuators.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Sensors</h4>
+                <p>Devices that collect real-world data.</p>
+                <a href="sensors.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Arduino</h4>
+                <p>Popular microcontroller for IoT projects.</p>
+                <a href="arduino.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Raspberry Pi</h4>
+                <p>Single-board computer for IoT applications.</p>
+                <a href="raspberrypi.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>IoT Protocols</h4>
+                <p>Communication standards like MQTT & HTTP.</p>
+                <a href="iot-protocols.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>MQTT</h4>
+                <p>Lightweight messaging protocol for IoT.</p>
+                <a href="mqtt.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>HTTP</h4>
+                <p>Hypertext Transfer Protocol for IoT communication.</p>
+                <a href="http.html">Read More →</a> 
+            </div>
+
+            <div class="topic-card">
+                <h4>Embedded C</h4>
+                <p>Programming microcontrollers for IoT.</p>
+                <a href="embedded-c.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Cloud Integration</h4>
+                <p>Connecting IoT devices to cloud platforms.</p>
+                <a href="cloud-iot.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>IoT Security</h4>
+                <p>Protecting devices and data.</p>
+                <a href="iot-security.html">Read More →</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-bottom">
+        <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+        <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+    </div>
+</footer>
+
+</body>
+</html>

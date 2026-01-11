@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IoT Sensors | Internet of Things</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #facc15, #b45309);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .sensor-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">IoT Sensors</h1>
+        <p class="fs-5 mt-3">Devices that detect and measure physical parameters in IoT systems</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What are Sensors?</h3>
+        <p>
+            <strong>Sensors</strong> are IoT devices that detect changes in the physical environment, 
+            such as temperature, motion, light, or humidity, and convert them into data that can be processed.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Types of Sensors in IoT</h3>
+        <ul>
+            <li><strong>Temperature Sensors:</strong> Measure heat, e.g., DHT11, DS18B20</li>
+            <li><strong>Motion Sensors:</strong> Detect movement, e.g., PIR sensor</li>
+            <li><strong>Proximity Sensors:</strong> Detect objects or distance</li>
+            <li><strong>Light Sensors:</strong> Measure light intensity, e.g., LDR</li>
+            <li><strong>Gas Sensors:</strong> Detect gases in the environment, e.g., MQ-2, MQ-7</li>
+            <li><strong>Humidity Sensors:</strong> Measure moisture in the air, e.g., DHT22</li>
+            <li><strong>Pressure Sensors:</strong> Measure force or pressure, e.g., BMP180</li>
+            <li><strong>Sound Sensors:</strong> Detect noise levels</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Working of Sensors</h3>
+        <ol>
+            <li>Sensor detects a physical change in the environment.</li>
+            <li>Converts the detected change into an electrical signal.</li>
+            <li>Signal is sent to a microcontroller or gateway for processing.</li>
+            <li>Processed data is sent to the cloud or local device for monitoring and action.</li>
+        </ol>
+    </div>
+
+    <div class="content-card">
+        <h3>Applications of Sensors in IoT</h3>
+        <ul>
+            <li>Smart homes (temperature, motion, light)</li>
+            <li>Healthcare monitoring (heart rate, glucose)</li>
+            <li>Industrial automation (pressure, vibration)</li>
+            <li>Agriculture (soil moisture, humidity)</li>
+            <li>Smart cities (air quality, traffic monitoring)</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Example of Sensors Diagram</h3>
+        <img src="https://i.imgur.com/7qCiyQZ.png" alt="IoT Sensors Diagram" class="sensor-image">
+        <p class="mt-2">Shows various IoT sensors collecting data from the environment and sending it to a central system.</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="iot-components.html" class="btn btn-outline-warning me-2">← IoT Components</a>
+        <a href="index.html" class="btn btn-warning">Home</a>
+        <a href="actuators.html" class="btn btn-outline-warning ms-2">Actuators →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microprocessors | Embedded Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f43f5e, #9f1239);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .diagram-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Microprocessors</h1>
+        <p class="fs-5 mt-3">The central processing unit for computers and embedded systems</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is a Microprocessor?</h3>
+        <p>
+            A <strong>Microprocessor</strong> is an integrated circuit (IC) that contains the CPU of a computer. 
+            It performs arithmetic, logic, control, and input/output operations, typically in general-purpose computers or embedded systems that require more processing power than a microcontroller.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Key Features of Microprocessors</h3>
+        <ul>
+            <li>Performs arithmetic and logic operations (ALU)</li>
+            <li>Controls execution of instructions (Control Unit)</li>
+            <li>Requires external memory (RAM, ROM) and I/O interfaces</li>
+            <li>Supports higher clock speeds than microcontrollers</li>
+            <li>Used in general-purpose computing systems</li>
+            <li>Flexible for multiple tasks with operating systems</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Popular Microprocessors</h3>
+        <ul>
+            <li>Intel 8086, 8088, and 80286</li>
+            <li>Intel Core i3/i5/i7/i9 series</li>
+            <li>AMD Ryzen series</li>
+            <li>ARM Cortex-A series</li>
+            <li>RISC-V based processors</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Microprocessor vs Microcontroller</h3>
+        <ul>
+            <li><strong>Microprocessor:</strong> Requires external peripherals, general-purpose computing, higher power consumption, used in PCs and servers.</li>
+            <li><strong>Microcontroller:</strong> All-in-one (CPU + memory + I/O), task-specific, low power, used in IoT and embedded systems.</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Microprocessor Architecture</h3>
+        <img src="https://i.imgur.com/7aZPjNv.png" alt="Microprocessor Architecture" class="diagram-image">
+        <p class="mt-2">Shows the CPU with ALU, control unit, registers, and connections to external memory and I/O devices.</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="microcontrollers.html" class="btn btn-outline-red me-2">← Microcontrollers</a>
+        <a href="index.html" class="btn btn-red">Home</a>
+        <a href="embedded-systems.html" class="btn btn-outline-red ms-2">Embedded Systems →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

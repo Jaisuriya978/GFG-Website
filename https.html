@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTPS Protocol | Web & Networking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #16a34a, #14532d);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .diagram-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">HTTPS Protocol</h1>
+        <p class="fs-5 mt-3">Secure version of HTTP using SSL/TLS for encrypted web communication</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is HTTPS?</h3>
+        <p>
+            <strong>HTTPS (HyperText Transfer Protocol Secure)</strong> is the secure version of HTTP. It encrypts data 
+            transmitted between a client (browser) and server using SSL/TLS to protect against eavesdropping and tampering.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Key Features of HTTPS</h3>
+        <ul>
+            <li>Data encryption using SSL/TLS</li>
+            <li>Authentication of the server to the client</li>
+            <li>Prevents man-in-the-middle attacks</li>
+            <li>Maintains data integrity during transmission</li>
+            <li>Indicated by padlock icon in browsers</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>HTTPS Communication Flow</h3>
+        <img src="https://i.imgur.com/WYLKfDz.png" alt="HTTPS Communication Flow" class="diagram-image">
+        <p class="mt-2">Diagram showing encrypted communication between client and server using SSL/TLS handshake.</p>
+    </div>
+
+    <div class="content-card">
+        <h3>Applications of HTTPS</h3>
+        <ul>
+            <li>Securing websites and web applications</li>
+            <li>Online banking and e-commerce</li>
+            <li>REST API calls over secure connections</li>
+            <li>IoT devices transmitting sensitive data to cloud servers</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="http1.html" class="btn btn-outline-success me-2">← HTTP</a>
+        <a href="index.html" class="btn btn-success">Home</a>
+        <a href="iot.html" class="btn btn-outline-success ms-2">→ IoT</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

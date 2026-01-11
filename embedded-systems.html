@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Embedded Systems | IoT & Microcontrollers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f97316, #b45309);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .diagram-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Embedded Systems</h1>
+        <p class="fs-5 mt-3">Integration of hardware and software to perform dedicated functions in devices</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is an Embedded System?</h3>
+        <p>
+            An <strong>Embedded System</strong> is a combination of hardware and software designed to perform a specific function 
+            within a larger system. Unlike general-purpose computers, embedded systems are optimized for dedicated tasks.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Characteristics of Embedded Systems</h3>
+        <ul>
+            <li>Task-specific functionality</li>
+            <li>Real-time operation</li>
+            <li>Limited hardware resources (CPU, memory, storage)</li>
+            <li>High reliability and stability</li>
+            <li>Low power consumption</li>
+            <li>Embedded software tightly coupled with hardware</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Components of Embedded Systems</h3>
+        <ul>
+            <li>Microcontroller or microprocessor</li>
+            <li>Memory (ROM, RAM, Flash)</li>
+            <li>Input devices (sensors, switches)</li>
+            <li>Output devices (LEDs, motors, displays)</li>
+            <li>Communication interfaces (UART, SPI, I2C, Wi-Fi, Bluetooth)</li>
+            <li>Power supply and clock circuitry</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Applications of Embedded Systems</h3>
+        <ul>
+            <li>IoT devices and smart homes</li>
+            <li>Automotive systems (ECUs, ABS, infotainment)</li>
+            <li>Medical devices and wearable health monitors</li>
+            <li>Industrial automation and robotics</li>
+            <li>Consumer electronics (microwaves, washing machines, cameras)</li>
+            <li>Networking devices (routers, modems)</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Embedded System Architecture</h3>
+        <img src="https://i.imgur.com/4V6mB6V.png" alt="Embedded System Architecture" class="diagram-image">
+        <p class="mt-2">Illustrates the main components of an embedded system including CPU, memory, input/output interfaces, and sensors/actuators.</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="embedded-c.html" class="btn btn-outline-orange me-2">← Embedded C</a>
+        <a href="index.html" class="btn btn-orange">Home</a>
+        <a href="raspberrypi.html" class="btn btn-outline-orange ms-2">Raspberry Pi →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IoT Gateways | Internet of Things</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #8b5cf6, #581c87);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .gateway-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">IoT Gateways</h1>
+        <p class="fs-5 mt-3">Bridging IoT devices and the cloud for data transmission</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What are IoT Gateways?</h3>
+        <p>
+            <strong>IoT Gateways</strong> act as intermediaries between IoT devices (sensors and actuators) 
+            and cloud platforms. They aggregate, process, and transmit data securely to the cloud or local servers.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Functions of IoT Gateways</h3>
+        <ul>
+            <li>Aggregate data from multiple sensors and devices</li>
+            <li>Perform edge computing for real-time processing</li>
+            <li>Convert protocols (e.g., MQTT to HTTP) for cloud communication</li>
+            <li>Ensure security through encryption and authentication</li>
+            <li>Manage network traffic and reduce latency</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Types of IoT Gateways</h3>
+        <ul>
+            <li><strong>Protocol Gateways:</strong> Convert communication protocols between devices and cloud</li>
+            <li><strong>Data Processing Gateways:</strong> Perform edge computing and filtering of IoT data</li>
+            <li><strong>Security Gateways:</strong> Handle encryption, authentication, and secure data transmission</li>
+            <li><strong>Cloud Gateways:</strong> Connect devices directly to cloud platforms</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>IoT Gateway Architecture</h3>
+        <img src="https://i.imgur.com/ObHEmWm.png" alt="IoT Gateway Diagram" class="gateway-image">
+        <p class="mt-2">Illustrates sensors, actuators, edge processing, gateways, and cloud connectivity in an IoT system.</p>
+    </div>
+
+    <div class="content-card">
+        <h3>Applications of IoT Gateways</h3>
+        <ul>
+            <li>Smart homes: connecting multiple devices to cloud apps</li>
+            <li>Industrial IoT: real-time monitoring and automation</li>
+            <li>Healthcare: collecting patient data from wearables</li>
+            <li>Smart cities: traffic, environment, and energy monitoring</li>
+            <li>Agriculture: controlling irrigation and crop monitoring systems</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>Benefits of IoT Gateways</h3>
+        <ul>
+            <li>Reduced latency through local processing</li>
+            <li>Secure data transmission</li>
+            <li>Protocol interoperability</li>
+            <li>Efficient network usage</li>
+            <li>Centralized device management</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="actuators.html" class="btn btn-outline-purple me-2">← IoT Actuators</a>
+        <a href="index.html" class="btn btn-purple">Home</a>
+        <a href="iot-protocols.html" class="btn btn-outline-purple ms-2">IoT Protocols →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

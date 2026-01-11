@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IoT Security | Internet of Things</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f472b6, #be185d);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .security-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">IoT Security</h1>
+        <p class="fs-5 mt-3">Protecting IoT devices, networks, and data from cyber threats</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is IoT Security?</h3>
+        <p>
+            <strong>IoT Security</strong> involves strategies, technologies, and practices to protect IoT devices, 
+            gateways, networks, and data from unauthorized access, attacks, and breaches.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Common Security Threats in IoT</h3>
+        <ul>
+            <li>Device hijacking or unauthorized access</li>
+            <li>Data breaches and leakage</li>
+            <li>Denial of Service (DoS) attacks</li>
+            <li>Malware and ransomware targeting IoT devices</li>
+            <li>Weak authentication and insecure passwords</li>
+            <li>Unpatched software vulnerabilities</li>
+            <li>Man-in-the-Middle (MITM) attacks on communication</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>IoT Security Measures</h3>
+        <ul>
+            <li>Strong authentication and access control</li>
+            <li>Data encryption (at rest and in transit)</li>
+            <li>Regular firmware and software updates</li>
+            <li>Network segmentation and firewalls</li>
+            <li>Secure boot and trusted hardware</li>
+            <li>Continuous monitoring and anomaly detection</li>
+            <li>Security protocols like TLS, MQTT with SSL, and DTLS</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>IoT Security Architecture</h3>
+        <img src="https://i.imgur.com/LnD0DkO.png" alt="IoT Security Architecture" class="security-image">
+        <p class="mt-2">Shows layered security including devices, gateways, network, and cloud protection.</p>
+    </div>
+
+    <div class="content-card">
+        <h3>Best Practices for IoT Security</h3>
+        <ol>
+            <li>Use strong, unique passwords for every device</li>
+            <li>Keep firmware and software up to date</li>
+            <li>Encrypt sensitive data</li>
+            <li>Monitor network traffic for unusual activity</li>
+            <li>Limit device exposure to the internet</li>
+            <li>Perform regular security audits</li>
+        </ol>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="iot-protocols.html" class="btn btn-outline-info me-2">← IoT Protocols</a>
+        <a href="index.html" class="btn btn-outline-secondary">Home</a>
+        <a href="microprocessors.html" class="btn btn-outline-info ms-2">Microprocessors →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

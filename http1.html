@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTP Protocol | Web & Networking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2563eb, #1e3a8a);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .content-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-6px);
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .diagram-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">HTTP Protocol</h1>
+        <p class="fs-5 mt-3">HyperText Transfer Protocol for communication between web clients and servers</p>
+    </div>
+</section>
+
+<!-- Content -->
+<div class="container my-5">
+
+    <div class="content-card">
+        <h3>What is HTTP?</h3>
+        <p>
+            <strong>HTTP (HyperText Transfer Protocol)</strong> is a protocol used by the World Wide Web 
+            to transfer information between a client (like a web browser) and a server.
+        </p>
+    </div>
+
+    <div class="content-card">
+        <h3>Key Features of HTTP</h3>
+        <ul>
+            <li>Request/Response model</li>
+            <li>Stateless protocol (each request is independent)</li>
+            <li>Text-based and human-readable</li>
+            <li>Supports multiple methods (GET, POST, PUT, DELETE, etc.)</li>
+            <li>Can be secured using HTTPS (HTTP over TLS/SSL)</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>HTTP Methods</h3>
+        <ul>
+            <li><strong>GET:</strong> Retrieve data from the server</li>
+            <li><strong>POST:</strong> Send data to the server</li>
+            <li><strong>PUT:</strong> Update existing data on the server</li>
+            <li><strong>DELETE:</strong> Remove data from the server</li>
+            <li><strong>PATCH:</strong> Apply partial modifications</li>
+            <li><strong>HEAD:</strong> Retrieve metadata only</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>HTTP Communication Flow</h3>
+        <img src="https://i.imgur.com/T1VpFdv.png" alt="HTTP Communication Flow" class="diagram-image">
+        <p class="mt-2">Diagram showing a client sending requests to a server and receiving responses.</p>
+    </div>
+
+    <div class="content-card">
+        <h3>Applications of HTTP</h3>
+        <ul>
+            <li>Accessing web pages via browsers</li>
+            <li>REST APIs for web and mobile applications</li>
+            <li>IoT devices communicating with cloud servers</li>
+            <li>File transfers over web services</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="iot-protocols.html" class="btn btn-outline-info me-2">← IoT Protocols</a>
+        <a href="index.html" class="btn btn-info">Home</a>
+        <a href="https.html" class="btn btn-outline-info ms-2">HTTPS →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Learning Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
