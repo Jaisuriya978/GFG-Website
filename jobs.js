@@ -34,16 +34,16 @@ const jobs = [
         logo: "https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
     },
     {
-        company: "Netflix",
-        role: "Backend Engineer",
-        exp: "2-4 Years",
-        salary: "₹10 – 15 LPA",
+        company: "infosys",
+        role: "System Engineer",
+        exp: "1-3 Years",
+        salary: "₹8 – 12 LPA",
         type: ["Full Time", "Remote"],
-        desc: "Design and implement scalable backend systems.",
-        skills: "Python, Node.js, PostgreSQL, Redis, Docker",
-        posted: "1 week ago",
-        logo: "https://logos-world.net/wp-content/uploads/2020/08/Netflix-Logo.png"
-    }
+        desc: "Support and maintain enterprise systems.",
+        skills: "Java, Python, SQL, Networking",
+        posted: "3 days ago",
+        logo: " https://static.vecteezy.com/system/resources/previews/020/336/451/non_2x/infosys-logo-infosys-icon-free-free-vector.jpg"
+    },
 ];
 
 const jobList = document.getElementById("jobList");
