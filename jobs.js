@@ -43,7 +43,7 @@ const jobs = [
         skills: "Java, Python, SQL, Networking",
         posted: "3 days ago",
         logo: " https://static.vecteezy.com/system/resources/previews/020/336/451/non_2x/infosys-logo-infosys-icon-free-free-vector.jpg"
-    }
+    },
 ];
 
 const jobList = document.getElementById("jobList");
