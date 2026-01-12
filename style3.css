@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+.content {
+    padding: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-6px);
+}
+
+.company-logo img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.company {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.fulltime {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.remote {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.onsite {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.desc, .skills, .posted {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.apply-btn {
+    display: block;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+}

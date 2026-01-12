@@ -9,6 +9,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style3.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -458,6 +459,71 @@ h1 {
       color: #ccc;
     }
 
+    .content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background: #111;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.company-logo img {
+    max-width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.company {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.fulltime { background: #e3f2fd; color: #1565c0; }
+.remote { background: #e8f5e9; color: #2e7d32; }
+.onsite { background: #fff3e0; color: #ef6c00; }
+
+.apply-btn {
+    display: block;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+
     /* ===== FOOTER ===== */
 
     .footer {
@@ -603,10 +669,10 @@ h1 {
     </select>
 </section>
 
-<section class="content">
+<section class="content" id="jobList" >
     <h2>🔥 Featured Jobs</h2>
 
-    <div class="cards">
+    <div class="cards" id="jobCards">
         <div class="job-card featured">
             <div class="company-logo">
               <img src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png" width="200px" height="200px">
@@ -662,8 +728,169 @@ h1 {
             <p class="posted">Posted 1 week ago</p>
             <a href="#" class="apply-btn">Apply Now</a>
         </div>
+        
+        <div class="job-card featured">
+    <div class="company-logo">
+        <img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" width="200" height="200">
     </div>
+    <p class="company">Facebook</p>
+    <h3>Data Scientist</h3>
+    <div class="job-info">
+        <span>💼 3-5 Years</span>
+        <span>💰 ₹12 – 18 LPA</span>
+    </div>
+
+    <span class="tag fulltime">Full Time</span>
+    <span class="tag remote">Remote</span>
+
+    <p class="desc">
+        Analyze large datasets to drive business decisions.
+    </p>
+
+    <p class="skills">
+        <strong>Skills:</strong> Python, R, SQL, Machine Learning
+    </p>
+
+    <p class="posted">Posted 2 weeks ago</p>
+    <a href="#" class="apply-btn">Apply Now</a>
+</div>
+
+        <div class="job-card featured">
+    <div class="company-logo">
+        <img src="https://logos-world.net/wp-content/uploads/2020/08/Netflix-Logo.png" width="300" height="200">
+    </div>
+    <p class="company">Netflix</p>
+    <h3>Backend Engineer</h3>
+
+    <div class="job-info">
+        <span>💼 3-5 Years</span>
+        <span>💰 ₹15 – 20 LPA</span>
+    </div>
+
+    <span class="tag fulltime">Full Time</span>
+    <span class="tag remote">Remote</span>
+
+    <p class="desc">
+        Build scalable backend services and APIs used by millions of users worldwide.
+    </p>
+
+    <p class="skills">
+        <strong>Skills:</strong> Java, Node.js, REST APIs, Microservices, SQL/NoSQL, Docker
+    </p>
+
+    <p class="posted">Posted 2 days ago</p>
+    <a href="#" class="apply-btn">Apply Now</a>
+</div>
+
+        <div class="job-card featured">
+    <div class="company-logo">
+        <img src="https://logos-world.net/wp-content/uploads/2020/11/Infosys-Logo.png" width="200" height="200">
+    </div>
+    <p class="company">Infosys</p>
+    <h3>System Engineer</h3>
+
+    <div class="job-info">
+        <span>💼 0-2 Years</span>
+        <span>💰 ₹4 – 6 LPA</span>
+    </div>
+
+    <span class="tag fulltime">Full Time</span>
+    <span class="tag onsite">Onsite</span>
+
+    <p class="desc">
+        responsible for developing, testing, implementing, verifying, and supporting programs. 
+    </p>
+
+    <p class="skills">
+        <strong>Skills:</strong> Java, Spring Boot, HTML, CSS, JavaScript, MySQL
+    </p>
+
+    <p class="posted">Posted Today</p>
+    <a href="#" class="apply-btn">Apply Now</a>
+</div>
+    </div>
+    <div class="job-card featured">
+    <div class="company-logo">
+        <img src="https://logos-world.net/wp-content/uploads/2020/04/Microsoft-Logo.png" width="200" height="200">
+    </div>
+    <p class="company">Microsoft</p>
+    <h3>Frontend Developer</h3>
+
+    <div class="job-info">
+        <span>💼 1-3 Years</span>
+        <span>💰 ₹8 – 12 LPA</span>
+    </div>
+
+    <span class="tag fulltime">Full Time</span>
+    <span class="tag onsite">Onsite</span>
+
+    <p class="desc">
+        Design and build modern, responsive user interfaces for enterprise applications.
+    </p>
+
+    <p class="skills">
+        <strong>Skills:</strong> HTML, CSS, JavaScript, React, TypeScript, UI/UX basics, Git
+    </p>
+
+    <p class="posted">Posted 3 days ago</p>
+    <a href="#" class="apply-btn">Apply Now</a>
+</div>
+
+<div class="job-card featured">
+    <div class="company-logo">
+        <img src="https://logos-world.net/wp-content/uploads/2020/08/Netflix-Logo.png" width="200" height="200">
+    </div>
+    <p class="company">Netflix</p>
+    <h3>Backend Engineer</h3>
+
+    <div class="job-info">
+        <span>💼 3-5 Years</span>
+        <span>💰 ₹15 – 20 LPA</span>
+    </div>
+
+    <span class="tag fulltime">Full Time</span>
+    <span class="tag remote">Remote</span>
+
+    <p class="desc">
+        Build scalable backend services and APIs used by millions of users worldwide.
+    </p>
+
+    <p class="skills">
+        <strong>Skills:</strong> Java, Node.js, REST APIs, Microservices, SQL/NoSQL, Docker
+    </p>
+
+    <p class="posted">Posted 2 days ago</p>
+    <a href="#" class="apply-btn">Apply Now</a>
+</div>
+
+<div class="job-card featured">
+    <div class="company-logo">
+        <img src="https://logos-world.net/wp-content/uploads/2020/11/Infosys-Logo.png" width="200" height="200">
+    </div>
+    <p class="company">Infosys</p>
+    <h3>Full Stack Developer</h3>
+
+    <div class="job-info">
+        <span>💼 0-2 Years</span>
+        <span>💰 ₹4 – 6 LPA</span>
+    </div>
+
+    <span class="tag fulltime">Full Time</span>
+    <span class="tag onsite">Onsite</span>
+
+    <p class="desc">
+        Develop end-to-end web applications for global enterprise clients.
+    </p>
+
+    <p class="skills">
+        <strong>Skills:</strong> Java, Spring Boot, HTML, CSS, JavaScript, MySQL
+    </p>
+
+    <p class="posted">Posted Today</p>
+    <a href="#" class="apply-btn">Apply Now</a>
+</div>
 </section>
+<script src="jobs.js"></script>
 
 <section class="content light">
     <h2 class="text-success">Job Categories</h2>
