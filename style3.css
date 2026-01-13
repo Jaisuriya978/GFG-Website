@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f8;
+    background: #121212;
 }
 
 .content {
@@ -20,7 +20,7 @@ body {
 }
 
 .job-card {
-    background: #fff;
+    background: #111;
     padding: 20px;
     border-radius: 14px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
