@@ -71,7 +71,73 @@ jobs.forEach(job => {
         <p class="skills"><strong>Skills:</strong> ${job.skills}</p>
         <p class="posted">Posted ${job.posted}</p>
 
-        <a href="#" class="apply-btn">Apply Now</a>
+        <button class="apply-btn">Apply Now</button>
     </div>`;
-});
 
+    jobList.appendChild(card);
+    const applyButtons = document.querySelectorAll('.apply-btn');
+    applyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Application process started!');
+            this.disabled = true;
+            this.innerText = 'Applied';
+            this.style.backgroundColor = '#4CAF50';
+            this.style.cursor = 'not-allowed';
+        });
+    });
+
+    const modal = document.getElementById("jobModal");
+    const modalContent = document.querySelector(".modal-content");
+    const closeModal = document.querySelector(".close");
+
+    card.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalContent.innerHTML = `
+            <span class="close">&times;</span>
+            <h2>${job.role}</h2>
+            <p><strong>Company:</strong> ${job.company}</p>
+            <p><strong>Experience:</strong> ${job.exp}</p>
+            <p><strong>Salary:</strong> ${job.salary}</p>
+            <p><strong>Type:</strong> ${job.type.join(", ")}</p>
+            <p><strong>Description:</strong> ${job.desc}</p>
+            <p><strong>Skills:</strong> ${job.skills}</p>
+        `;
+    }); 
+    closeModal.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        };
+
+        applyForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Application submitted successfully!');
+            selectedJob.button.textContent = 'Applied';
+            selectedJob.button.disabled = true;
+            selectedJob.button.style.backgroundColor = '#4CAF50';
+            selectedJob.button.style.cursor = 'not-allowed';        
+            applyForm.reset();
+            modal.style.display = "none";
+        });
+    }
+
+    const applyBtn = card.querySelector('.apply-btn');
+    applyBtn.addEventListener('click', (e) => {
+        e.stopPropagation();    
+        selectedJob = { job, button: applyBtn };
+        modal.style.display = "block";
+        modalContent.innerHTML = `
+            <span class="close">&times;</span>
+            <h2>${job.role}</h2>
+            <p><strong>Company:</strong> ${job.company}</p>
+            <p><strong>Experience:</strong> ${job.exp}</p>
+            <p><strong>Salary:</strong> ${job.salary}</p>
+            <p><strong>Type:</strong> ${job.type.join(", ")}</p>
+            <p><strong>Description:</strong> ${job.desc}</p>
+            <p><strong>Skills:</strong> ${job.skills}</p>
+        `;
+    });
+
+});
