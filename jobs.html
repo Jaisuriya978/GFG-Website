@@ -583,6 +583,47 @@ h1 {
     cursor: pointer;
 }
 
+
+  .modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #111;
+  padding: 25px;
+  width: 350px;
+  border-radius: 12px;
+  position: relative;
+  animation: scaleUp 0.3s ease;
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.modal-content input,
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+}
+
+
     /* ===== FOOTER ===== */
 
     .footer {
@@ -731,6 +772,7 @@ h1 {
 
     <section class="content" id="jobList" >
 
+
     <h2 class="text-success">🔥 Featured Jobs</h2>
 
     <div class="cards" id="jobCards">
@@ -759,7 +801,7 @@ h1 {
             </p>
 
             <p class="posted">Posted 5 days ago</p>
-            <a href="#" class="apply-btn">Apply Now</a>
+            <button class="btn btn-info apply-btn">Apply Now</button>
         </div>
 
         <div class="job-card featured">
@@ -787,7 +829,7 @@ h1 {
             </p>
 
             <p class="posted">Posted 1 week ago</p>
-            <a href="#" class="apply-btn">Apply Now</a>
+            <button class="btn btn-info apply-btn">Apply Now</button>
         </div>
         
         <div class="job-card featured">
@@ -809,7 +851,7 @@ h1 {
             <strong>Skills:</strong> Python, R, SQL, Machine Learning
           </p>
           <p class="posted">Posted 2 weeks ago</p>
-          <a href="#" class="apply-btn">Apply Now</a>
+          <button class="btn btn-info apply-btn">Apply Now</button>
       </div>
 
         
@@ -834,8 +876,111 @@ h1 {
           </p>
 
           <p class="posted">Posted Today</p>
-          <a href="#" class="apply-btn">Apply Now</a>   
+          <button class="btn btn-info apply-btn">Apply Now</button> 
         </div>
+
+        <div class="job-card featured">
+            <div class="company-logo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" width="200px" height="200px">
+            </div>
+            <p class="company">Microsoft</p>
+            <h3>DevOps Engineer</h3>
+
+            <div class="job-info">
+                <span>💼 3-5 Years</span>
+                <span>💰 ₹11 – 15 LPA</span>
+            </div>
+
+            <span class="tag fulltime">Full Time</span>
+            <span class="tag remote">Remote</span>
+
+            <p class="desc">
+                Design and implement CI/CD pipelines, automate infrastructure,
+                and monitor system performance.
+            </p>
+            <p class="skills">
+                <strong>Skills:</strong> CI/CD tools (Jenkins, GitLab), containerization (Docker, Kubernetes), cloud platforms (Azure, AWS), scripting (Python, Bash), and infrastructure as code (Terraform, Ansible)
+            </p>
+            <p class="posted">Posted 3 days ago</p>
+            <button class="btn btn-info apply-btn">Apply Now</button>
+          </div>
+
+          <div class="job-card featured">
+            <div class="company-logo">
+              <img src="https://cdn.shopify.com/s/files/1/0558/6413/1764/files/Rewrite_IBM_Logo_Design_History_Evolution_7_1024x1024.jpg?v=1695273904" width="200px" height="200px">
+            </div>
+            <p class="company">IBM</p>
+            <h3>Cloud Solutions Architect</h3>
+
+            <div class="job-info">
+                <span>💼 5+ Years</span>
+                <span>💰 ₹15 – 20 LPA</span>
+            </div>
+
+            <span class="tag fulltime">Full Time</span>
+            <span class="tag remote">Remote</span>
+            <p class="desc">
+                Lead cloud architecture design, migration strategies,
+                and best practices for enterprise clients.
+            </p>
+            <p class="skills">
+                <strong>Skills:</strong> Cloud platforms (AWS, Azure, GCP), architecture frameworks (TOGAF), containerization (Docker, Kubernetes), networking, and security best practices
+            </p>
+            <p class="posted">Posted 4 days ago</p>
+            <button class="btn btn-info apply-btn">Apply Now</button>
+          </div>
+
+          <div class="job-card featured">
+            <div class="company-logo">
+              <img src="https://cdn.mos.cms.futurecdn.net/DtGtLda47VdS8pE2iJLbBZ.jpg" width="200px" height="200px">
+            </div>
+            <p class="company">Adobe</p>
+            <h3>Frontend Developer</h3>
+
+            <div class="job-info">
+                <span>💼 2-4 Years</span>
+                <span>💰 ₹9 – 13 LPA</span>
+            </div>
+
+            <span class="tag fulltime">Full Time</span>
+            <span class="tag remote">Remote</span>
+            <p class="desc">
+                Create responsive web applications with a focus on user experience
+                and performance.
+            </p>
+            <p class="skills">
+                <strong>Skills:</strong> HTML, CSS, JavaScript, React/Vue, responsive design, and performance optimization
+            </p>
+            <p class="posted">Posted 6 days ago</p>
+            <button class="btn btn-info apply-btn">Apply Now</button>
+
+          </div>
+
+          <div class="job-card featured">
+            <div class="company-logo">
+              <img src="https://logos-world.net/wp-content/uploads/2021/09/Intel-Symbol.png" width="200px" height="200px">
+            </div>
+            <p class="company">Intel</p>
+            <h3>Embedded Systems Engineer</h3>
+
+            <div class="job-info">
+                <span>💼 3-5 Years</span>
+                <span>💰 ₹10 – 14 LPA</span>
+            </div>
+
+            <span class="tag fulltime">Full Time</span>
+            <span class="tag remote">Remote</span>
+            <p class="desc">
+                Develop firmware and software for embedded systems in IoT devices
+                and consumer electronics.
+            </p>
+            <p class="skills">
+                <strong>Skills:</strong> C/C++, embedded Linux, RTOS, microcontroller programming, and hardware-software integration
+            </p>
+            <p class="posted">Posted 1 week ago</p>
+            <button onclick="openmodal()" class="btn btn-info apply-btn">Apply Now</button>
+
+          </div>
   
     </div>
 </section>
@@ -908,6 +1053,31 @@ h1 {
         </form>
     </div>
 </div>
+
+<!-- APPLY JOB MODAL -->
+<div class="Modal" id="applyModal">
+  <div class="modal-content">
+    <span class="close-btn" id="CloseModal">&times;</span>
+
+    <h3>Apply for Job</h3>
+
+    <form id="applyForm">
+
+      <input type="text" id="name" placeholder="Full Name" required>
+
+      <input type="email" id="email" placeholder="Email Address" required>
+
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+
+      <input type="file" id="resume" required>
+
+      <button type="submit" class="btn btn-success">
+        Submit Application
+      </button>
+    </form>
+  </div>
+</div>
+
 
 <script src="jobs.js"></script>
 

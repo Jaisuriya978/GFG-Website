@@ -90,4 +90,38 @@ jobs.forEach(job => {
         `;
     });
 
+
+
+    const Modal = document.getElementById("applyModal");
+const CloseModal = document.getElementById("closeModal");
+const jobTitleInput = document.getElementById("jobTitle");
+
+// OPEN MODAL & SET JOB TITLE
+document.addEventListener("click", e => {
+  if (e.target.classList.contains("apply-btn")) {
+    const jobCard = e.target.closest(".job-card");
+    const title = jobCard.querySelector("h3").innerText;
+
+    jobTitleInput.value = title;
+    modal.style.display = "flex";
+  }
+});
+
+// CLOSE MODAL
+closeModal.onclick = () => modal.style.display = "none";
+
+window.onclick = e => {
+  if (e.target === modal) modal.style.display = "none";
+};
+
+// FORM SUBMIT
+document.getElementById("applyForm").addEventListener("submit", e => {
+  e.preventDefault();
+
+  alert("✅ Application Submitted Successfully!");
+  modal.style.display = "none";
+  e.target.reset();
+});
+
+
 });
