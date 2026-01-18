@@ -125,3 +125,22 @@ document.getElementById("applyForm").addEventListener("submit", e => {
 
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("applyForm");
+  const successMsg = document.getElementById("successMsg");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop page refresh
+
+    // show success message
+    successMsg.style.display = "block";
+
+    // disable submit button
+    const btn = form.querySelector("button");
+    btn.innerText = "Applied";
+    btn.disabled = true;
+    btn.classList.remove("btn-success");
+    btn.classList.add("btn-secondary");
+  });
+});

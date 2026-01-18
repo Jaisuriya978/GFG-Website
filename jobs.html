@@ -524,6 +524,12 @@ h1 {
     margin-top: 15px;
 }
 
+.applied {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+
 .modal {
     display: none;
     position: fixed;
@@ -801,7 +807,19 @@ h1 {
             </p>
 
             <p class="posted">Posted 5 days ago</p>
-            <button class="btn btn-info apply-btn">Apply Now</button>
+            <button
+  class="btn btn-info apply-btn"
+  onclick="
+    if(this.classList.contains('applied')) return;
+    this.innerText='✅ Applied';
+    this.classList.remove('btn-info');
+    this.classList.add('btn-success','applied');
+    alert('Successfully applied for this job!');
+  "
+>
+  Apply Now
+</button>
+
         </div>
 
         <div class="job-card featured">
@@ -829,7 +847,19 @@ h1 {
             </p>
 
             <p class="posted">Posted 1 week ago</p>
-            <button class="btn btn-info apply-btn">Apply Now</button>
+            <button
+  class="btn btn-info apply-btn"
+  onclick="
+    if(this.classList.contains('applied')) return;
+    this.innerText='✅ Applied';
+    this.classList.remove('btn-info');
+    this.classList.add('btn-success','applied');
+    alert('Successfully applied for this job!');
+  "
+>
+  Apply Now
+</button>
+
         </div>
         
         <div class="job-card featured">
@@ -851,7 +881,19 @@ h1 {
             <strong>Skills:</strong> Python, R, SQL, Machine Learning
           </p>
           <p class="posted">Posted 2 weeks ago</p>
-          <button class="btn btn-info apply-btn">Apply Now</button>
+          <button
+  class="btn btn-info apply-btn"
+  onclick="
+    if(this.classList.contains('applied')) return;
+    this.innerText='✅ Applied';
+    this.classList.remove('btn-info');
+    this.classList.add('btn-success','applied');
+    alert('Successfully applied for this job!');
+  "
+>
+  Apply Now
+</button>
+
       </div>
 
         
@@ -876,7 +918,19 @@ h1 {
           </p>
 
           <p class="posted">Posted Today</p>
-          <button class="btn btn-info apply-btn">Apply Now</button> 
+          <button
+  class="btn btn-info apply-btn"
+  onclick="
+    if(this.classList.contains('applied')) return;
+    this.innerText='✅ Applied';
+    this.classList.remove('btn-info');
+    this.classList.add('btn-success','applied');
+    alert('Successfully applied for this job!');
+  "
+>
+  Apply Now
+</button>
+
         </div>
 
         <div class="job-card featured">
@@ -902,7 +956,19 @@ h1 {
                 <strong>Skills:</strong> CI/CD tools (Jenkins, GitLab), containerization (Docker, Kubernetes), cloud platforms (Azure, AWS), scripting (Python, Bash), and infrastructure as code (Terraform, Ansible)
             </p>
             <p class="posted">Posted 3 days ago</p>
-            <button class="btn btn-info apply-btn">Apply Now</button>
+            <button
+  class="btn btn-info apply-btn"
+  onclick="
+    if(this.classList.contains('applied')) return;
+    this.innerText='✅ Applied';
+    this.classList.remove('btn-info');
+    this.classList.add('btn-success','applied');
+    alert('Successfully applied for this job!');
+  "
+>
+  Apply Now
+</button>
+
           </div>
 
           <div class="job-card featured">
@@ -978,7 +1044,19 @@ h1 {
                 <strong>Skills:</strong> C/C++, embedded Linux, RTOS, microcontroller programming, and hardware-software integration
             </p>
             <p class="posted">Posted 1 week ago</p>
-            <button onclick="openmodal()" class="btn btn-info apply-btn">Apply Now</button>
+            <button
+  class="btn btn-info apply-btn"
+  onclick="
+    if(this.classList.contains('applied')) return;
+    this.innerText='✅ Applied';
+    this.classList.remove('btn-info');
+    this.classList.add('btn-success','applied');
+    alert('Successfully applied for this job!');
+  "
+>
+  Apply Now
+</button>
+
 
           </div>
   
@@ -1071,10 +1149,25 @@ h1 {
 
       <input type="file" id="resume" required>
 
-      <button type="submit" class="btn btn-success">
-        Submit Application
-      </button>
     </form>
+    <form 
+  onsubmit="
+    event.preventDefault();
+    document.getElementById('successMsg').style.display='block';
+    this.querySelector('button').innerText='Applied';
+    this.querySelector('button').disabled=true;
+    this.querySelector('button').className='btn btn-secondary';
+  "
+>
+  <button type="submit" class="btn btn-success">
+    Submit Application
+  </button>
+</form>
+
+<p id="successMsg" style="display:none; color:#28a745; margin-top:10px;">
+  ✅ Successfully Applied!
+</p>
+
   </div>
 </div>
 
