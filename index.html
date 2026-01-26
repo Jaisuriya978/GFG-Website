@@ -400,8 +400,36 @@ h1 {
   <header>
     <div class="logo">GFG</div>
     <div class="search-box">
-      <input type="text" placeholder="Search..." />
-    </div>
+    <input 
+      type="text" 
+      id="searchInput"
+      placeholder="Search topics..."
+    />
+   </div>
+   <script>
+      const pages = {
+    html: "html5.html",
+    css: "css3.html",
+    javascript: "js.html",
+    react: "react.html",
+    bootstrap: "bootstrap.html",
+    iot: "iot.html",
+    };
+
+  document.getElementById("searchInput").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      const value = e.target.value.toLowerCase().trim();
+
+      if (pages[value]) {
+        window.location.href = pages[value];
+      } else {
+        window.location.href = "not-found.html";
+      }
+    }
+  });
+</script>
+
+
 
     <nav>
       <a href="login.html">Login</a>
@@ -412,11 +440,12 @@ h1 {
       <a href="jobs.html">Jobs</a>
     </nav>
   </header>
-  <center>
+  <div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     
-    <a class="navbar-brand" href="index.html">GeeksforGeeks</a>
+    <a class="navbar-brand" href="index.html">
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220413171839/gfgwhite.png" width="50px">      GeeksforGeeks</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -429,6 +458,9 @@ h1 {
         </li>
         <li class="nav-item">
           <a class="nav-link" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="exploreroadmaps.html">Explore</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="tutorials.html">Tutorials</a>
@@ -582,7 +614,7 @@ h1 {
 
   </div>
 </div>
-</center>
+</div>
 
 
   <div class="container text-white my-5 p-1 rounded">
@@ -590,68 +622,88 @@ h1 {
   </div>
   <div class="cards">
     <div class="card bg-primary" style="width: 300px;">
-    <h2>Data Structure and Algorithms</h2>
+      <div><img src="https://png.pngtree.com/png-clipart/20230920/original/pngtree-concept-icon-with-blue-gradient-for-data-structures-and-algorithms-vector-png-image_12700673.png"  alt="dsa"> </div>
+      <h2>Data Structure and Algorithms</h2>
+      <div><img src="https://i.ytimg.com/vi/lq60Vfa_U4U/maxresdefault.jpg" alt="dsa1"></div>
     <a href="dsa1.html">
         <button>View more →</button>
     </a>
   </div>
   <br>
   <div class="card bg-danger" style="width: 300px;">
+    <div><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200214165928/Web-Development-Course-Thumbnail.jpg" alt="web"></div>
     <h2>Web<br>Development</h2>
+    <div><img src="https://static.vecteezy.com/system/resources/previews/000/665/651/original/vector-isometric-concept-of-web-development-for-banner-and-website.jpg" alt="web1"></div>
     <a href="webdev.html">
         <button>View more →</button>
     </a>
   </div>
   <br>
   <div class="card" style="width: 300px; background-color: #FF8C00;">
+    <div><img src="https://static.vecteezy.com/system/resources/previews/019/038/910/original/team-of-ux-ui-designer-mobile-development-experience-app-vector.jpg" alt="UiUx"></div>
     <h2>UI/UX<br>Design</h2>
+    <div><img src="https://minervainfotech.com/blog/wp-content/uploads/2019/09/Untitled-6-1920x1280.jpg" alt="uIuX"></div>
     <a href="uiux.html">
       <button>View more →</button>
     </a>
   </div>
   <br>
   <div class="card bg-success" style="width: 300px;">
-    <h2>AI ML & Data Science</h2>
+    <div><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm3mTM4i_DkVKEo9vy4QyhNSgA0U8jj8eUXieZkodrbsSZ44Ix5Jxp8tDKrDMIIrYEtCWvPA2NpmEybtesKbDgP9UxFYUPcIFhokv-CScDXhH_9Fav00YwthyrtEx9zPS2d1jJraS0DzFvpwvm6nbScSvjATHwdVC0SMl_bumQlO7iuzdbImWdlcbntw/w640-h398/AIML%20Thumbnail.jpg" alt="Aiml"></div>
+    <h2>AI ML <br> Data Science</h2>
+    <div><img src="https://www.researchgate.net/profile/Janos-Abonyi/publication/357353200/figure/fig1/AS:1108082033721345@1641198752366/The-relationship-between-data-science-big-data-big-data-analytics-and-data-analytics.png" alt="ds"></div>
       <a href="aiml.html">
           <button>View more →</button>
       </a>
   </div><br>
   <div class="card bg-secondary" style="width:300px;"> 
+    <div><img src="https://ostechnix.com/wp-content/uploads/2021/12/Cloud-Computing.png" alt="cc"></div>
   <h2>Cloud<br>Computing</h2>
+     <div><img src="https://img.freepik.com/premium-photo/cloud-computing-images_861346-30261.jpg" alt="cc1"></div>
     <a href="cloud.html">
       <button>View more →</button>
     </a>
   </div>
   <br>
   <div class="card bg-warning" style="width: 300px;">
+    <div><img src="https://1.bp.blogspot.com/-GRNuxO0n9ys/YG_wiYUHCnI/AAAAAAAAbh0/ZciwwXqrm_sLU3fMhLHz_HgFwa0oKG_dgCNcBGAsYHQ/s16000/oops-IN-JAVA.png" alt="oop"></div>
   <h2>OOPS</h2>
+     <div><img src="https://1.bp.blogspot.com/-CH0HfZUWGc0/Xr50dA5ksbI/AAAAAAAAAWI/-YmxGDgQWBYV3_R3yDML_wX0HHgA_IWMQCLcBGAsYHQ/s1600/oops%2Ball.jpg" alt="oop1"></div>
     <a href="oops.html">
       <button>View more →</button> 
     </a>
   </div><br>
   <div class="card" style="background-color: blueviolet; width: 300px;">
+    <div><img src="https://www.cybersecurityspecialists.co.uk/wp-content/uploads/2023/07/1657711469335.png" alt="cs"></div>
   <h2>Cyber<br>Security</h2>
+    <div><img src="https://www.pronixinc.com/top-5-cybersecurity-threats-c-level-executives.PNG" alt="cs1"></div>
     <a href="cybersecurity.html">
       <button>View more →</button>
     </a>
   </div>
   <br>
   <div class="card" style="background-color: #FF69B4; width: 300px;">
+    <div><img src="https://techstory.in/wp-content/uploads/2016/05/0847d5211daa2cfcfde28d825aa07d5d_XL.jpg" alt="iot1"></div>
     <h2>Internet of<br>Things</h2>
+    <div><img src="https://www.regentstudies.com/wp-content/uploads/2024/08/dall%C2%B7e-2024-08-26-202932-a-large-eye-catching-banner-image-representing-the-impact-of-the-internet-of-things-iot-on-daily-life-and-industry-the-design-should-feature-eleme.webp" alt="iot2"></div>
     <a href="iot.html">
       <button>View more →</button>
     </a>
   </div>
   <br>
   <div class="card" style="background-color: #D57A7A; width: 300px;">
+    <div><img src="https://www.datocms-assets.com/59840/1665590970-complete-blueprint-to-all-types-of-software-testing.png?auto=format&fit=max&w=1200" alt="st1"></div>
     <h2>Software<br>Testing</h2>
+    <div><img src="https://cms-cdn.katalon.com/Software_Testing_Life_Cycle_by_Katalon_c6df3f9611.png" alt="st"></div>
     <a href="softwaretesting.html">
       <button>View more →</button>
     </a>
   </div>
   <br>
   <div class="card" style="background-color: brown; width: 300px;">
+    <div><img src="https://media.geeksforgeeks.org/wp-content/uploads/20221125161227/Blockchain1040.png" alt="bc"></div>
     <h2>Blockchain</h2>
+    <div><img src="https://www.insidehighered.com/sites/default/server_files/media/iStock-892082986.jpg" alt="bc1"></div>
     <a href="blockchain.html">
       <button>View more →</button>
     </a>
@@ -675,14 +727,41 @@ h1 {
         </p>
 
         <div class="hero-search d-flex mb-4">
-          <input 
-            type="text" 
-            class="form-control me-2" 
-          />
-          <button class="btn btn-success px-4">
-            Search
-          </button>
-        </div>
+  <input 
+    type="text" 
+    id="searchInput"
+    class="form-control me-2" 
+    placeholder="Search topics..."
+  />
+  <button class="btn btn-success px-4" onclick="handleSearch()">
+    Search
+  </button>
+</div>
+          <script>
+function handleSearch() {
+  const search = document.getElementById("searchInput").value.toLowerCase().trim();
+
+  const routes = {
+    "html": "html5.html",
+    "css": "css3.html",
+    "javascript": "js.html",
+    "react": "react.html",
+    "python": "python.html",
+    "java": "java.html",
+    "node": "node.html",
+    "bootstrap": "bootstrap5.html",
+    "sql": "sql.html"
+  };
+
+  if (routes[search]) {
+    window.location.href = routes[search];
+  } else {
+    alert("Topic not found ❌");
+  }
+}
+</script>
+
+
 
         <div class="mb-3">
           <span class="badge bg-secondary me-2">DSA</span>
@@ -709,9 +788,15 @@ h1 {
         />
         <img 
           src="https://static.vecteezy.com/system/resources/thumbnails/007/469/004/small_2x/graduated-student-in-simple-flat-personal-profile-icon-or-symbol-people-concept-illustration-vector.jpg"
-          alt="Learning Illustration"
+          alt="Learning Illustration1"
           class="img-fluid"
           style="max-width: 240px; max-height: 180px;"
+        />
+        <img 
+          src="https://pg-group.online/wp-content/uploads/2023/05/6101073-scaled.jpg" 
+          alt="Learning Illustration2" 
+          class="img-fluid"
+          style="max-width: 340px; max-height: 380px;"
         />
       </div>
     </div>
@@ -771,9 +856,9 @@ h1 {
     <div class="cards">
       <div class="card">
         <div class="avatar">
-        <img src="https://miro.medium.com/v2/resize:fit:1400/1*L1FbcKSvUAPO_y5L6wwEQA.png" alt="Interview Experience"></div>
-        <h3>On-campus Interview Experience</h3>
-        <p>Real student interview experiences from top companies.</p>
+        <img src="https://static.vecteezy.com/system/resources/previews/041/929/711/non_2x/web-development-concept-with-character-situation-man-developer-working-with-program-languages-at-computer-coding-and-creates-layouts-illustration-with-people-scene-in-flat-design-for-web-vector.jpg" alt="Interview Experience"></div>
+        <h3>Learn and Practice</h3>
+        <p>Learn Programming Languages and keep on Practice the real world problems</p>
       </div>
       <div class="card">
         <div class="avatar">
