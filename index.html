@@ -725,44 +725,7 @@ h1 {
           Learn in-demand skills with structured roadmaps, hands-on practice,
           and expert guidance. Start your journey from beginner to pro today.
         </p>
-
-        <div class="hero-search d-flex mb-4">
-  <input 
-    type="text" 
-    id="searchInput"
-    class="form-control me-2" 
-    placeholder="Search topics..."
-  />
-  <button class="btn btn-success px-4" onclick="handleSearch()">
-    Search
-  </button>
-</div>
-          <script>
-function handleSearch() {
-  const search = document.getElementById("searchInput").value.toLowerCase().trim();
-
-  const routes = {
-    "html": "html5.html",
-    "css": "css3.html",
-    "javascript": "js.html",
-    "react": "react.html",
-    "python": "python.html",
-    "java": "java.html",
-    "node": "node.html",
-    "bootstrap": "bootstrap5.html",
-    "sql": "sql.html"
-  };
-
-  if (routes[search]) {
-    window.location.href = routes[search];
-  } else {
-    alert("Topic not found ❌");
-  }
-}
-</script>
-
-
-
+        
         <div class="mb-3">
           <span class="badge bg-secondary me-2">DSA</span>
           <span class="badge bg-secondary me-2">Web Development</span>
