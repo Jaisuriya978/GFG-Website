@@ -76,6 +76,14 @@ body {
     margin: 40px auto;
 }
 
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    
+}
+
 @media (min-width: 768px){
     .container{
         width: 75%;
