@@ -1,0 +1,44 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #020617, #0f172a);
+            color: #e5e7eb;
+        }
+
+        .page-title {
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+
+        .page-title h1 {
+            color: #22c55e;
+            font-weight: 700;
+        }
+
+        .page-title p {
+            color: #9ca3af;
+        }
+
+        .section-card {
+            background: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .section-card h3 {
+            color: #22c55e;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 14px;
+        }
