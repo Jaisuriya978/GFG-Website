@@ -1004,7 +1004,18 @@ h1 {
                 <strong>Skills:</strong> Cloud platforms (AWS, Azure, GCP), architecture frameworks (TOGAF), containerization (Docker, Kubernetes), networking, and security best practices
             </p>
             <p class="posted">Posted 4 days ago</p>
-            <button class="btn btn-info apply-btn">Apply Now</button>
+            <button
+  class="btn btn-info apply-btn"
+  onclick="
+    if(this.classList.contains('applied')) return;
+    this.innerText='✅ Applied';
+    this.classList.remove('btn-info');
+    this.classList.add('btn-success','applied');
+    alert('Successfully applied for this job!');
+  "
+>
+  Apply Now
+</button>
           </div>
 
           <div class="job-card featured">
@@ -1029,7 +1040,18 @@ h1 {
                 <strong>Skills:</strong> HTML, CSS, JavaScript, React/Vue, responsive design, and performance optimization
             </p>
             <p class="posted">Posted 6 days ago</p>
-            <button class="btn btn-info apply-btn">Apply Now</button>
+            <button
+  class="btn btn-info apply-btn"
+  onclick="
+    if(this.classList.contains('applied')) return;
+    this.innerText='✅ Applied';
+    this.classList.remove('btn-info');
+    this.classList.add('btn-success','applied');
+    alert('Successfully applied for this job!');
+  "
+>
+  Apply Now
+</button>
 
           </div>
 
