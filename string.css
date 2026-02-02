@@ -1,0 +1,116 @@
+body {
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(135deg, #198754, #146c43);
+            color: white;
+            padding: 60px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+        .content-card {
+            background: #111;
+            color:#333;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+        .card {
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .badge-custom {
+            background-color: #070b14;
+            color: #0f9d58;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #ccc;
+            margin-top: 40px;
+        }
+
+        .footer {
+  background-color: #070b14;
+  color: #cbd5e1;
+  padding: 50px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h3,
+.footer-col .brand {
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #22c55e;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  margin-top: 40px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+        .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 12px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  color: #cbd5e1;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #22c55e;
+  color: #0f172a;
+}
