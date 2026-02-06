@@ -7,8 +7,6 @@ function resetPassword() {
         message.className = "message error";
         return;
       }
-
-      // Demo success message (replace with backend API later)
       message.textContent = "Password reset link sent to your email!";
       message.className = "message success";
     }
