@@ -15,7 +15,7 @@ function handleLogin() {
     }
 
     
-    if (email === "admin@gmail.com" && password === "123456") {
+    if (email === "jaisuriya978@gmail.com" && password === "Jjai@0007") {
         if (remember) {
             localStorage.setItem("userEmail", email);
         }
