@@ -10,6 +10,26 @@ body {
     color: white;
 }
 
+/* ===== THEME VARIABLES ===== */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-bg: #ffffff;
+  --border-color: #e5e5e5;
+  --header-bg: #f8f9fa;
+  --nav-bg: #f1f1f1;
+}
+
+body.dark {
+  --bg-color: #111111;
+  --text-color: #ffffff;
+  --card-bg: #1a1a1a;
+  --border-color: #2a2a2a;
+  --header-bg: #1a1a1a;
+  --nav-bg: #151515;
+}
+
+
 /* NAVBAR */
 .navbar {
     display: flex;
