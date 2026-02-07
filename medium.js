@@ -87,17 +87,8 @@ function loadProblem(){
     document.getElementById("codeArea").value = templates[lang];
 }
 
-/* RUN (DEMO) */
-function runCode(){
-    document.getElementById("output").innerText =
-        "Code executed successfully (demo output).";
-}
 
-/* SUBMIT (DEMO) */
-function submitCode(){
-    document.getElementById("output").innerText =
-        "Medium problem submitted successfully ✔";
-}
+
 
 function runCode() {
   const lang = document.getElementById("language").value;
