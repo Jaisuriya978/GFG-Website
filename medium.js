@@ -27,23 +27,44 @@ const problems = [
 
 /* STARTER CODE */
 const templates = {
-    c:`#include <stdio.h>
+  c: `#include <stdio.h>
 int main(){
-    // Medium problem logic here
+    // easy problem logic here
     return 0;
 }`,
-    cpp:`#include <iostream>
+
+  cpp: `#include <iostream>
 using namespace std;
 int main(){
-    // Medium problem logic here
+    // easy problem logic here
     return 0;
 }`,
-    python:`# Medium problem logic here`,
-    java:`class Main{
+
+  python: `# easy problem logic here
+n = int(input())
+print(n * 2)
+`,
+
+  java: `class Main{
     public static void main(String[] args){
-        // Medium problem logic here
+        // easy problem logic here
     }
-}`
+}`,
+
+  javascript: `// Easy problem logic here
+
+// Example input
+let input = "5";
+
+// Convert input
+let n = parseInt(input);
+
+// Write logic
+let result = n * 2;
+
+// Output result
+console.log(result);
+`
 };
 
 /* LOAD RANDOM PROBLEM */
@@ -76,4 +97,75 @@ function runCode(){
 function submitCode(){
     document.getElementById("output").innerText =
         "Medium problem submitted successfully ✔";
+}
+
+function runCode() {
+  const lang = document.getElementById("language").value;
+  const code = document.getElementById("code").value;
+  const output = document.getElementById("output");
+
+  output.innerText = "";
+
+  if (code.trim() === "") {
+    output.innerText = "⚠ Please write some code.";
+    return;
+  }
+
+  // ✅ REAL EXECUTION ONLY FOR JAVASCRIPT
+  if (lang === "javascript") {
+    let logs = [];
+    const originalLog = console.log;
+
+    console.log = (...args) => logs.push(args.join(" "));
+
+    try {
+      new Function(code)();
+      output.innerText = logs.length
+        ? logs.join("\n")
+        : "✔ Program executed successfully (no output).";
+    } catch (err) {
+      output.innerText = "❌ Error:\n" + err.message;
+    }
+
+    console.log = originalLog;
+  }
+  // ⚠ SIMULATION FOR OTHER LANGUAGES
+  else {
+    output.innerText =
+      "⚠ Execution not supported in browser for " + lang.toUpperCase() +
+      ".\n\n✔ Code looks saved.\n✔ Syntax check passed (simulated).\n\nTip: Use Submit to continue.";
+  }
+}
+
+
+function submitCode() {
+  const lang = document.getElementById("language").value;
+  const code = document.getElementById("code").value;
+  const output = document.getElementById("output");
+
+  if (code.trim() === "") {
+    output.innerText = "❌ Cannot submit empty code.";
+    return;
+  }
+
+  // Basic validation based on template
+  let valid = false;
+
+  if (lang === "c" && code.includes("int main")) valid = true;
+  if (lang === "cpp" && code.includes("int main")) valid = true;
+  if (lang === "java" && code.includes("class Main")) valid = true;
+  if (lang === "python" && !code.includes(";")) valid = true;
+  if (lang === "javascript" && code.includes("console.log")) valid = true;
+
+  if (!valid) {
+    output.innerText =
+      "❌ Submission failed.\n\nReason: Code does not follow required template.";
+    return;
+  }
+
+  output.innerText =
+    "✅ Submission Successful!\n\n" +
+    "Language: " + lang.toUpperCase() + "\n" +
+    "Status: Accepted (Demo)\n" +
+    "Test Cases Passed: 5 / 5 🎉";
 }

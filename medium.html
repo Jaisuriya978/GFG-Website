@@ -663,15 +663,16 @@ h1 {
 
     <!-- COMPILER -->
     <div class="compiler">
-        <textarea id="codeArea" placeholder="Write your code here..."></textarea>
+        <textarea id="code" rows="10" style="width:100%; font-family:monospace;"> </textarea>
 
-        <div class="actions">
-            <button onclick="runCode()">Run</button>
-            <button onclick="submitCode()">Submit</button>
-        </div>
+        <br><br>
 
-        <div class="output" id="output">Output will appear here...</div>
+        <button onclick="runCode()">Run Code</button>
+        <button onclick="submitCode()">Submit</button>
+
+        <pre id="output" style="background:#111;color:#0f6;padding:10px;"></pre>
     </div>
+
 
 </div>
 
