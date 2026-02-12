@@ -1,0 +1,56 @@
+body {
+            background-color: #333;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #22c55e, #15803d);
+            color: white;
+            padding: 70px 20px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        .roadmap-card {
+            background: #111;
+            color: #e5e7eb;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .roadmap-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 14px 35px rgba(0,0,0,0.5);
+        }
+
+        .roadmap-card h4 {
+            color: #22c55e;
+            font-weight: 700;
+        }
+
+        .roadmap-card ul li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .btn-roadmap {
+            background: #22c55e;
+            color: #022c22;
+            font-weight: 600;
+            border-radius: 8px;
+        }
+
+        .btn-roadmap:hover {
+            background: #16a34a;
+            color: #022c22;
+        }
+
+        footer {
+            background: #222;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
