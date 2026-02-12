@@ -1,4 +1,4 @@
-// microserices.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Microservices page loaded");
