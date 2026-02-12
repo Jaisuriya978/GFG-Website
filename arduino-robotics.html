@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arduino in Robotics | Learn Robotics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="arduino-robotics.css">
+
+  <style>
+    body {
+      background-color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #021e11, #3ae796);
+      color: white;
+      padding: 60px 20px;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .arduino-card {
+      background: #111;
+      color: whitesmoke;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .arduino-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      background: #000;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #22c55e;
+    }
+
+    .arduino-card:hover {
+      transform: scale(1.03);
+      border: 1px solid #22c55e;
+    }
+
+    .active-card {
+      border: 2px solid #22c55e;
+      box-shadow: 0 0 15px #22c55e;
+    }
+
+    #infoBox {
+      background: #000;
+      color: #22c55e;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #ccc;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="fw-bold">Arduino in Robotics</h1>
+    <p class="mt-3">Arduino is the brain of many beginner and advanced robots</p>
+  </div>
+</section>
+
+<!-- Arduino Content -->
+<div class="container my-5">
+  <div class="row">
+
+    <!-- Arduino UNO -->
+    <div class="col-md-6">
+      <div class="arduino-card" onclick="showArduino('uno', this)">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" alt="Arduino Uno">
+        <h4><i class="fas fa-microchip me-2"></i>Arduino UNO</h4>
+        <p>Most popular Arduino board.</p>
+      </div>
+    </div>
+
+    <!-- Arduino Nano -->
+    <div class="col-md-6">
+      <div class="arduino-card" onclick="showArduino('nano', this)">
+        <img src="https://i0.wp.com/www.electronics-lab.com/wp-content/uploads/2017/02/ARDUINO_NANO.png?strip=all" alt="Arduino Nano">
+        <h4><i class="fas fa-microchip me-2"></i>Arduino Nano</h4>
+        <p>Compact and breadboard-friendly.</p>
+      </div>
+    </div>
+
+    <!-- Arduino Mega -->
+    <div class="col-md-6">
+      <div class="arduino-card" onclick="showArduino('mega', this)">
+        <img src="https://www.passion-radio.fr/38/mega-2560.jpg" alt="Arduino Mega">
+        <h4><i class="fas fa-microchip me-2"></i>Arduino Mega</h4>
+        <p>For large and complex projects.</p>
+      </div>
+    </div>
+
+    <!-- Why Arduino -->
+    <div class="col-md-6">
+      <div class="arduino-card" onclick="showArduino('why', this)">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino Logo">
+        <h4><i class="fas fa-question-circle me-2"></i>Why Arduino?</h4>
+        <p>Perfect for robotics beginners.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Info Box -->
+  <div id="infoBox"></div>
+
+  <!-- Demo Button -->
+  <div class="text-center mt-4">
+    <button class="btn btn-success" onclick="simulateArduino()">Run Sample Code</button>
+  </div>
+
+  <!-- Navigation -->
+  <div class="text-center mt-4">
+    <a href="robot-components.html" class="btn btn-outline-success me-2">← Back</a>
+    <a href="index.html" class="btn btn-success">Home</a>
+    <a href="raspberrypi-robotics.html" class="btn btn-outline-success ms-2">Next →</a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Robotics Learning Platform. All rights reserved.</p>
+</footer>
+
+<script src="arduino-robotics.js"></script>
+
+</body>
+</html>

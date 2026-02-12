@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Robot Control Systems | Learn Robotics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+      color: whitesmoke;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #198754, #146c43);
+      color: white;
+      padding: 60px 20px;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .topic-card {
+      background: #111;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-left: 5px solid #22c55e;
+    }
+
+    .formula-box {
+      background: #000;
+      color: #22c55e;
+      padding: 15px;
+      border-radius: 8px;
+      font-family: monospace;
+      margin-top: 10px;
+    }
+
+    input {
+      background: #222 !important;
+      color: white !important;
+      border: 1px solid #22c55e !important;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #ccc;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="fw-bold">Robot Control Systems</h1>
+    <p>How robots achieve accurate and stable motion</p>
+  </div>
+</section>
+
+<div class="container my-5">
+
+  <!-- Intro -->
+  <div class="topic-card">
+    <h3><i class="fas fa-sliders-h me-2"></i>What is Robot Control?</h3>
+    <p>
+      Robot control ensures that a robot moves and behaves in a desired manner
+      by continuously adjusting motor inputs based on system behavior.
+    </p>
+  </div>
+
+  <!-- Open vs Closed -->
+  <div class="topic-card">
+    <h3><i class="fas fa-random me-2"></i>Open Loop vs Closed Loop</h3>
+    <ul>
+      <li><strong>Open Loop</strong> – No feedback (e.g., timer-based motor control)</li>
+      <li><strong>Closed Loop</strong> – Uses feedback (e.g., encoder-based control)</li>
+    </ul>
+  </div>
+
+  <!-- PID Controller -->
+  <div class="topic-card">
+    <h3><i class="fas fa-chart-line me-2"></i>PID Controller</h3>
+    <p><strong>Control Law:</strong></p>
+
+    <div class="formula-box">
+      Output = Kp·e + Ki∫e dt + Kd·(de/dt)
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-3">
+        <label>Kp</label>
+        <input type="number" id="kp" class="form-control" value="1">
+      </div>
+      <div class="col-md-3">
+        <label>Ki</label>
+        <input type="number" id="ki" class="form-control" value="0">
+      </div>
+      <div class="col-md-3">
+        <label>Kd</label>
+        <input type="number" id="kd" class="form-control" value="0">
+      </div>
+      <div class="col-md-3">
+        <label>Error (e)</label>
+        <input type="number" id="error" class="form-control" value="10">
+      </div>
+    </div>
+
+    <button class="btn btn-success mt-3" onclick="calculatePID()">
+      Calculate Control Output
+    </button>
+
+    <div class="formula-box mt-3">
+      Control Output = <span id="pidResult">0</span>
+    </div>
+  </div>
+
+  <!-- Control Applications -->
+    <div class="topic-card">
+        <h3><i class="fas fa-cogs me-2"></i>Control Applications</h3>
+        <ul>
+        <li>Motor speed control</li>
+        <li>Line-following robots</li>
+        <li>Drone stabilization</li>
+        <li>Industrial automation</li>
+        </ul>
+    </div>
+
+  <!-- Usages -->
+  <div class="topic-card">
+    <h3><i class="fas fa-robot me-2"></i>Common Usage Scenarios</h3>
+    <ul>
+        <li>Robots use control systems to maintain stability and accuracy in tasks like navigation, manipulation, and interaction.</li>
+        <li>Control algorithms are implemented in microcontrollers or embedded systems within the robot.</li>
+        <li>Advanced control techniques include adaptive control, model predictive control, and machine learning-based control.</li>
+        <li>Effective control is crucial for safety, efficiency, and performance in robotic applications.</li>
+    </ul>
+  </div>
+
+  <!-- Navigation -->
+  <div class="text-center">
+    <a href="robot-dynamics.html" class="btn btn-outline-success me-2">← Robot Dynamics</a>
+        <a href="index.html" class="btn btn-outline-success me-2">Home</a>
+        <a href="robot-trajectory-planning.html" class="btn btn-success">
+        Next: Trajectory Planning →</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 Robotics Learning Platform. All rights reserved.</p>
+</footer>
+
+<!-- External JavaScript -->
+<script src="robot-control.js"></script>
+
+</body>
+</html>

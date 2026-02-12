@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robotics Resources | Robotics Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #22c55e, #166534);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .resource-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        footer {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1 class="fw-bold">Robotics Learning Resources</h1>
+    <p>Explore tutorials, tools, books, and platforms to master robotics</p>
+</section>
+
+<div class="container my-5">
+
+    <!-- Search and Filter -->
+    <div class="mb-4">
+        <input type="text" id="searchInput" class="form-control mb-3"
+               placeholder="Search resources...">
+
+        <select id="categoryFilter" class="form-select">
+            <option value="all">All Categories</option>
+            <option value="tutorial">Tutorial</option>
+            <option value="platform">Platform</option>
+            <option value="book">Book</option>
+            <option value="tool">Tool</option>
+        </select>
+    </div>
+
+    <!-- Resource List -->
+    <div id="resourceContainer">
+
+        <div class="resource-card" data-category="tutorial">
+            <h5>ROS Tutorials</h5>
+            <p>Learn Robot Operating System fundamentals and advanced concepts.</p>
+        </div>
+
+        <div class="resource-card" data-category="platform">
+            <h5>Arduino Official Website</h5>
+            <p>Platform for learning embedded systems and robotics projects.</p>
+        </div>
+
+        <div class="resource-card" data-category="book">
+            <h5>Introduction to Robotics by John J. Craig</h5>
+            <p>Comprehensive robotics textbook covering kinematics and control.</p>
+        </div>
+
+        <div class="resource-card" data-category="tool">
+            <h5>Gazebo Simulator</h5>
+            <p>Powerful 3D robotics simulator for testing robot models.</p>
+        </div>
+
+        <div class="resource-card" data-category="platform">
+            <h5>Raspberry Pi</h5>
+            <p>Microcomputer platform widely used in robotics applications.</p>
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="robot-programming.html" class="btn btn-outline-success me-2">← Previous</a>
+        <a href="index.html" class="btn btn-success">Back to Home</a>
+        <a href="robotics-community.html" class="btn btn-outline-success">Next →</a>
+    </div>
+
+</div>
+
+<!-- Scroll Top Button -->
+<button id="scrollTopBtn" class="btn btn-success">↑ Top</button>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Robotics Learning Platform</p>
+</footer>
+
+<!-- External JavaScript -->
+<script src="robotics-resources.js"></script>
+
+</body>
+</html>

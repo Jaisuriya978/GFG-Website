@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Robot Trajectory Planning | Learn Robotics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+      color: whitesmoke;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #198754, #146c43);
+      color: white;
+      padding: 60px 20px;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .topic-card {
+      background: #111;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-left: 5px solid #22c55e;
+    }
+
+    .formula-box {
+      background: #000;
+      color: #22c55e;
+      padding: 15px;
+      border-radius: 8px;
+      font-family: monospace;
+      margin-top: 10px;
+    }
+
+    input {
+      background: #222 !important;
+      color: white !important;
+      border: 1px solid #22c55e !important;
+    }
+
+    #robot {
+      width: 40px;
+      height: 40px;
+      background: #22c55e;
+      border-radius: 50%;
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .track {
+      height: 6px;
+      background: #555;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #ccc;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="fw-bold">Robot Trajectory Planning</h1>
+    <p>Planning smooth motion between points</p>
+  </div>
+</section>
+
+<div class="container my-5">
+
+  <!-- Explanation -->
+  <div class="topic-card">
+    <h3><i class="fas fa-route me-2"></i>What is Trajectory Planning?</h3>
+    <p>
+      Trajectory planning determines how a robot moves from one position
+      to another smoothly and safely over time.
+    </p>
+    <p>
+      It considers position, velocity, and acceleration constraints.
+    </p>
+    <p>
+        Common trajectory types include linear, cubic, and logistic trajectories.
+    </p>
+    <p>
+        Trajectory planning is crucial for tasks like pick-and-place, navigation,
+        and any application requiring precise motion control.
+    </p>
+    <p>
+        It ensures efficient, safe, and accurate robot movements in various environments.
+    </p>
+  </div>
+
+  <!-- Linear Trajectory -->
+  <div class="topic-card">
+    <h3><i class="fas fa-chart-line me-2"></i>Linear Trajectory Formula</h3>
+
+    <div class="formula-box">
+      Position(t) = Start + (End - Start) × (t / TotalTime)
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-3">
+        <label>Start Position</label>
+        <input type="number" id="startPos" class="form-control" value="0">
+      </div>
+      <div class="col-md-3">
+        <label>End Position</label>
+        <input type="number" id="endPos" class="form-control" value="100">
+      </div>
+      <div class="col-md-3">
+        <label>Total Time (sec)</label>
+        <input type="number" id="totalTime" class="form-control" value="5">
+      </div>
+      <div class="col-md-3">
+        <label>Current Time (sec)</label>
+        <input type="number" id="currentTime" class="form-control" value="1">
+      </div>
+    </div>
+
+    <button class="btn btn-success mt-3" onclick="calculatePosition()">
+      Calculate Position
+    </button>
+
+    <div class="formula-box mt-3">
+      Position = <span id="positionResult">0</span>
+    </div>
+  </div>
+
+  <!-- Animation -->
+  <div class="topic-card">
+    <h3><i class="fas fa-play me-2"></i>Motion Simulation</h3>
+    <button class="btn btn-success" onclick="startAnimation()">Start Motion</button>
+
+    <div class="track">
+      <div id="robot"></div>
+    </div>
+  </div>
+
+  <!--logestics Trajectory -->
+    <div class="topic-card">
+        <h3><i class="fas fa-chart-area me-2"></i>Logistic Trajectory</h3>
+    
+        <div class="formula-box">
+        Position(t) = Start + (End - Start) / (1 + e^(-k(t - TotalTime/2)))
+        </div>
+    
+        <div class="row mt-3">
+        <div class="col-md-3">
+            <label>Start Position</label>
+            <input type="number" id="logStartPos" class="form-control" value="0">
+        </div>
+        <div class="col-md-3">
+            <label>End Position</label>
+            <input type="number" id="logEndPos" class="form-control" value="100">
+        </div>
+        <div class="col-md-3">
+            <label>Total Time (sec)</label>
+            <input type="number" id="logTotalTime" class="form-control" value="5">
+        </div>
+        <div class="col-md-3">
+            <label>Current Time (sec)</label>
+            <input type="number" id="logCurrentTime" class="form-control" value="1">
+        </div>
+        </div>
+    
+        <button class="btn btn-success mt-3" onclick="calculateLogisticPosition()">
+        Calculate Position
+        </button>
+    
+        <div class="formula-box mt-3">
+        Position = <span id="logPositionResult">0</span>
+        </div>  
+    </div>
+
+    <div class="topic-card">
+     <h3><i class="fas fa-play me-2"></i>Logistic Motion Simulation</h3>
+
+    <button class="btn btn-success mt-3" onclick="startLogisticAnimation()">Start Motion</button>
+    <div class="track">
+      <div id="logisticRobot"></div>
+    </div>
+  </div>
+
+
+    <!--Cubic Trajectory -->
+    <div class="topic-card">            
+        <h3><i class="fas fa-chart-bar me-2"></i>Cubic Trajectory</h3>
+    
+        <div class="formula-box">
+        Position(t) = Start + (End - Start) × (3(t/TotalTime)² - 2(t/TotalTime)³)
+        </div>
+    
+        <div class="row mt-3">
+        <div class="col-md-3">
+            <label>Start Position</label>
+            <input type="number" id="cubicStartPos" class="form-control" value="0">
+        </div>
+        <div class="col-md-3">
+            <label>End Position</label>
+            <input type="number" id="cubicEndPos" class="form-control" value="100">
+        </div>
+        <div class="col-md-3">
+            <label>Total Time (sec)</label>
+            <input type="number" id="cubicTotalTime" class="form-control" value="5">
+        </div>
+        <div class="col-md-3">
+            <label>Current Time (sec)</label>
+            <input type="number" id="cubicCurrentTime" class="form-control" value="1">
+        </div>
+        </div>
+    
+        <button class="btn btn-success mt-3" onclick="calculateCubicPosition()">
+        Calculate Position
+        </button>
+    
+        <div class="formula-box mt-3">
+        Position = <span id="cubicPositionResult">0</span>
+        </div>
+    </div>
+<div class="topic-card">
+     <h3><i class="fas fa-play me-2"></i>Cubic Motion Simulation</h3>
+    <button class="btn btn-success mt-3" onclick="startCubicAnimation()">Start Motion</button>
+    <div class="track">
+      <div id="cubicRobot"></div>
+    </div>
+  </div>    
+
+
+  <!-- Navigation -->
+  <div class="text-center">
+    <a href="robot-control.html" class="btn btn-outline-success me-2">← Robot Control</a>
+    <a href="robot-components.html" class="btn btn-outline-success me-2">Robot Components</a>
+    <a href="robotics-applications.html" class="btn btn-success">
+      Back to Applications →
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 Robotics Learning Platform. All rights reserved.</p>
+</footer>
+
+<script src="robot-trajectory-planning.js"></script>
+
+</body>
+</html>

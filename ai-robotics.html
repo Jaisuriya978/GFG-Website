@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI in Robotics | Learn Robotics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #1f2933;
+            font-family: 'Inter', sans-serif;
+            color: #e5e7eb;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #22c55e, #15803d);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .content-card {
+            background: #111827;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        footer {
+            background: #020617;
+            color: #cbd5e1;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1 class="fw-bold">Artificial Intelligence in Robotics</h1>
+    <p class="mt-2">How AI makes robots smart, adaptive, and autonomous</p>
+</section>
+
+<!-- Main Content -->
+<div class="container my-5">
+
+    <!-- Introduction -->
+    <div class="content-card">
+        <h3>What is AI in Robotics?</h3>
+        <p>
+            <strong>Artificial Intelligence (AI)</strong> in robotics allows robots to
+            perceive, learn, reason, and make decisions without human intervention.
+            AI-powered robots can adapt to their environment and improve performance over time.
+        </p>
+    </div>
+
+    <!-- AI Technologies -->
+    <div class="content-card">
+        <h3>Key AI Technologies Used in Robotics</h3>
+
+        <button id="toggleTech" class="btn btn-success mb-3">
+            Show / Hide Technologies
+        </button>
+
+        <div id="techList">
+            <ul>
+                <li><strong>Machine Learning:</strong> Enables robots to learn from data.</li>
+                <li><strong>Computer Vision:</strong> Helps robots recognize objects and faces.</li>
+                <li><strong>Natural Language Processing:</strong> Allows human-robot interaction.</li>
+                <li><strong>Deep Learning:</strong> Used for image and speech recognition.</li>
+                <li><strong>Reinforcement Learning:</strong> Robots learn via rewards and penalties.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <h3 class="text-success mt-4">Images AI in Robotics</h3>
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm">
+                    <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg"
+                         class="card-img-top" alt="Industrial Robot">
+                    <div class="card-body">
+                        <h5 class="card-title">Industrial Automation</h5>
+                        <p class="card-text">AI-powered robots perform welding, assembly, and quality inspection.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+                         class="card-img-top" alt="Medical Robot">
+                    <div class="card-body">
+                        <h5 class="card-title">Healthcare Robots</h5>
+                        <p class="card-text">AI robots assist in surgery, patient care, and diagnostics.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm">
+                    <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg"
+                         class="card-img-top" alt="Autonomous Car">
+                    <div class="card-body">
+                        <h5 class="card-title">Autonomous Vehicles</h5>
+                        <p class="card-text">Self-driving cars use AI for navigation and obstacle detection.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    <!-- Applications -->
+    <div class="content-card">
+        <h3>Applications of AI in Robotics</h3>
+        <ul>
+            <li>Autonomous vehicles</li>
+            <li>Medical robots</li>
+            <li>Industrial automation</li>
+            <li>Service and humanoid robots</li>
+            <li>Space exploration</li>
+        </ul>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="content-card">
+        <h3>Quick Quiz</h3>
+        <p><strong>Which AI technique helps robots learn from experience?</strong></p>
+
+        <button class="btn btn-outline-success quiz-option">Machine Learning</button>
+        <button class="btn btn-outline-success quiz-option">Hydraulics</button>
+        <button class="btn btn-outline-success quiz-option">Pneumatics</button>
+
+        <p id="quizResult" class="mt-3 fw-bold"></p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center">
+        <a href="robot-trajectory-planning.html" class="btn btn-outline-success me-2">← Previous</a>
+        <a href="index.html" class="btn btn-success">Back to Home</a>
+        <a href="robot-programming.html" class="btn btn-outline-success">Next →</a>
+    </div>
+
+</div>
+
+<!-- Scroll Top Button -->
+<button id="scrollTopBtn" class="btn btn-success">↑ Top</button>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Robotics Learning Platform. All rights reserved.</p>
+</footer>
+
+<!-- External JavaScript -->
+<script src="ai-robotics.js"></script>
+
+</body>
+</html>

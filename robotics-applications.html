@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Applications of Robotics | Learn Robotics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      background-color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #198754, #146c43);
+      color: white;
+      padding: 60px 20px;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .app-card {
+      background: #111;
+      color: whitesmoke;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .app-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #22c55e;
+    }
+
+    .app-card:hover {
+      transform: scale(1.03);
+      border: 1px solid #22c55e;
+    }
+
+    .active-card {
+      border: 2px solid #22c55e;
+      box-shadow: 0 0 15px #22c55e;
+    }
+
+    #infoBox {
+      background: #000;
+      color: #22c55e;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #ccc;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Hero -->
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="fw-bold">Applications of Robotics</h1>
+    <p class="mt-3">Robotics is transforming industries and everyday life</p>
+  </div>
+</section>
+
+<!-- Applications -->
+<div class="container my-5">
+  <div class="row">
+
+    <!-- Manufacturing -->
+    <div class="col-md-6">
+      <div class="app-card" onclick="showApp('manufacturing', this)">
+        <h4><i class="fas fa-industry me-2"></i>Manufacturing</h4>
+        <p>Automation and assembly lines.</p>
+      </div>
+    </div>
+
+    <!-- Medical -->
+    <div class="col-md-6">
+      <div class="app-card" onclick="showApp('medical', this)">
+        <h4><i class="fas fa-heartbeat me-2"></i>Medical</h4>
+        <p>Surgical and healthcare robots.</p>
+      </div>
+    </div>
+
+    <!-- Space -->
+    <div class="col-md-6">
+      <div class="app-card" onclick="showApp('space', this)">
+        <h4><i class="fas fa-rocket me-2"></i>Space Exploration</h4>
+        <p>Rovers and space research.</p>
+      </div>
+    </div>
+
+    <!-- Defense -->
+    <div class="col-md-6">
+      <div class="app-card" onclick="showApp('defense', this)">
+        <h4><i class="fas fa-shield-alt me-2"></i>Defense</h4>
+        <p>Security and bomb disposal.</p>
+      </div>
+    </div>
+
+    <!-- Agriculture -->
+    <div class="col-md-6">
+      <div class="app-card" onclick="showApp('agriculture', this)">
+        <h4><i class="fas fa-seedling me-2"></i>Agriculture</h4>
+        <p>Smart farming and harvesting.</p>
+      </div>
+    </div>
+
+    <!-- Home -->
+    <div class="col-md-6">
+      <div class="app-card" onclick="showApp('home', this)">
+        <h4><i class="fas fa-home me-2"></i>Home & Service</h4>
+        <p>Daily assistance robots.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Info Box -->
+  <div id="infoBox"></div>
+
+  <!-- Navigation -->
+  <div class="text-center mt-4">
+    <a href="robotics-intro.html" class="btn btn-outline-success me-2">← Back</a>
+    <a href="index.html" class="btn btn-success">Home</a>
+    <a href="robot-components.html" class="btn btn-outline-success ms-2">Next →</a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Robotics Learning Platform. All rights reserved.</p>
+</footer>
+
+<script src="robotics-applications.js"></script>
+
+</body>
+</html>
