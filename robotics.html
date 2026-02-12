@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robotics | GeeksforGeeks Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111;
+            color: #fff;
+        }
+
+        .navbar {
+            background: #0f9d58;
+            padding: 14px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .sidebar {
+            background: black;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .sidebar h3 {
+            color: #ccc;
+            margin-bottom: 12px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 8px 0;
+            color: #0f9d58;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .content {
+            background: #111;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .topic-card {
+            border: 1px solid #fff;
+            border-radius: 8px;
+            padding: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .topic-card h4 {
+            color: #0f9d58;
+        }
+
+        .topic-card a {
+            text-decoration: none;
+            color: #0f9d58;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            margin-left: 12px;
+            color: #cbd5e1;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #22c55e;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">GeeksforGeeks</div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="practice.html">Practice</a>
+        <a href="jobs.html">Jobs</a>
+    </div>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Robotics</h3>
+        <a href="robotics-intro.html">Introduction</a>
+        <a href="robot-components.html">Robot Components</a>
+        <a href="sensors.html">Sensors</a>
+        <a href="actuators.html">Actuators</a>
+        <a href="robot-kinematics.html">Kinematics</a>
+        <a href="robot-dynamics.html">Dynamics</a>
+        <a href="embedded-systems.html">Embedded Systems</a>
+        <a href="arduino.html">Arduino</a>
+        <a href="raspberrypi.html">Raspberry Pi</a>
+        <a href="robot-programming.html">Robot Programming</a>
+        <a href="ai-robotics.html">AI in Robotics</a>
+        <a href="robotics-applications.html">Applications</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Robotics</h1>
+        <p>
+            Robotics is an interdisciplinary field that combines mechanical engineering,
+            electronics, computer science, and artificial intelligence to design,
+            build, and operate robots.
+        </p>
+
+        <h2>Popular Topics</h2>
+
+        <div class="topics">
+            <div class="topic-card">
+                <h4>Introduction to Robotics</h4>
+                <p>Basics of robotics, history, and real-world applications.</p>
+                <a href="robotics-intro.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Robot Components</h4>
+                <p>Controllers, sensors, actuators, power systems.</p>
+                <a href="robot-components.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Sensors</h4>
+                <p>Ultrasonic, IR, temperature, proximity sensors.</p>
+                <a href="sensors.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Actuators</h4>
+                <p>Motors, servos, hydraulic and pneumatic actuators.</p>
+                <a href="actuators.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Embedded Systems</h4>
+                <p>Microcontrollers and real-time control systems.</p>
+                <a href="embedded-systems.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Arduino</h4>
+                <p>Open-source electronics platform for robotics projects.</p>
+                <a href="arduino.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Raspberry Pi</h4>
+                <p>Single-board computer used for advanced robotics.</p>
+                <a href="raspberrypi.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Robot Programming</h4>
+                <p>Programming robots using C, Python, ROS.</p>
+                <a href="robot-programming.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>AI in Robotics</h4>
+                <p>Machine learning, computer vision, autonomous robots.</p>
+                <a href="ai-robotics.html">Read More →</a>
+            </div>
+
+            <div class="topic-card">
+                <h4>Robotics Applications</h4>
+                <p>Industrial robots, healthcare, space, defense.</p>
+                <a href="robotics-applications.html">Read More →</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-bottom">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+  </div>
+</footer>
+
+</body>
+</html>
