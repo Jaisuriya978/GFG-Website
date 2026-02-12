@@ -24,6 +24,12 @@ function handleLogin() {
     } else {
         alert("Invalid email or password ❌");
     }
+
+    if (remember) {
+        localStorage.setItem("userEmail", email);
+    } else {
+        localStorage.removeItem("userEmail");
+    }   
 }
 
 
@@ -34,3 +40,15 @@ window.onload = function () {
         document.getElementById("remember").checked = true;
     }
 };
+
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+}
+
+function toggleLightMode() {
+    const body = document.body;
+    body.classList.toggle('light-mode');
+}
+
+
