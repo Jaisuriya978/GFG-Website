@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Queues | System Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="message-queues.css">
+</head>
+
+<body>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Message Queues</h1>
+        <p class="mt-3">Enable asynchronous communication in distributed systems</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container my-5">
+
+    <!-- Introduction -->
+    <div class="content-card">
+        <h3>What is a Message Queue?</h3>
+        <p>
+            A <strong>Message Queue</strong> is a communication mechanism that allows
+            different components of a system to send and receive messages asynchronously.
+        </p>
+    </div>
+
+    <!-- Why Message Queues -->
+    <div class="content-card">
+        <h3>Why Use Message Queues?</h3>
+        <ul>
+            <li>Decouples producers and consumers</li>
+            <li>Improves system scalability</li>
+            <li>Handles traffic spikes gracefully</li>
+            <li>Increases fault tolerance</li>
+        </ul>
+    </div>
+
+    <!-- How It Works -->
+    <div class="content-card">
+        <h3>How Message Queues Work</h3>
+        <ul>
+            <li><strong>Producer</strong> sends a message to the queue</li>
+            <li><strong>Queue</strong> stores the message temporarily</li>
+            <li><strong>Consumer</strong> processes the message asynchronously</li>
+        </ul>
+    </div>
+
+    <!-- Types -->
+    <div class="content-card">
+        <h3>Types of Message Queues</h3>
+        <ul>
+            <li>Point-to-Point Queue</li>
+            <li>Publish / Subscribe</li>
+            <li>FIFO Queues</li>
+            <li>Priority Queues</li>
+        </ul>
+    </div>
+
+    <!-- Popular Tools -->
+    <div class="content-card">
+        <h3>Popular Message Queue Systems</h3>
+        <ul>
+            <li>RabbitMQ</li>
+            <li>Apache Kafka</li>
+            <li>Amazon SQS</li>
+            <li>ActiveMQ</li>
+            <li>Redis Streams</li>
+        </ul>
+    </div>
+
+    <!-- Use Cases -->
+    <div class="content-card">
+        <h3>Real-World Use Cases</h3>
+        <ul>
+            <li>Order processing systems</li>
+            <li>Event-driven architectures</li>
+            <li>Email and notification services</li>
+            <li>Log and stream processing</li>
+        </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center">
+        <a href="api-design.html" class="btn btn-outline-success me-2">← API Design</a>
+        <a href="index.html" class="btn btn-success">Back to Home</a>
+        <a href="microservices.html" class="btn btn-outline-success ms-2"> → Microservices</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-bottom">
+    <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+  </div>
+</footer>
+
+
+<!-- External JavaScript -->
+<script src="message-queues.js"></script>
+</body>
+</html>
