@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Integration in Android | Android Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="android-intro.css">
+</head>
+
+<body>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">API Integration in Android</h1>
+        <p class="mt-3">Connecting Android Apps with Remote Servers</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container my-5">
+
+    <!-- What is API Integration -->
+    <div class="content-card">
+        <h3>What is API Integration?</h3>
+        <p>
+            API Integration allows Android applications to communicate with 
+            remote servers to fetch or send data using HTTP requests.
+        </p>
+        <ul>
+            <li>Fetch data from server</li>
+            <li>Send user data to backend</li>
+            <li>Connect to cloud services</li>
+        </ul>
+    </div>
+
+    <!-- Popular Libraries -->
+    <div class="content-card">
+        <h3>Popular Networking Libraries</h3>
+        <ul>
+            <li><strong>Retrofit</strong> – Type-safe HTTP client</li>
+            <li><strong>Volley</strong> – Lightweight networking library</li>
+            <li><strong>OkHttp</strong> – Efficient HTTP client</li>
+        </ul>
+    </div>
+
+    <!-- Steps -->
+    <div class="content-card">
+        <h3>Steps to Integrate API (Using Retrofit)</h3>
+        <ol>
+            <li>Add Retrofit dependency</li>
+            <li>Create API Interface</li>
+            <li>Create Retrofit Instance</li>
+            <li>Call API using enqueue()</li>
+        </ol>
+    </div>
+
+    <!-- Example Code -->
+    <div class="content-card">
+        <h3>Example (Retrofit - Kotlin)</h3>
+        <pre class="bg-dark text-white p-3 rounded">
+interface ApiService {
+    @GET("users")
+    suspend fun getUsers(): Response<List<User>>
+}
+        </pre>
+    </div>
+
+    <!-- Interactive Demo -->
+    <div class="content-card text-center">
+        <h3>API Call Simulation</h3>
+        <button class="btn btn-outline-success me-2" onclick="fetchData()">Fetch Data</button>
+        <p id="apiStatus" class="mt-3 fw-bold"></p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="android-services.html" class="btn btn-outline-success me-2">← Services</a>
+        <a href="index.html" class="btn btn-success">Back to Home</a>
+        <a href="datastorage-android.html" class="btn btn-outline-success ms-2">Data Storage →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-bottom">
+        <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- External JavaScript -->
+<script src="api-android.js"></script>
+
+</body>
+</html>

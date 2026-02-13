@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Storage in Android | Android Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="android-intro.css">
+</head>
+
+<body>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Data Storage in Android</h1>
+        <p class="mt-3">Managing Local & Persistent Data in Android Apps</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container my-5">
+
+    <!-- Introduction -->
+    <div class="content-card">
+        <h3>What is Data Storage?</h3>
+        <p>
+            Data Storage in Android allows applications to store user data 
+            locally or remotely for later retrieval and usage.
+        </p>
+    </div>
+
+    <!-- Types of Storage -->
+    <div class="content-card">
+        <h3>Types of Data Storage in Android</h3>
+        <ul>
+            <li><strong>SharedPreferences</strong> – Store small key-value pairs</li>
+            <li><strong>Internal Storage</strong> – Store private app files</li>
+            <li><strong>External Storage</strong> – Store public files</li>
+            <li><strong>SQLite Database</strong> – Structured local database</li>
+            <li><strong>Room Database</strong> – Modern SQLite abstraction</li>
+        </ul>
+    </div>
+
+    <!-- Example -->
+    <div class="content-card">
+        <h3>Example: SharedPreferences (Kotlin)</h3>
+        <pre class="bg-dark text-white p-3 rounded">
+val sharedPref = getSharedPreferences("MyPrefs", MODE_PRIVATE)
+val editor = sharedPref.edit()
+editor.putString("username", "Jai")
+editor.apply()
+        </pre>
+    </div>
+
+    <!-- Room Database -->
+    <div class="content-card">
+        <h3>Room Database</h3>
+        <p>
+            Room is part of Android Jetpack and provides an abstraction layer 
+            over SQLite for easier database management.
+        </p>
+    </div>
+
+    <!-- Interactive Demo -->
+    <div class="content-card text-center">
+        <h3>Local Storage Simulation</h3>
+        <input type="text" id="userInput" class="form-control mb-2" placeholder="Enter your name">
+        <button class="btn btn-outline-success me-2" onclick="saveData()">Save</button>
+        <button class="btn btn-outline-primary" onclick="loadData()">Load</button>
+        <p id="storageOutput" class="mt-3 fw-bold"></p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-4">
+        <a href="api-integration in android.html" class="btn btn-outline-success me-2">← API Integration</a>
+        <a href="index.html" class="btn btn-success">Back to Home</a>
+        <a href="jetpack.html" class="btn btn-outline-success ms-2">Jetpack →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-bottom">
+        <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- External JavaScript -->
+<script src="datastorage-android.js"></script>
+
+</body>
+</html>

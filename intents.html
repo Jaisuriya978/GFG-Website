@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intents in Android</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="android-intro.css">
+</head>
+
+<body>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Intents in Android</h1>
+        <p class="mt-3">Communication Between Android Components</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container my-5">
+
+    <!-- Introduction -->
+    <div class="content-card">
+        <h3>What is an Intent?</h3>
+        <p>
+            An <strong>Intent</strong> is a messaging object used to request an action 
+            from another app component (Activity, Service, Broadcast Receiver).
+        </p>
+    </div>
+
+    <!-- Types of Intents -->
+    <div class="content-card">
+        <h3>Types of Intents</h3>
+        <ul>
+            <li><strong>Explicit Intent</strong> – Used to start a specific Activity.</li>
+            <li><strong>Implicit Intent</strong> – Used to perform actions like opening browser, sending email, etc.</li>
+        </ul>
+    </div>
+
+    <!-- Explicit Intent Example -->
+    <div class="content-card">
+        <h3>Explicit Intent Example (Kotlin)</h3>
+        <pre style="background: #123451; padding:15px; border-radius:8px;">
+val intent = Intent(this, SecondActivity::class.java)
+startActivity(intent)
+        </pre>
+    </div>
+
+    <!-- Passing Data -->
+    <div class="content-card">
+        <h3>Passing Data Using Intent</h3>
+        <pre style="background: #123451; padding:15px; border-radius:8px;">
+val intent = Intent(this, SecondActivity::class.java)
+intent.putExtra("username", "Jai")
+startActivity(intent)
+        </pre>
+    </div>
+
+    <!-- Receiving Data -->
+    <div class="content-card">
+        <h3>Receiving Data in Second Activity</h3>
+        <pre style="background: #123451; padding:15px; border-radius:8px;">
+val name = intent.getStringExtra("username")
+        </pre>
+    </div>
+
+    <!-- Implicit Intent Example -->
+    <div class="content-card">
+        <h3>Implicit Intent Example</h3>
+        <pre style="background: #123451; padding:15px; border-radius:8px;">
+val intent = Intent(Intent.ACTION_VIEW)
+intent.data = Uri.parse("https://www.google.com")
+startActivity(intent)
+        </pre>
+    </div>
+
+    <!-- Advantages -->
+    <div class="content-card">
+        <h3>Advantages of Intents</h3>
+        <ul>
+            <li>Component communication</li>
+            <li>Data transfer between Activities</li>
+            <li>Trigger system-level actions</li>
+            <li>Supports inter-app communication</li>
+        </ul>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="text-center">
+        <a href="android-navigation.html" class="btn btn-outline-success me-2">← Navigation</a>
+        <a href="index.html" class="btn btn-success">Back to Home</a>
+        <a href="android-services.html" class="btn btn-outline-success ms-2">Services →</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-bottom">
+        <p>© 2025 GeeksforGeeks. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/company/geeksforgeeks-learn-to-code/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- External JavaScript -->
+<script src="android.js"></script>
+
+</body>
+</html>
