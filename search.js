@@ -41,3 +41,55 @@ const jobs = [
       document.getElementById("suggestions").style.display = "none";
     }, 200);
   }
+
+  document.getElementById("jobSearch").addEventListener("input", function () {
+    showSuggestions(this.value);
+  });
+
+  document.getElementById("jobSearch").addEventListener("blur", hideSuggestions);
+
+  document.getElementById("jobSearch").addEventListener("focus", function () {
+    if (this.value.trim() !== "") {
+      showSuggestions(this.value);
+    } else {
+      document.getElementById("suggestions").style.display = "none";
+    } });
+
+  document.getElementById("jobSearch").addEventListener("keydown", function (e) {
+    const list = document.getElementById("suggestions");
+    const items = list.getElementsByTagName("li");
+    let index = -1; 
+    
+    for (let i = 0; i < items.length; i++) {
+      if (items[i].style.background === "rgb(0, 128, 0)") {
+        index = i;
+        break;
+      }
+    }
+
+    switch(e.key) {
+      case "ArrowDown":
+        index = (index + 1) % items.length;
+        break;
+      case "ArrowUp":
+        index = (index - 1 + items.length) % items.length;
+        break;
+      case "Enter":
+        if (index >= 0 && items[index]) {
+          document.getElementById("jobSearch").value = items[index].textContent;
+          list.style.display = "none";
+        }
+        return;
+      default:
+        return;
+    }
+
+    for (let i = 0; i < items.length; i++) {
+      items[i].style.background = "#2c2e50";
+    }
+
+    if (index >= 0 && items[index]) {
+      items[index].style.background = "#008000";
+    }
+  });
+  
